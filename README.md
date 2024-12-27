@@ -11,7 +11,22 @@ Many processes undertaken by IWTE are accessible and/or easier to use via the ta
 
 For further information see [Task File Overview.md](Task_File_Overview.md)
 
-# Functions For M2TW
+## Preferences
+As from 2025 versions certain preferences can be set and stored.
+
+![image](IWTEgithub_images/preferences.jpg)
+
+Settings and some frequently used paths will be stored in iwte_settings.txt in the IWTE folder.
+
+Options accessed from main screen buttons are:
+* Extract File\
+dae, glb, or ms3d - the selected type will be used as default for cas to extract and mesh to extract processes, please note that some conversions are not possible to ms3d due to file format limits.  Glb files can be used in Blender 4+ where support for dae has been withdrawn.
+* Game\
+all, m2, rr or rtw - select a specific game if you wish to tidy the appearance of IWTE by removing game related functions you don't need
+* Mode\
+dark or brown - brown is close to the light brown appearance of the pre 2025 IWTE versions
+
+## Functions For M2TW
 The following list is a quick round-up of IWTE's current capabilities for M2TW:
 * Battlemap - Settlements:\
 Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfinding, .worldvegetation and .worldpkgdesc files. Using these files you can completely change the settlement layout, models, textures, effects and lighting.
@@ -32,7 +47,7 @@ Supports simple editing of the stratmap TGA and HGT files with files shown at co
 * Misc - Image Editing\
 A simple painting process editor which supports basic editing of several file types (terrain masks can be edited shown at actual size in relation to settlement).
 
-# Functions For RTW and Rome Remastered
+## Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
 * Campaign Map - Map Mesh - Rome Remastered Only\
 Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
@@ -66,9 +81,9 @@ Access to the software is obtained from their respective sites.
 * Pillow     HPND
 
 The below executables can be called by IWTE. They are provided as is via Nvidia (see Nvidia_licence.pdf). You can obtain them from the Nvidia site.
-nvdtx.exe
-Readdxt.eve
+* nvdtx.exe
+* Readdxt.eve
 
-The below executable can be called by IWTE. It is provided as is and is subject to the MIT licence. Newer versions can be obtained from the microsoft site (https://github.com/Microsoft/DirectXTex/wiki/Texconv).
+The below executable can be called by IWTE. It is provided as is and is subject to the MIT licence. Newer versions can be obtained from the [microsoft github page](https://github.com/Microsoft/DirectXTex/wiki/Texconv).
 It is used to handle certain texture conversions.
-Texconv.exe
+* Texconv.exe
