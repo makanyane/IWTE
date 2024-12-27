@@ -1,6 +1,7 @@
 # IWTE -- *****PLEASE NOTE THIS REPOSITORY IS WIP AND SOME TASKS/INFO RELATE TO THE AS YET UNRELEASED 2025 VERSION OF IWTE*****
 IWTE for Total War Modding (RTW, RR &amp; M2TW)
 Repository for the IWTE tool, developed by wilddog to enable modding of the Total War games, Medieval 2 Total War, Rome Total War and Rome Remastered.
+![image](https://github.com/user-attachments/assets/7359cc4a-605f-4bcb-929e-17088be22571)
 
 Information about IWTE and Total War modding is also available on [TWC WIKI](https://wiki.twcenter.net/index.php?title=IWTE)
 
