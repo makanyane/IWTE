@@ -1,11 +1,17 @@
 # IWTE -- *****PLEASE NOTE THIS REPOSITORY IS WIP AND SOME TASKS/INFO RELATE TO THE AS YET UNRELEASED 2025 VERSION OF IWTE*****
 IWTE for Total War Modding (RTW, RR &amp; M2TW)
 Repository for the IWTE tool, developed by wilddog to enable modding of the Total War games, Medieval 2 Total War, Rome Total War and Rome Remastered.
-![image](https://github.com/user-attachments/assets/7359cc4a-605f-4bcb-929e-17088be22571)
 
 Information about IWTE and Total War modding is also available on [TWC WIKI](https://wiki.twcenter.net/index.php?title=IWTE)
 
-# For M2TW
+## Task File Processes
+Many processes undertaken by IWTE are accessible and/or easier to use via the task file process.  The process is initiated by selecting a task file from the button shown below.
+
+![image](IWTEgithub_images/task-file-button.jpg)
+
+For further information see [Task File Overview.md](Task%20File%20Overview.md)
+
+# Functions For M2TW
 The following list is a quick round-up of IWTE's current capabilities for M2TW:
 * Battlemap - Settlements:\
 Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfinding, .worldvegetation and .worldpkgdesc files. Using these files you can completely change the settlement layout, models, textures, effects and lighting.
@@ -26,7 +32,7 @@ Supports simple editing of the stratmap TGA and HGT files with files shown at co
 * Misc - Image Editing\
 A simple painting process editor which supports basic editing of several file types (terrain masks can be edited shown at actual size in relation to settlement).
 
-# For RTW and Rome Remastered
+# Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
 * Campaign Map - Map Mesh - Rome Remastered Only\
 Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
