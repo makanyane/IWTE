@@ -4,6 +4,14 @@ Repository for the IWTE tool, developed by wilddog to enable modding of the Tota
 
 Information about IWTE and Total War modding is also available on [TWC WIKI](https://wiki.twcenter.net/index.php?title=IWTE)
 
+#### Table of Contents
+* [Task File Processes](#Task-File-Processes)
+* [Preferences](#preferences)
+* [Functions for M2TW](#Functions-for-M2TW)
+* [Functions for RTW and Rome Remastered](#Functions-for-RTW-and-Rome-Remastered)
+* [License](#License)
+
+
 ## Task File Processes
 Many processes undertaken by IWTE are accessible and/or easier to use via the task file process.  The process is initiated by selecting a task file from the button shown below.
 
