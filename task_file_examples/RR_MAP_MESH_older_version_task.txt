@@ -1,0 +1,97 @@
+# winter textures are not created automatically in this version, you will need to run the process again with different textures for winter
+
+<task_id>                             create_map_pieces                         
+
+<directory_out>                      "I:\Rome_remastered\create_maprr"             #directory where all created files be put
+<directory_out_increment>             no                                           #yes or no whether to increment the directory name (default is yes to prevent accidental overwriting)
+
+#switch options Please note texttures take a long time to create and will take a lot of memory.
+<map_pieces_longest_dimension>        13                     # divides longest length - square tiles only will be produced
+<create_albedo_textures>        yes                          # yes or no - warning, slow takes several minutes - will be required by game
+<create_normal_textures>        yes                          # yes or no - warning, slow takes several minutes - will be required by game
+<create_river_mesh_cas>         yes                          # create the river mesh cas file - will be required by game
+<create_coastline_cas>          yes                          # create coastline cas file - will be required by game
+<create_pieces_cas>             yes                          # create piece cas files - will be required by game
+
+<create_full_dae>               no                           # yes or no - NOT required by game, for reference/viewing
+<create_full_glb>               no                           # yes or no - NOT required by game, for reference/viewing
+
+<texture_normal_factor>         0.12                         # higher value increases impact of texture normals
+<normals_multiplier>            14.5                         # higher value increases normals intensity
+<tint_factor>                    0.3                         # 0 to 1 ratio for tints v textures
+
+#beach related parameters
+<beach_factor>                   0.50                        # 0 to 1 ratio for beach v non beach texture (higher makes beach color stronger)
+<beach_rgb_list>                 208 187 161                 # RGB color for the beach)
+<beach_high>                     1.1                         # Beach height high point (beach will cover up to this height at 100 percent color)
+<beach_merge_high>               1.5                         # additional height to merge beach color eg merge from 1.1 to 2.6
+
+
+<tga_ht_scale>                   1.0                         # relative scale of TGA at 0 to 255 (allowed values 0.25 to 2.5)
+<mtn_ht_factor>                  1.0                         # multiplier 0.0 to 5.0
+<mtnhigh_ht>                    100.0                        # mtnhigh texture will be applied above this height
+<mtnpeak_ht>                    130.0                        # mtnpeak texture will be applied above this height
+<ridge_ht>                      100.0                        # ridges found above this height will be accentuated by the factor below
+<ridge_ht_factor>                1.0                         # multiplier 0.0 to 5.0
+<direction_gt_list>            4 5 6 7                       # sequence is as per the ground type list below (starting zero) ie 4 = mountain_high
+<mesh_detail_level>            medium                        # simplified control for mesh if cas is too large change to low or lowest
+<sea_drop_list>                4 5 5                         # sea drop for seas shallow, deep, ocean (value  of 5 is similar to TGA pixel difference of 5 in heights_tga)
+<drop_loop_factor>             80                            # used to calculate itterations in sea drop
+
+
+#Main map files to use.
+<map_heights_tga>                    "I:\Rome_remastered\world\maps\base\map_heights.tga"   
+<map_regions_tga>                    "I:\Rome_remastered\world\maps\base\map_regions.tga"         
+<map_ground_types_tga>               "I:\Rome_remastered\world\maps\base\map_ground_types.tga"     
+<map_climates_tga>                   "I:\Rome_remastered\world\maps\base\map_climates.tga" 
+<map_features_tga>                   "I:\Rome_remastered\world\maps\base\map_features.tga"
+<map_heights_lakes_tga>              "I:\Rome_remastered\world\maps\base\map_heights_lakes.tga"       #only required if you want to try and convert seas to lakes for the map mesh
+
+
+#default groundtype TGAs
+<default_fertility_low>              "I:\IWTE\base-textures\default_climate\fertility_medium.tga"
+<default_fertility_medium>           "I:\IWTE\base-textures\default_climate\fertility_medium.tga"
+<default_fertility_high>             "I:\IWTE\base-textures\default_climate\fertility_high.tga"
+<default_wilderness>                 "I:\IWTE\base-textures\default_climate\wilderness.tga"
+<default_mountains_high>             "I:\IWTE\base-textures\default_climate\mountains_high.tga"
+<default_mountains_low>              "I:\IWTE\base-textures\default_climate\mountains_low.tga"
+<default_hills>                      "I:\IWTE\base-textures\default_climate\hills.tga"
+<default_forest_dense>               "I:\IWTE\base-textures\default_climate\forest_dense.tga"
+<default_forest_sparse>              "I:\IWTE\base-textures\default_climate\forest_sparse.tga"
+<default_swamp>                      "I:\IWTE\base-textures\default_climate\swamp.tga"
+<default_ocean>                      "I:\IWTE\base-textures\default_climate\sea.tga"
+<default_sea_deep>                   "I:\IWTE\base-textures\default_climate\sea.tga"
+<default_sea_shallow>                "I:\IWTE\base-textures\default_climate\sea.tga"
+<default_beach>                      "I:\IWTE\base-textures\default_climate\beach.tga"
+<default_cliff>                      "I:\IWTE\base-textures\default_climate\cliff.tga"
+<default_mtnpeak>                    "I:\IWTE\base-textures\default_climate\mountains_high.tga"
+
+# directory paths containing the TGA data for each climate missing ones will use default - names within the diectory must match the names used in the default tags
+# but without the default_ part and ending .tga eg the directories should contain tga files called mountains_high.tga or forest_dense.tga
+<mediterranean_gt_dir>                       "I:\IWTE\base-textures\mediterranean_climate"
+<sandy_desert_gt_dir>                        "I:\IWTE\base-textures\sandy_desert_climate"
+<rocky_desert_gt_dir>                        "I:\IWTE\base-textures\rocky_desert_climate"
+<temperate_grassland_fertile_gt_dir>         "I:\IWTE\base-textures\temperate_fertile_climate"
+<temperate_grassland_infertile_gt_dir>       "I:\IWTE\base-textures\temperate_infertile_climate"
+<temperate_forest_open_gt_dir>               "I:\IWTE\base-textures\temperate_forest_open_climate"
+<temperate_forest_deep_gt_dir>               "I:\IWTE\base-textures\temperate_forest_deep_climate"
+<swamp_gt_dir>                               "I:\IWTE\base-textures\swamp_climate"
+<highland_gt_dir>                            "I:\IWTE\base-textures\highland_climate"
+<alpine_gt_dir>                              "I:\IWTE\base-textures\alpine_climate"
+<sub_arctic_gt_dir>                          "I:\IWTE\base-textures\arctic_climate"
+<semi_arid_gt_dir>                           "I:\IWTE\base-textures\semi_arid_climate"
+
+#climate tints - choose from the combinations arid, warm_dry, warm_humid, cold_humid, polar, winter
+<default_tint>                            warm_humid
+<mediterranean_tint>                      warm_dry                                                                                     
+<sandy_desert_tint>                       arid                                                   
+<rocky_desert_tint>                       arid                                                 
+<temperate_grassland_fertile_tint>        warm_humid                                             
+<temperate_grassland_infertile_tint>      warm_dry                                               
+<temperate_forest_open_tint>              warm_humid                                              
+<temperate_forest_deep_tint>              cold_humid                                            
+<swamp_tint>                              warm_humid                                           
+<highland_tint>                           cold_humid                                             
+<alpine_tint>                             warm_humid                                                   
+<sub_arctic_tint>                         polar                                                       
+<semi_arid_tint>                          warm_dry   

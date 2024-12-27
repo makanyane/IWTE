@@ -1,0 +1,27 @@
+# Example of a created readback task file created from cas_to_extract_with_multiple_anims_task.txt
+# Please note the <overlap_frames> and <frames_in> are commented out as they aren't used in the read back.
+# The values after the cas files are the start (0 frame) and the last frame of the cas files used to create the original dae file.
+# For the read back these values are used to determine the start and end frames for each of the cas files ie they will split the files up at that point.
+# Any files not required simply comment out with a # at the start. Repeat names will overwrite.
+# This is quite powerful as a tool as you can change the cas mesh model and a batch of cas animations in one hit or in whatever variations of this you want to use.  
+
+<task_id>                                           extract_to_cas                                                      # to read dae/ms3d/glb file and generate *.cas files
+<extract_file_full_path_in>                         c:/M2TW/mods/my_mod/data/models_strat/to_dae/pkh_scot_captain.dae   # file to read in, must end .dae/.ms3d/.glb - rename to match your edited file if different
+
+<directory_out>                                     c:/M2TW/mods/my_mod/data/models_strat/to_dae/from_dae       	# directory to put new created files, all files will go to same folder
+
+<cas_mesh_file_name_out>                            pkh_scot_captain.cas                                                # *.cas model file to be created
+<cas_animation_file_format>                         m2                                                                  # format of cas to be created from extract (rr, m2 or full) 
+# 'rr' format should also be used for RTW - 'm2' should be used if you are repacking anims with XIDX etc - 'full' should be used if you're allowing M2TW game engine to repack, Devkit style
+
+#<overlap_frames>                                    no                                                                 # overlap frames selection used to create the dae (not used on import, frame numbers below are used)
+
+<cas_file_name_out_anim_split_list>                                                                                     # cas anim files start and end frames and list of names
+pkh_clk_flag_axe_stand_a_idle_selected.cas              1   11                                                          # start/end frames can be adjusted if you wish to shorten/extend animations
+pkh_clk_flag_axe_stand_a_idle_selected.cas             12   21                                                          
+pkh_clk_flag_axe_stand_a_to_walk.cas                   22   39                                                          
+pkh_clk_flag_axe_walk.cas                              40   63                                                          
+pkh_clk_flag_axe_walk.cas                              64   87     # For looped animations, e.g. walk or run, using the middle section of a duplicated animation can give a smoother result, in this case you'd comment out the final walk anim                                                       
+pkh_clk_flag_axe_walk.cas                              88  111                                                           # your file should contain at least the number of listed frames
+
+#<end_frame>                                        111            # Last animated frame (use to see full animation your 3d program)

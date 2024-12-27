@@ -1,0 +1,21 @@
+# FOR UNIT MESHES - EXAMPLE WITHOUT WEAPON BONES IN USE - BODY ONLY
+# 
+<task_id>                              mesh_to_extract                                  # reads a.mesh file and .cas basepose and animation files
+
+<mesh_file_full_path_in>               C:\M2TW\mods\devkit\data\animations\EB_Slinger\numidian_slinger_lod0.mesh                  # mesh file name to be read
+<mesh_double_texture>                  yes                                              # battle mesh models mapped to two textures yes/no
+
+<cas_file_types_in_list>    body 							# types of cas anims to be included - Maximum is: body weapon shield mount - a single horse unit should use "body", mount is only used when combining mount and rider
+
+<cas_file_full_path_in_default_list>                                                    # pose/default for each of the types (in sequence)  
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_basepose.cas 
+
+<cas_file_full_path_in_action_list>  
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_stand_A_idle.cas		# animation for each of the types (in sequence )	
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_attack_missile_ready.cas	
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_attack_missile_hold.cas
+
+<directory_out>                        C:\M2TW\mods\devkit\data\animations\EB_Slinger   # directory for extract
+<extract_file_name_out>                EBslingerAnims.dae                		# extract file name, must end .dae or .glb or .ms3d to set file format type
+
+<create_text_file>                     yes                               		# 'full', 'yes', 'no', options to create text for each file read (default no) yes is compact (omits big arrays) - used for problem solving, not required by tool or game

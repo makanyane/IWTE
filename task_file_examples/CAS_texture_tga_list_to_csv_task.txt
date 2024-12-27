@@ -1,0 +1,11 @@
+# used to create a CSV file of the textures the cas files say they are using
+# CSV files can be opened in Excel or other spreadsheet programs
+# RTW and M2 will crash if the tga files specified inside cas models are not supplied
+# texture.tga location is normally relative to the .cas file, e.g. in /textures folder below the .cas location
+# if you have the .cas file in the mod-folder you also need its specified tga in the mod-folder regardless of whether it exists in vanilla/data 
+# RR generally does not crash if tga files are missing but will display the object in bright pink instead
+
+<task_id>                                          cas_texture_csv 
+<directory_in>                                     "X:\Total War ROME REMASTERED\Contents\Resources\Data\data"   
+<directory_out>                                    "X:\cas_texture_csv" 
+<all_subdirectories>                               yes 					# yes or no to include/exclude subdirectories

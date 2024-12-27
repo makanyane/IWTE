@@ -1,0 +1,7 @@
+# generate an EDU based spreadsheet to support Feral M2 unit card creation.
+# copy/paste the lines of the units you want to make cards from into a new file, or delete the lines you don't want
+# you should then run the modeldb_mesh_to_dae to extract the required models and textures. 
+
+<task_id>                                           unit_card_data                             
+<mod_directory_in>                                  "H:\Medieval_II_Total_War\mods\mod_name" 
+<directory_out>                                     "I:/IWTE/out"  

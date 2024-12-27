@@ -1,0 +1,13 @@
+# Mak can't remember what this does
+ 
+<task_id>                                convert_from_skeleton_to_new                           # extract skeletons from a skeletons.dat file
+<cas_file_full_path_in>                  D:\IWTE\dwarf-test/ered_bow_upg_lod0_basepose.cas	# cas model to be used as donor of new bone positions
+<directory_in>                           D:\med2directorypath\data\animations                   # directory containing the skeletons.dat and skeletons.idx files
+<directory_out>                          D:\IWTE\newdwarf                                       # directory to place the unpacked skeletons
+#<create_text_file>                      full                                                   # create text files for bug fixing/research
+#<fixed_height_change>                   -0.13                                                  # fixed amount to heighten or lower an animation (normally difference between foot and base of mesh)
+<amended_file_prefix>                    dwarfbow_
+
+<skeleton_pak_list> 
+MTW2_Bowman
+MTW2_Knifeman

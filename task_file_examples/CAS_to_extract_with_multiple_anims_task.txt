@@ -1,0 +1,32 @@
+# FOR RR/RTW UNITS AND STRAT CHARACTERS
+# FOR M2 STRAT CHARACTERS ONLY ########################################################  SEE mesh_to_extract FOR M2 UNIT MESHES
+# This process is used to combine mutiple cas animations together with a CAS mesh model. 
+# It currently has two variants determined by the <overlap_frames> data_id.
+## A) yes means that each animation added is expected to contiunue from the last frame of the previous cas. ie its zero frame is discarded as it is expected to tie to the last frame
+# of the previous animation. This is how animations should work so any jumps etc will highlight an error. USE FOR VIDEOS ETC, NOT FOR EDITING ANIMS
+## B) no means that the animations are added after the previous animation including the zero time frame. This is to allow you to match up animations. Please note that at the moment
+# this option is only tracking horizontal distance between animations effectively in straight lines (as the game uses the specific id in the descr_skeleton.txt to move left/right up/down etc.
+# This is useful if viewing/changing idle to walk to idle to ambush etc combinations. 
+# This process creates a read back _task file which can be edited/amended to control any changes you want to read back in, including the number of frames to add to each animation (see below). 
+# Process works with any M2/RR/RTW .cas animation file including 'unpacked' variants
+# The 'skeleton' or 'basepose' used will be that contained in the .cas model
+
+<task_id>                                           cas_to_extract                                                      # cas_to_extract can be used for single or multiple animations 
+<cas_mesh_file_full_path_in>                        c:/M2TW/mods/my_mod/data/models_strat/pkh_scot_captain.cas   	# full address to the 'model' file .cas
+ 
+<directory_out>                                     c:/M2TW/mods/my_mod/data/models_strat/to_dae                 	#  
+<dae_file_name_out>                                 pkh_scot_captain.dae                                                # must end .dae or .ms3d or .glb to determine file type produced
+
+<overlap_frames>                                    no 									# no is recommended for editing anims
+ 
+<create_text_file>                                  no                                                                  # or 'yes' or 'full' if you are bug-tracing technical problems with the files
+<create_task_file_from_input>                       yes                                                                 # this will create the task file you need to re-create the individual files for the game
+<task_file_full_path_out>                           c:/IWTE/IWTE_tasks/dae_to_mesh_pkh_scot_captain_task.txt   		# 
+
+<cas_file_full_path_in_action_list>                                                                                     #  you can list as many files here as you want - logical chains starting with idle are best!
+c:/M2TW/mods/my_mod/data/animations/pkh_strat_clk_flag_axe/pkh_clk_flag_axe_stand_a_idle.cas          
+c:/M2TW/mods/my_mod/data/animations/pkh_strat_clk_flag_axe/pkh_clk_flag_axe_stand_a_idle_selected.cas          
+c:/M2TW/mods/my_mod/data/animations/pkh_strat_clk_flag_axe/pkh_clk_flag_axe_stand_a_to_walk.cas                
+c:/M2TW/mods/my_mod/data/animations/pkh_strat_clk_flag_axe/pkh_clk_flag_axe_walk.cas                           
+c:/M2TW/mods/my_mod/data/animations/pkh_strat_clk_flag_axe/pkh_clk_flag_axe_walk.cas                           
+c:/M2TW/mods/my_mod/data/animations/pkh_strat_clk_flag_axe/pkh_clk_flag_axe_walk.cas

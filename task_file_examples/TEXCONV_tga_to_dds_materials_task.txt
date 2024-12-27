@@ -1,0 +1,7 @@
+# requires the texconv.exe in same folder as IWTE*.exe
+# generates dds files suitable for RR map mesh materials, including alpha layer and mip-maps with high quality setting
+
+<task_id>           task_tex_conv_tga_to_dxt5_dds                            
+<directory_in>      "I:\Rome_remastered\create_maprr\materials" 
+<directory_out>     "I:\Rome_remastered\create_maprr\materials\ddsfiles"
+<directory_out_increment>     yes                       			#yes or no whether to increment the directory name (default is yes to prevent accidental overwriting)

@@ -1,0 +1,4 @@
+# FOR UNIT MESHES - EXAMPLE WITH BODY AND ONE WEAPON ANIM
+<task_id>                              mesh_to_extract                                         # reads a.mesh file and .cas basepose and animation files
+
+find one for this!

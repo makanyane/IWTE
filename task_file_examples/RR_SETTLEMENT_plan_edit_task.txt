@@ -1,0 +1,14 @@
+# To read an RR settlement plan and allow editing either in IWTE 2D window or in 3D program with .dae or .glb
+# If editing in Blender move items in OBJECT MODE (not edit), and do not apply transforms - the moved to/rotated to information is needed to populate the settlement_plan info
+# Wall position changes will not be picked up from 3D programs, they can only be made in the IWTE 2D window which will restrict movements to valid grid positions
+# IWTE does not sanity check the wall perimeter for completeness, please ensure you do not leave gaps/overlaps
+# An extract_to_settlement_plan will be created for you to load your 3D file info back into the plan
+# The .dae or .glb files if requested will be written to "anyoutfiles" folder below the input settlement plan location e.g. D:\RRMods\My Mods\mod_name\data\settlement_plans\anyoutfiles
+
+<task_id>                                           settlement_plan_edit                                                          
+<settlement_plan_file_full_path_in>                 "D:\RRMods\My Mods\mod_name\data\settlement_plans\roman_huge_city.txt"    
+<mod_directory_in>                                  "D:\RRMods\My Mods\mod_name"    							# Do not include /data
+<rr_directory_in>                                   "D:\Steam\steamapps\common\Total War ROME REMASTERED\Contents\Resources\Data"    	# Do not include additional /data or /bi etc this needs to start at the higher level so both RTW data and BI/alex can be read
+
+<create_dae>                                        yes		# yes or no
+<create_glb>                                        no		# yes or no

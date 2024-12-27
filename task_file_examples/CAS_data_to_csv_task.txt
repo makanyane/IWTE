@@ -1,0 +1,7 @@
+# used to create a CSV file of the basic cas files listing mesh types, total vertex data and total triangles.
+# use the csv file in Excel or similar spreadsheet program to view and check if number of meshes or total verts/faces exceed recommendations
+
+<task_id>                                           cas_data_csv                             
+<directory_in>                                     "D:\Medieval II Total War\data\models_strat"   
+<directory_out>                                    "D:\modwork\cas_check"                 
+<all_subdirectories>                               yes 			# yes or no to include/exclude subdirectories

@@ -1,0 +1,9 @@
+#  special task which needs to be in a file labeled *_list.txt 
+#  tasks are run in sequence waiting for the first to finish
+
+<task_id>                               multi_list             	# read a list of tasks to action
+
+<task_list>                             			#list of tasks to be actioned in sequence
+"yourdirectory\iwte_tasks\createmappieces_task.txt"                        
+"yourdirectory\iwte_tasks\tex_conv_albedos_dxt1_nomipmaps_dds_task.txt"
+"yourdirectory\iwte_tasks\tex_conv_normals_dxt5_dds_task.txt" 

@@ -1,0 +1,16 @@
+# Converts meshes and textures for the listed units
+
+<task_id>                                  modeldb_mesh_to_extract              #
+<mod_directory_in>                         "mod path" 
+<m2_directory_in>                          "M2 vanilla path"                    #
+<directory_out>                            "out directory"                      #  
+<primary_or_secondary>                     primary                              # primary or secondary skeleton to be used
+<create_text_file>                         no 					# yes no or full - text files used for bug tracing only, not used in game or by IWTE
+                                                                
+<modeldb_type_name_list> 							# list of units with meshes to be converted
+hobbit_archers
+dwarven_warriors
+ents
+fell_beastC
+wargsC
+polish_nobles

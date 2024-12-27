@@ -1,0 +1,27 @@
+# FOR RECREATING UNIT MESHES & ANIMS FROM EXTRACT FILE - EXAMPLE WITH BODY WEAPON AND SHIELD ANIM
+# IWTE will generate you a default extract_to_mesh_***_task.txt file based on the initial mesh_to_extract input file 
+# you can change the names of files to be saved and the frame start/finish positions to suit your required changes
+
+<task_id>                                           extract_to_mesh                                                     # to read dae file and generate *.mesh and *.cas files
+<extract_file_full_path_in>                         c:/M2TW/mods/devkit/data/animations/eb_slinger/slingerW2.dae   	# extract file to read in, must end .dae or .glb or .ms3d
+
+<directory_out>                                     c:/M2TW/mods/devkit/data/animations/eb_slinger/from_dae     	# directory to put new created files
+
+<mesh_file_name_out>                                numidian_slinger_lod0.mesh                                          # *.mesh file to be created
+<mesh_type>                                         unit                                                                # must be one of; unit siege banner skydome - sets the internal lod name required by the game
+<mesh_double_texture>                               yes                                                                 # yes for battle mesh models mapped to two textures, no for models mapped to a single texture (no attachment texture)
+
+<overlap_frames>                                    no                                                                  # overlap frames selection used to create the dae (not used on import - frame numbers given below are used)
+<cas_file_types_out_list>                           body weapon shield                                                  # types of cas files to be created (in sequence) - use "body weapon" for one weapon anim "body" for body only
+
+<cas_file_name_out_default_list>                                                                                        # cas default files (in sequence, body weapon shield)
+eb_slinger_basepose.cas                             w_eb_slinger_default.cas              	w_shield_default.cas                                           
+
+<cas_file_name_out_anim_split_list>                                                                                     # cas anim files start and end frames and file names (in sequence)
+eb_slinger_stand_a_idle.cas                         DUMMY.cas             			DUMMY.cas                   1   29      # if you aren't going to use a weapon anim give this an obvious name so you can discard the .cas
+eb_slinger_attack_missile_ready.cas                 w_eb_slinger_attack_missile_ready.cas       w_shield_ready.cas          30   58      
+eb_slinger_attack_missile_hold.cas                  w_eb_slinger_attack_missile_hold.cas        w_shield_hold.cas           59   65      
+eb_slinger_attack_missile_release.cas               w_eb_slinger_attack_missile_release.cas     w_shield_release.cas        66  108      
+eb_fast_slinger_run.cas                             w_eb_slinger_run.cas          		DUMMY.cas                   109  123 	# if same name is repeated the .cas will be overwritten and you will get the last version - beware of overwriting your default accidentally   
+
+#<end_frame>                                        123                                                                 # Last animated frame (use to see full animation in your 3d program)

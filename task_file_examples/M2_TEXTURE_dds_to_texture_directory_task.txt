@@ -1,0 +1,6 @@
+#dds_to_texture conversion - this feature is also available via IWTE button, select input directory, select output directory
+
+<task_id>                             dds_to_texture_directory                           # 
+<directory_in>      "I:\archer" #test
+<directory_out>     "I:\test_dds_conversion"
+<directory_out_increment>     yes                       #yes or no whether to increment the directory name (default is yes to prevent accidental overwriting)  

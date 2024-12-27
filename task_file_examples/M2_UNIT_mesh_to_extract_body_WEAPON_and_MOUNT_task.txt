@@ -1,0 +1,47 @@
+# This uses the same layout as a standard mesh_to_dae but includes a mount and rider with one weapon (weapon and shield can also be used)
+# Please note the mount specific details at the bottom of the file. A returned extract_to_mesh task file will also be generated. 
+# The return task file will have extra numbers after the names of the animation cas files. 
+# They are specifically start and end frames for the rider anims then start and end frames for the mount (the start frames are always aligned to the longest of the animations where mount and rider anims differ)
+# If you're using this to form a combined anim for video
+
+<task_id>                                           mesh_to_extract   
+<mesh_file_full_path_in>                            c:yourdirectory/mailed_knights_lod0.mesh     
+
+<mesh_type>                                         unit 
+<mesh_double_texture>                               yes                                         #  applies to unit (rider) element
+<skeleton_scale>                                    1.0                                         #  applies to unit (rider) element
+  
+<directory_out>                                     c:yourdirectory/yoursubdirectory          
+<extract_file_name_out>                             mailed_knightscombotest.dae                 # extract file name, must end .dae or .glb or .ms3d to set file format type  
+<create_text_file>                                  no                                          # 'full', 'yes', 'no', options to create text files for each file read (default no) yes is compact (omits big arrays) - used for problem solving, not required by tool or game
+<create_task_file_from_input>                       yes 
+<overlap_frames>                                    no  					# use no for editing, yes for video creation (to get a smoother flow through anims) - no is default
+                                            
+<cas_file_types_in_list>  body  weapon  mount				# for unit which doesn't use a weapon skeleton this would be "body mount" - for unit with 2nd weapon anim "body weapon shield mount"
+
+<cas_file_full_path_in_default_list> 
+c:yourdirectory/hr_lance/HR_lance_basepose.cas  			# unit skeletons' default anim (basepose)                                      
+c:yourdirectory/hr_lance/weapon/w_HR_lance_default.cas          	# weapon skeletons' default anim                 
+c:yourdirectory/horse_marka/fs_horse_marka_default.cas          	# mount skeletons' default anim                       
+
+<cas_file_full_path_in_action_list>                                                                                   
+c:yourdirectory/hr_lance/HR_lance_fs_horse_stand_a_idle.cas		# 1st anim for unit                         
+c:yourdirectory/hr_lance/weapon/w_HR_lance_stand_a_idle.cas     	# 1st anim for weapon                 
+c:yourdirectory/horse_marka/fs_horse_marka_stand_a_idle.cas     	# 1st anim for mount
+                          						# space not required by IWTE but recommended for clarity
+c:yourdirectory/hr_lance/HR_lance_fs_horse_stand_a_to_walk.cas  	# 2nd anim for unit, etc...                     
+c:yourdirectory/hr_lance/weapon/w_HR_lance_stand_a_to_walk.cas                      
+c:yourdirectory/horse_marka/fs_horse_marka_stand_a_to_walk.cas 
+                        
+c:yourdirectory/hr_lance/HR_lance_fs_horse_walk.cas	                        
+c:yourdirectory/hr_lance/weapon/w_HR_lance_walk.cas                     
+c:yourdirectory/horse_marka/fs_horse_marka_walk.cas    
+
+c:yourdirectory/hr_lance/HR_lance_fs_horse_walk_to_stand_a.cas                       
+c:yourdirectory/hr_lance/weapon/w_HR_lance_default.cas                   # as this is the same as the default it will be renamed for the return files (default should not have animations in it)   
+c:yourdirectory/horse_marka/fs_horse_marka_walk_to_stand_a.cas  
+
+<mount_mesh_file_full_path_in>                  c:yourdirectory/pkh_knight_horse_lod0.mesh   	#  
+<mount_mesh_double_texture>                     no                                              # or "yes" if mount has been set up in model.db to use an attachment texture
+<mount_skeleton_scale>                          1.12                                            # scales the mount skeleton (no effect on rider offset)
+<mount_rider_offset_list>      			0.0   0.38   0.25  				# look up from descr_mount.txt - sets relative position of rider

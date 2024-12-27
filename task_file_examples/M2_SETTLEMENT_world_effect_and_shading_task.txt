@@ -1,0 +1,38 @@
+# You will need to have opened the three binary files, .world .worldcollision and .animinstances before running this task
+# Shading adds darker colour at vertexes 'shaded' by overhangs or other objects
+# Lighting applies when a light emitting effect is activated nearby
+# If building elements are set to apply lighting from an effect which has been removed you may get odd results including 'disco' lighting if fewer effects exist than are indexed
+# You should therefore reset the lighting after changing effects or if pasting in building mesh elements from other settlements
+
+<task_id>                             world_effects_and_shading                         # used to amend world effects
+
+<update_objects>                      yes                                     		# object groups will be updated
+<update_animations>                   no                                      		# animation transitions will be updated (increases time a lot)
+<directory_in_vanilla_animations>    "H:\Medieval II Total War\data\blockset"     	# directory containing vanilla anim files
+<directory_in_mod_animations>         H:\Medieval_II_Total_War\mods\yourmod\data\blockset               # directory containing mod anim files
+
+<update_effects>                                 no                               # yes or no
+<effect_light_distance_undamaged>                11.0                             # max distance from effect to vertex for undamaged effect groups eg night lights
+<effect_light_distance_damaged>                  9.0                              # max distance from effect to vertex for damaged effect groups eg damage fires
+<effect_ignore_blocking_distance_undamaged>      1.5                              # ignore blocking from objects inside this distance eg the torch object itself
+<effect_ignore_blocking_distance_damaged>        2.0                              # ignore blocking from objects inside this distance eg the damage fire itself
+
+<update_shading>                                 yes                              # yes or no
+<default_shade_value>                            255                              # default lighting value (max value)
+<reset_to_default>                               yes                              # yes or no (priority 1 : yes = resets to default value, no = keep with existing lighting )
+<ambient_occlusion>                              no                               # yes or no (priority 2 : yes = will calculate and use lower value only (darken). This is very slow)
+<shade_distance>                                 2.0                              # maximum distance to find and apply shading
+
+<vertex_angles>                                  yes                              # yes or no (priority 3 : yes = will calculate and use lower value only (darken))
+<minimum_shade_value>                            20                               # minimum lighting value
+<angle_minimum_value_cutoff>                     0.10                             # angles below this will not be shaded (0 is flat, value is cos)
+<ratio_of_angle_light>                           0.8                              # amount of weight given to close vertex angles versus light from above
+<close_vertex_shading_distance>                  0.05                             # maximum distance to find triangle verts affecting shading
+<triangle_dark_weight>                           0.05                             # influence of triangles darkest vertex on other tri vertexes (0.0 to 1.0)
+<close_vertex_merge_distance>                    0.05                             # maximum distance to merge shading value of similar vertex positions
+
+<full_world>                                  yes                                 # (sequence 1) yes = adds all objects, no = empty 
+#<complex_include_list>                        0 1 2 3 4                          # (sequence 2) add objects in these complexes (use for shading only)
+#<complex_exclude_list>                        2 7 8 9                             # (sequence 3) remove objects in these complexes (use for shading only)
+#<object_include_list>                        405 406 407                          # (sequence 4) add these objects (use for shading only)
+#<object_exclude_list>                        307 568 409                          # (sequence 5) remove these objects (use for shading only)

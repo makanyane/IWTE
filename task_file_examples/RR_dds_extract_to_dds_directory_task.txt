@@ -1,0 +1,8 @@
+# decompresses RR textures that have been compressed using LZ4
+# some RR textures are also in DX10 format, you may need other software e.g. texConv.exe, to convert this to a DX type older 2D graphics programs will open
+
+<task_id>                       rrdds_extract_to_dds_directory                            
+<directory_in>      		"I:\Rome_remastered\characters\skin_textures" 
+<directory_out>     		"I:\Rome_remastered\uncompressed"
+<directory_out_increment>     	yes                     # yes or no - whether to increment the directory name
+<all_subdirectories>          	yes 			# yes or no - if subdirectories are included the extracted textures will be placed in same named subdirectories under the directory_out folder

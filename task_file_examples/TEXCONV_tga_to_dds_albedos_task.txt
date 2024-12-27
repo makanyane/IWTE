@@ -1,0 +1,8 @@
+# requires the texconv.exe in same folder as IWTE*.exe
+# generates dds files suitable for RR map mesh albedos - without mip-maps
+# we recommend using 2048 size textures without mip-maps as this seems to be the best compromise on quality versus size - if you generate mip-maps settings below extreme high quality will only show the mips
+
+<task_id>            task_tex_conv_tga_to_dxt1_nomipmaps_dds   
+<directory_in>      "I:\Rome_remastered\create_maprr\albedos" 
+<directory_out>     "I:\Rome_remastered\create_maprr\albedos\ddsfiles"
+<directory_out_increment>     yes                       #yes or no whether to increment the directory name (default is yes to prevent accidental overwriting) 

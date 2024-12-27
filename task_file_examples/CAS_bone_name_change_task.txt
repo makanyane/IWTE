@@ -1,0 +1,15 @@
+# This process allows you to swap the names of bones around within all cas files in a subdirectory. This is because some bone names are hard coded and must be present for certain unit types
+# however you may be trying to swap or hide certain things.
+# The new named bone must not already exist. Example below swaps bone_Lhand and bone_Rhand
+# This function will work for full .cas animation files (as supplied by Caliban, or as extracted from packs by IWTE) - it will NOT work on .cas anim files 'unpacked' by XIDX or Toolbox
+# This function will also work for bone names within .cas models, e.g. M2 strat, or RTW units.
+
+<task_id>                     cas_bone_name_change                                  # changes a bone name (the NEW name must not already exist in a skeleton this is being applied to)
+#<directory_in>               D:/testing/Stratmap_General                           # optional path to directory where .cas files are (if different to .txt file location)
+
+#<directory_out>              D:/testing/Stratmap_General/changedbones              # directory where extracted files will be put will default to subdirectory '/updateskeletons' if not specified
+
+<bone_name_change_list>                                                             # list of cas bone names to be swapped
+bone_Lhand           bone_Lhand_temp
+bone_Rhand           bone_Lhand
+bone_Lhand_temp      bone_Rhand

@@ -1,0 +1,17 @@
+# by default _v2 version of this task uses textures inbuilt into the IWTE.exe which resemble the style of the vanilla RR map
+# _v2 adds small models to the map_heights generated mesh in areas where hill or mountains_high ground types occur on 'odd,odd' pixels, this is intended to give a result resembling the vanilla map
+# the _v2 task can be expanded to amend where the default textures are used and/or to introduce your own textures
+# IWTE will use texconv.exe to convert the texture tga files produced to dds ready for use in the game, the texconv.exe needs to be in the same folder as the IWTE.exe for this to work
+
+<task_id>                                  create_map_pieces_v2                                                 #  please note the addition of _v2 to the task id switches the process used, the original process is also still available
+<directory_in>                             "J:/RRMods/My Mods/MM/data/world/maps/base"                          #  or folder containing map_*.tga files - you can if desired give IWTE different files to those used in game
+<directory_out>                            "J:/RRMods/My Mods/MM/data/terrain/campaign/imperial_campaign"       #  if you select the actual in game folder you will not need to move or rename main map components
+<directory_out_increment>                  no                                                                   #  use 'yes' if you are worried about overwriting existing files
+
+#<create_dds>				   no				# optional - include this tag set to 'no' if you want to keep the textures in tga format to convert later
+#<map_pieces_longest_dimension>            13                           # optional - longest side is divided by this number of tiles - if not specified IWTE will calculate a viable number
+
+<create_full_dae>               no                           # yes or no - NOT required by game, for reference/viewing
+<create_full_glb>               no                           # yes or no - NOT required by game, for reference/viewing
+
+<strat_map_texture_descr>        "D:\IWTE_folder\my_strat_map_texture_descr.txt" 

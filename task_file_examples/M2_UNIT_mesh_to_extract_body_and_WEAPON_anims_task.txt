@@ -1,0 +1,32 @@
+# FOR UNIT MESHES - EXAMPLE WITH BODY AND ONE WEAPON ANIM
+<task_id>                              mesh_to_extract                                         # reads a.mesh file and .cas basepose and animation files
+
+<mesh_file_full_path_in>               C:\M2TW\mods\devkit\data\animations\EB_Slinger\numidian_slinger_lod0.mesh                  # mesh file name to be read
+<mesh_double_texture>                  yes                                                      # battle mesh models mapped to two textures yes/no
+
+<cas_file_types_in_list>    body weapon								# types of cas files to be read - Maximum is:    body weapon shield mount
+
+<cas_file_full_path_in_default_list>                                                            # pose/default for each of the types (in sequence above ie body then weapon )  
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_basepose.cas 
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\Weapon\w_EB_Slinger_default.cas 
+
+<cas_file_full_path_in_action_list>  								# list of animations for each of the types (in sequence above ie body then weapon )
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_stand_A_idle.cas			# 1st body anim	
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\Weapon\w_EB_Slinger_default.cas 			# 1st weapon anim
+												# space is not needed by IWTE but will help you see the groupings
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_attack_missile_ready.cas		# 2nd body anim
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\Weapon\w_EB_Slinger_attack_missile_ready.cas  	# 2nd weapon anim
+												# 
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_attack_missile_hold.cas		# 3rd body anim, etc...
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\Weapon\w_EB_Slinger_attack_missile_hold.cas
+
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Slinger_attack_missile_release.cas	
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\Weapon\w_EB_Slinger_attack_missile_release.cas
+
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\EB_Fast_Slinger_run.cas	
+C:\M2TW\mods\devkit\data\animations\EB_Slinger\Weapon\w_EB_Slinger_default.cas
+
+<directory_out>                        C:\M2TW\mods\devkit\data\animations\EB_Slinger        	# directory for extract
+<extract_file_name_out>                EBslingerAnims.dae                # extract file name, must end .dae or .glb or .ms3d to set file format type
+
+<create_text_file>                     yes                               # full or yes or no - options to create text for each file read (default no) yes is compact (omits big arrays) - used for problem solving, not required by tool or game

@@ -1,0 +1,8 @@
+# This will replace the CONTENTS of the settlement with the objects in the 3D file
+# The names of the meshes in the 3D file must correspond to valid dbb entries
+# Walls, streetplan and floor are ignored - walls will remain as listed in the original settlement plan 
+# The revised settlement name will have the suffix _new0* added to the name to avoid accidental overwriting
+
+<task_id>                                           extract_to_settlement_plan                                           		 # to read extract file and update a settlement plan
+<settlement_plan_file_full_path_in>                 "j:/rrmods/my mods/mod_name/data/settlement_plans/roman_huge_city.txt"   		 # settlement plan to update
+<extract_file_full_path_in>                         "j:/rrmods/my mods/mod_name/data/settlement_plans/anyoutfiles/roman_huge_city.glb"   # dae or glb file of settlement
