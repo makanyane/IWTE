@@ -8,6 +8,7 @@ Other tutorials and links are listed [here](documentation/tutorials_and_links.md
 #### Table of Contents
 * [Task File Processes](#Task-File-Processes)
 * [Preferences](#preferences)
+* [Launching and Error Reporting](#Launching-and-Error-Reporting)
 * [Functions for M2TW](#Functions-for-M2TW)
 * [Functions for RTW and Rome Remastered](#Functions-for-RTW-and-Rome-Remastered)
 * [License](#License)
@@ -34,6 +35,20 @@ dae, glb, or ms3d - the selected type will be used as default for cas to extract
 all, m2, rr or rtw - select a specific game if you wish to tidy the appearance of IWTE by removing game related functions you don't need
 * Mode\
 dark or brown - brown is close to the light brown appearance of the pre 2025 IWTE versions
+
+## Launching and Error Reporting
+Please launch IWTE using a .bat file, the bat file should be in the same folder as the IWTE.exe and have content:
+
+    IWTE_v25_01A.exe
+    cmd /k
+The top line should be the name of your current IWTE.exe
+Launching via the .bat file will allow the command window to stay open in the event of an error occuring.  Some errors are also reported via IWTE's pop-up window as in the picture below.
+
+![image](IWTEgithub_images/error-messages.jpg)
+
+The pop-up window allows you to show/hide details, although it will normally be easier to read information in the command window.  If your error is simple e.g. a file not found issue from a task file, you can click 'ignore', fix the file reference and run the task again.  For more complex problems make a copy or screenshot of the error message and click 'close' to shut IWTE.
+
+Useful information will normally be found just before the 'Traceback' part of the error message, and just after the Files listed in the Traceback.
 
 ## Functions For M2TW
 The following list is a quick round-up of IWTE's current capabilities for M2TW:
