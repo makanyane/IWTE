@@ -68,8 +68,10 @@ Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst m
 For siege engines, editing by conversion to .txt and back.
 * Battlemap - Texture Conversion:\
 Single file and directory level conversion of texture>dds>texture and tga>texture
-* Campaign Map - Strat Models\
-Editing of residences, trees, resources in Milkshape/Blender/Max. Editing of animated character .cas models (via Blender/Max only), includes the ability to chain animations together, edit and save back to separate anims.
+* Campaign Map - [Strat Models (static)](documentation/strat_models.md)\
+Editing of residences, trees, resources in Milkshape/Blender/Max. 
+* Campaign Map - Strat Models (characters)\
+Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
 * Campaign Map - Map Editing\
 Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
 * Misc - Image Editing\
