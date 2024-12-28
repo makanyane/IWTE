@@ -41,7 +41,7 @@ Please launch IWTE using a .bat file, the bat file should be in the same folder 
 
     IWTE_v25_01A.exe
     cmd /k
-The top line should be the name of your current IWTE.exe
+The top line should be the name of your current IWTE.exe\
 Launching via the .bat file will allow the command window to stay open in the event of an error occuring.  Some errors are also reported via IWTE's pop-up window as in the picture below.
 
 ![image](IWTEgithub_images/error-messages.jpg)
