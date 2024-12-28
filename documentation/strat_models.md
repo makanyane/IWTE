@@ -9,11 +9,14 @@ General Modding Points to Note:
 
 ## cas_to_extract
 
-The task you need to convert static cas models to dae/glb/ms3d is cas_to_extract, see [task file example](https://github.com/makanyane/IWTE/blob/main/task_file_examples/CAS_cas_to_extract_no_anim_task.txt).
+The task id you need to convert static cas models to dae/glb/ms3d is **cas_to_extract**, see [task file example](https://github.com/makanyane/IWTE/blob/main/task_file_examples/CAS_cas_to_extract_no_anim_task.txt).
 
+This process can also be accessed from buttons *Cas Models > Cas_mesh to extract*, see picture below
 
+![image](IWTEgithub_images/cas_to_extract.jpg)
 
-
+When using the buttons the type of extract (dae/glb/ms3d) will be set by the Extract File type currently selected.
+The *Cas_mesh to directory* button performs a similar conversion of all the cas files in a directory.  The task ID for that function is **cas_to_extract_directory** and will need a **<directory_in>** specified.
 
 ## Residences
 
