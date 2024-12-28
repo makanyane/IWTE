@@ -6,6 +6,9 @@ Repository for the IWTE tool, developed by wilddog to enable modding of the Tota
 Information about IWTE and Total War modding is also available on [TWC WIKI](https://wiki.twcenter.net/index.php?title=IWTE)\
 Other tutorials and links are listed [here](documentation/tutorials_and_links.md).
 
+Information in this repository relates to using IWTE in conjunction with [Blender](https://www.blender.org/).  Blender is a powerful and FREE 3d modelling program. 
+Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are not supported by the IWTE team.  The original Milkshape (ms3d) options have been retained but are not generally detailed here.  If you are new to modding with IWTE we do not recommend using ms3d as it has size and other limitations.
+
 #### Table of Contents
 * [Task File Processes](#Task-File-Processes)
 * [Preferences](#preferences)
