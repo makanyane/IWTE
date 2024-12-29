@@ -35,8 +35,8 @@ If you need to check or change a cas files textures without converting it you ca
 
 ![image](../IWTEgithub_images/change-cas-texture-path.jpg)
 
-Change the path/name you want to alter and click OK.  The revised file will be saved in a folder called *amended* e.g.
-*original_folder/amended/original_name.cas*
+Change the path/name you want to alter and click OK.  The revised file will be saved in a folder called *amended* e.g.\
+*original_folder/amended/original_name.cas*\
 copy/move it to replace the original cas if you are happy with the changes.
 
 
