@@ -40,6 +40,8 @@ Change the path/name you want to alter and click OK.  The revised file will be s
 *original_folder/amended/original_name.cas*\
 copy/move it to replace the original cas if you are happy with the changes.
 
+To check which texture names are referenced by ALL the .cas files in a folder or mod use the [cas_texture_csv](cas_texture_names_check.md) function.
+
 
 ## Residences
 
