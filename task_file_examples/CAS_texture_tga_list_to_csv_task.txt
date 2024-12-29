@@ -6,6 +6,6 @@
 # RR generally does not crash if tga files are missing but will display the object in bright pink instead
 
 <task_id>                                          cas_texture_csv 
-<directory_in>                                     "X:\Total War ROME REMASTERED\Contents\Resources\Data\data"   
-<directory_out>                                    "X:\cas_texture_csv" 
+<directory_in>                                     "D:\Total War ROME REMASTERED\Contents\Resources\Data\data"   
+<directory_out>                                    "D:\cas_texture_csv" 
 <all_subdirectories>                               yes 					# yes or no to include/exclude subdirectories
