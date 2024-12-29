@@ -69,7 +69,9 @@ For siege engines, editing by conversion to .txt and back.
 * Battlemap - Texture Conversion:\
 Single file and directory level conversion of texture>dds>texture and tga>texture
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md)\
-Editing of residences, trees, resources in Milkshape/Blender/Max. 
+Editing of residences, trees, resources in Milkshape/Blender/Max.
+* Campaign Map - [Cas Texture Check CSV](documentation/cas_texture_csv.md)\
+Lists all texture names referenced by .cas files in selected directories in CSV format. 
 * Campaign Map - Strat Models (characters)\
 Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
 * Campaign Map - Map Editing\
@@ -91,6 +93,8 @@ Unpacks Rome Remastered skeletons and animations and provides skeleton to text a
 Provides .items to .cas conversions. Provides 2d window option to edit settlement plans including wall layouts. Provides txt to Blender/Max to txt options for editing settlement plans.
 * Battlemap - Environment:\
 Allows read/edit of geography.db
+* Misc - [Cas Texture Check CSV](documentation/cas_texture_csv.md)\
+Lists all texture names referenced by .cas files in selected directories in CSV format. 
 * Misc - dds Conversion:\
 Decompresses dds image files that use LZ4 compression, also applies LZ4 compression
 
