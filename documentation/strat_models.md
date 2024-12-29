@@ -57,3 +57,23 @@ General Modding Points to Note:
 * Residence models have a 'symbol' mesh which controls the strat flag position, this mesh should NOT have a texture
 * Models with too many triangles or vertexes can cause crashes
 * RTW and M2TW residences can have some triangles that face away from the camera removed to reduce size.  RR residences can be viewed from any angle.
+
+
+## Bridges
+
+### Bridges in M2TW
+Bridge models in M2TW are revolved to either 0,90,180,270 degrees to suit river direction.  However the shadow rendered by the bridge is only based on the 0 or 90 degree version, therefore having a non-symmetrical bridge model will give you odd shadows, see example picture below.
+
+![image](../IWTEgithub_images/bad-bridge.jpg)
+
+The MESH NAME is also important e.g. the mesh name inside *bridge_dirt.cas* must be *bridge_a* otherwise only the shadow is displayed!
+
+![image](../IWTEgithub_images/bad-bridge-name.jpg)
+
+### Bridges in RR
+The displayed height of the bridge models on the RR campaign map is set by the campaign's map_heights.tga/hgt\
+This may be a problem as the height of everything else on the campaign map is set by the mesh itself and the heightmap .bin files which are based on the mesh...
+
+Therefore please do not attempt to use a mesh that varies substantially from the games expected heights at bridge positions.
+
+
