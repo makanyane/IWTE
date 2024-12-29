@@ -6,6 +6,7 @@ General Modding Points to Note:
 * Failing to include the correctly named .tga file can cause the game to crash on campaign load (except in RR where the missing texture will be rendered as pink).
 * If the model .cas in a mod-folder uses a vanilla texture, that .tga must be added to the mod-folder.
 * Textures can additionally be supplied as dds files named .tga.dds, this allows user manipulation of the mip-maps and smaller file sizes.  A .tga with the correct name should still be supplied, but this can just be 1px size.
+* See [Strat Models - M2TW](https://wiki.twcenter.net/index.php?title=Strat_Models_-_M2TW) on the TWC Wiki for some additional information.
 
 #### Table of Contents
 * [cas_to_extract](#cas_to_extract)
