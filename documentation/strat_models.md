@@ -50,6 +50,8 @@ Campaign map settlement models are normally referred to as 'residences' and foun
 General Modding Points to Note:
 * RTW and RR settlements have the 'city' element in a different .cas file to the 'wall' elements as walls can be upgraded separately.
 * M2TW settlements can have 'faction_variants'
+  * More than 65 valid named faction variants models causes a crash on exit
+  * Too high a total volume of triangles across all settlement models can cause shadows to stop being rendered
 * RTW and M2TW residences are specified in descr_cultures.txt
 * RR residences are specified at the top of each settlement_plan text file
 * Residence models have a 'symbol' mesh which controls the strat flag position, this mesh should NOT have a texture
