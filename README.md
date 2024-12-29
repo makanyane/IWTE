@@ -85,6 +85,8 @@ The following list is a quick round-up of IWTE's current capabilities for RTW (i
 Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
 * Campaign Map - Map Editing\
 Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
+* Campaign Map - [Strat Models (static)](documentation/strat_models.md)\
+Editing of residences, trees, resources in Milkshape/Blender/Max.
 * Character Extraction - Rome Remastered Only\
 Extracts and converts .cas files for battlemap units and campaign map figures from .pack files.
 * Skeletons and Animations:\
