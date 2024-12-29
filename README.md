@@ -92,7 +92,7 @@ Extracts and converts .cas files for battlemap units and campaign map figures fr
 * Skeletons and Animations:\
 Unpacks Rome Remastered skeletons and animations and provides skeleton to text and back option. Allows editing of animations, including in 'chained' format to view and edit multiple animations together.
 * Battlemap Settlements:\
-Provides .items to .cas conversions. Provides 2d window option to edit settlement plans including wall layouts. Provides txt to Blender/Max to txt options for editing settlement plans.
+Provides [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte). Provides [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) including a 2d window option to edit plans including wall layouts and a conversion to 3d options to allow editing in Blender.
 * Battlemap - Environment:\
 Allows read/edit of geography.db
 * Misc - [Cas Texture Check CSV](documentation/cas_texture_csv.md)\
