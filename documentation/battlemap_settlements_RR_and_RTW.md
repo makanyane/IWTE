@@ -5,9 +5,9 @@ Battlemap Settlements in RR and RTW are created and modified via settlement plan
 #### Table of Contents
 * [Item to Cas Conversion with IWTE](#item-to-cas-conversion-with-iwte)
 * [Settlement Plan Editing with IWTE](#settlement-plan-editing-with-iwte)
-* [Settlement Plan Editing in 2d Window](#settlement-plan-editing-in-2d-window)
- * [Wall Layout Editing](#wall-layout-editing)
-* [Settlement Plan Editing in 3d Program](#settlement-plan-editing-in-3d-program)
+  * [Settlement Plan Editing in 2d Window](#settlement-plan-editing-in-2d-window)
+    * [Wall Layout Editing](#wall-layout-editing)
+  * [Settlement Plan Editing in 3d Program](#settlement-plan-editing-in-3d-program)
 
 ## Item to Cas Conversion with IWTE
 
