@@ -1,5 +1,15 @@
 # Rome Remastered Map Making using IWTE
 
+The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW. It requires various mesh components and textures to be made by the modder. The components required include:
+* mesh pieces
+* albedo textures
+* normal textures
+* coastline mesh/meshes
+* river mesh
+* frame and textures 
+
+![image](../IWTEgithub_images/RR-mesh-components.jpg)
+
 ## Main Differences between Task Versions 
 
 | | Original Version | Version V2 | Notes |
