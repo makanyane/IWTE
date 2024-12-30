@@ -28,6 +28,9 @@ Running this process will generate a task file with the **settlement_plan_edit**
 
 You have the option of generating a dae or glb file of the settlement to work on in Blender.  Ms3d is not supported for this function due to size limitations.
 
+*Rome Remastered > Battle Map Settlements > **settlement plan - edit walls***\
+Provides a simplified version which only loads/changes the wall layout.
+
 ### Settlement Plan Editing in 2d Window
 
 ![image](../IWTEgithub_images/settlement-plan-edit-2d.jpg)
@@ -69,7 +72,7 @@ Other dbb elements are shown with one mesh representing all the elements at the 
 
 You must move things in **Object Mode**, do not use Edit Mode and do NOT apply transforms!  You should still be able to see the location and rotation of the object in the side-bar.
 
-When you've finished your changes export to dae or glb you can use the task file created by IWTE to create a revised settlement plan.
+When you've finished your changes export to dae or glb.  You can use the task file created by IWTE to create a revised settlement plan.
 
 
 
