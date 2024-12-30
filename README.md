@@ -81,7 +81,7 @@ A simple painting process editor which supports basic editing of several file ty
 
 ## Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
-* Campaign Map - Map Mesh - Rome Remastered Only\
+* Campaign Map - [Map Mesh - Rome Remastered Only](documentation/RR_Map_Mesh_Production.md)\
 Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
 * Campaign Map - Map Editing\
 Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
