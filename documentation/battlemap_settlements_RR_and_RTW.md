@@ -32,9 +32,21 @@ You have the option of generating a dae or glb file of the settlement to work on
 
 ![image](../IWTEgithub_images/settlement-plan-edit-2d.jpg)
 
-In the 2d Window you can select move and rotate objects. Use the *Settlement actions* drop down to select objects to add, to switch modes or to save.  Saved files will modify the starting settlement plan and produce a new file in the same directory called\
+In the 2d Window you can select move and rotate objects. Use the *Settlement actions* drop down to select objects to add, to switch modes or to save.  Saved files will modify the starting settlement plan and produce a new file in the same directory called:\
 *original_name_new00.txt*\
 the number will increment if that file exists. The original text file has to be used as a basis to retain the strat model/underlay/ground_types/street_plan information which is not changed via IWTE.
+
+Useful shortcuts:
+* Tab swaps mode between wall and object selection
+* M switches on movement option
+* R switches on rotation option
+* Delete button on keyboard will delete all selected walls/objects
+
+Heights and exact rotations can be set for selected objects in the *Main Processes* window.  If you have a settlement underlay with a lot of height changes we'd recommending using the 3d method for most changes.
+
+The *add dbb item* button opens up multiple other sections which then access ALL the possible available dbb items in alphabetically divided sections.
+
+Most objects are shown on the 2D view by a diagram representing their lowest lod level. Slots are shown by a diagram representing the outline of objects in their default version.  The street_plan and underlay shapes are shown diagramatically but are not editable in this method.
 
 #### Wall Layout Editing
 The walls in RTW/RR have to be laid out on set grid points so they form a continuous and exactly linked perimeter. Failing to link the walls correctly will cause the game to crash when launched.
@@ -47,6 +59,18 @@ IWTE does not sanity check your layout so please familiarise yourself with the p
 
 ### Settlement Plan Editing in 3d Program
 
+If you opted 'yes' for either dae or glb a representation of the settlement in 3d will have been produced and saved to *anyoutfiles* sub-folder below your settlement plan location.  These files can be imported into Blender.
+
 ![image](../IWTEgithub_images/settlement-plan-edit-3d.jpg)
+
+The floor (a representation of the underlay shape), the street_plan (a single mesh representing the street_plan) and any wall objects are not changeable in this system and will be ignored on read back of the 3d file.
+
+Other dbb elements are shown with one mesh representing all the elements at the lowest lod level. Slots are shown using their default option.  Dbb objects can be deleted, moved and rotated as desired. If you want more of an existing object you can duplicate the object, additional .001 numbering added by Blender will be ignored.  You can add other dbb elements if you know the name.  The only things read back from the file are the names, locations and rotations around the z axis.
+
+You must move things in **Object Mode**, do not use Edit Mode and do NOT apply transforms!  You should still be able to see the location and rotation of the object in the side-bar.
+
+When you've finished your changes export to dae or glb you can use the task file created by IWTE to create a revised settlement plan.
+
+
 
 
