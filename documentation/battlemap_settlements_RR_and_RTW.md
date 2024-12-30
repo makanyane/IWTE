@@ -32,6 +32,19 @@ You have the option of generating a dae or glb file of the settlement to work on
 
 ![image](../IWTEgithub_images/settlement-plan-edit-2d.jpg)
 
+In the 2d Window you can select move and rotate objects. Use the *Settlement actions* drop down to select objects to add, to switch modes or to save.  Saved files will modify the starting settlement plan and produce a new file in the same directory called\
+*original_name_new00.txt*\
+the number will increment if that file exists. The original text file has to be used as a basis to retain the strat model/underlay/ground_types/street_plan information which is not changed via IWTE.
+
+#### Wall Layout Editing
+The walls in RTW/RR have to be laid out on set grid points so they form a continuous and exactly linked perimeter. Failing to link the walls correctly will cause the game to crash when launched.
+
+Because the wall pieces have to be located on grid points the 2D window method is the only way to edit the wall layout using IWTE.  Rotation of wall elements is restricted to 45 or 90 degree increments. To rotate an element select it and then hit R on your keyboard. To move an element select it and then drag.
+
+To add items use the *Settlement actions* drop down menu on the 2D View Window. Select *add wall item* and then the item you want, and/or note the keyboard shortcuts which will add more of those items. New items will appear in the center of the current 2d  view.
+
+IWTE does not sanity check your layout so please familiarise yourself with the possible combinations and types of links in existing plans.
+
 ### Settlement Plan Editing in 3d Program
 
 ![image](../IWTEgithub_images/settlement-plan-edit-3d.jpg)
