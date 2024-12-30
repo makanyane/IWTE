@@ -2,6 +2,13 @@
 
 Battlemap Settlements in RR and RTW are created and modified via settlement plans in text format.  The settlement plans list positions of wall sections, dbb entries and other components.  The components used originate as models in .cas format. Some .cas files are converted by the game into .item files or .bpi files.
 
+#### Table of Contents
+* [Item to Cas Conversion with IWTE](#item-to-cas-conversion-with-iwte)
+* [Settlement Plan Editing with IWTE](#settlement-plan-editing-with-iwte)
+* [Settlement Plan Editing in 2d Window](#settlement-plan-editing-in-2d-window)
+ * [Wall Layout Editing](#wall-layout-editing)
+* [Settlement Plan Editing in 3d Program](#settlement-plan-editing-in-3d-program)
+
 ## Item to Cas Conversion with IWTE
 
 Some RTW mods were released with new buildings in the final .item format but .cas files were not supplied, additionally some RTW OG building .cas files were in an old .cas format which isn't read by the conversion tools.  The item to cas functions are supplied to allow modders to retrieve .cas files they can work on from .items
