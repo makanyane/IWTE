@@ -28,7 +28,7 @@ There are a few simply syntax items anyone wanting to use this process should be
 | ID | Example task/s | Documentation | Notes |
 | ----|----|----|----|
 | cas_bone_name_change | [CAS_bone_name_change_task.txt](../task_file_examples/CAS_bone_name_change_task.txt) |
-| cas_to_extract | [CAS_cas_to_extract_no_anim_task.txt](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt) | [strat_models.md)](../documentation/strat_models.md)
+| cas_to_extract | [CAS_cas_to_extract_no_anim_task.txt](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt)<br>[CAS_extract_to_CAS_with_multiple_anims_task.txt](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt) | [strat_models.md)](../documentation/strat_models.md)
 | extract_to_cas | [CAS_extract_to_CAS_with_multiple_anims_task.txt](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt)
 | cas_data_csv | [CAS_data_to_csv_task.txt](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv_task.txt](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
@@ -38,6 +38,16 @@ There are a few simply syntax items anyone wanting to use this process should be
 | unit_card_data | [M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt](../task_file_examples/M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt) | | M2 only |
 | convert_from_skeleton_to_new |
 | extract_to_mesh | [M2_UNIT_extract_to_mesh_body_WEAPON_SHIELD_anims_task.txt](../task_file_examples/M2_UNIT_extract_to_mesh_body_WEAPON_SHIELD_anims_task.txt) | | M2 only |
+| mesh_to_extract | [M2_UNIT_mesh_to_extract_with_anims_list_task.txt](../task_file_examples/M2_UNIT_mesh_to_extract_with_anims_list_task.txt)<br> [M2_UNIT_mesh_to_extract_body_and_WEAPON_anims_task.txt](../task_file_examples/M2_UNIT_mesh_to_extract_body_and_WEAPON_anims_task.txt)<br>[M2_UNIT_mesh_to_extract_body_WEAPON_and_MOUNT_task.txt](../task_file_examples/M2_UNIT_mesh_to_extract_body_WEAPON_and_MOUNT_task.txt)  | | M2 only |
+| modeldb_mesh_to_extract | [M2_UNIT_modeldb_mesh_to_extract_task.txt](../task_file_examples/M2_UNIT_modeldb_mesh_to_extract_task.txt) | | M2 only |
+| create_map_pieces | [RR_MAP_MESH_older_version_task.txt](../task_file_examples/RR_MAP_MESH_older_version_task.txt) | | RR only (map) |
+| create_map_pieces_V2 | [RR_MAP_MESH_v2_modified_textures_task.txt](../task_file_examples/RR_MAP_MESH_v2_modified_textures_task.txt) | | RR only (map) |
+| combine_piece_textures_v2 | [RR_MAP_MESH_combine_piece_textures_task.txt](../task_file_examples/RR_MAP_MESH_combine_piece_textures_task.txt) | | RR only (map) |
+| settlement_plan_edit  | [RR_SETTLEMENT_plan_edit_task.txt](../task_file_examples/RR_SETTLEMENT_plan_edit_task.txt) | [battlemap_settlements_RR_and_RTW.md](../documentation/battlemap_settlements_RR_and_RTW.md)| RR (/RTW\*) |
+| extract_to_settlement_plan | [RR_extract_to_SETTLEMENT_plan.txt](../task_file_examples/RR_extract_to_SETTLEMENT_plan.txt) | | RR (/RTW\*)
+| rrdds_extract_to_dds_directory | [RR_dds_extract_to_dds_directory_task.txt](../task_file_examples/RR_dds_extract_to_dds_directory_task.txt) | | RR only (Lz4 dds) |
+| task_tex_conv_tga_to_dxt1_nomipmaps_dds | [TEXCONV_tga_to_dds_albedos_task.txt](../task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt) | | launches TexConv |
+| task_tex_conv_tga_to_dxt5_dds | [TEXCONV_tga_to_dds_materials_task.txt](../task_file_examples/TEXCONV_tga_to_dds_materials_task.txt) | |  launches TexConv |
 
 ## Change Log Relating to Tasks
 IWTE_v22_09_C\
