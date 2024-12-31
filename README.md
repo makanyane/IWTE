@@ -70,8 +70,8 @@ For siege engines, editing by conversion to .txt and back.
 Single file and directory level conversion of texture>dds>texture and tga>texture
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md)\
 Editing of residences, trees, resources in Milkshape/Blender/Max.
-* Campaign Map - [Cas Texture Check CSV](documentation/cas_texture_csv.md)\
-Lists all texture names referenced by .cas files in selected directories in CSV format. 
+* Campaign Map - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv)\
+Lists all texture names referenced by .cas files in selected directories in CSV format. [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) lists cas data including verts/tris count.\
 * Campaign Map - Strat Models (characters)\
 Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
 * Campaign Map - Map Editing\
@@ -92,11 +92,11 @@ Extracts and converts .cas files for battlemap units and campaign map figures fr
 * Skeletons and Animations:\
 Unpacks Rome Remastered skeletons and animations and provides skeleton to text and back option. Allows editing of animations, including in 'chained' format to view and edit multiple animations together.
 * Battlemap Settlements:\
-Provides [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte). Provides [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) including a 2d window option to edit plans including wall layouts and a conversion to 3d option to allow editing in Blender.
+Provides [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte). Provides [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) including a 2d window option to edit plans including wall layouts and a conversion to 3d option to allow editing in Blender. [Cas collision Check CSV](documentation/cas_checking_tasks.md#cas_collision_csv) enables checking for correct names and flatness of 'collision' meshes in info files.
 * Battlemap - Environment:\
 Allows read/edit of geography.db
-* Misc - [Cas Texture Check CSV](documentation/cas_texture_csv.md)\
-Lists all texture names referenced by .cas files in selected directories in CSV format. 
+* Misc - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv)\
+Lists all texture names referenced by .cas files in selected directories in CSV format. [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) lists cas data including verts/tris count and numbers and types of meshes.
 * Misc - dds Conversion:\
 Decompresses dds image files that use LZ4 compression, also applies LZ4 compression
 
