@@ -68,11 +68,10 @@ Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst m
 For siege engines, editing by conversion to .txt and back.
 * Battlemap - Texture Conversion:\
 Single file and directory level conversion of texture>dds>texture and tga>texture
-* Campaign Map - [Strat Models (static)](documentation/strat_models.md)\
-Editing of residences, trees, resources in Milkshape/Blender/Max.
-* Campaign Map - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv)\
-Lists all texture names referenced by .cas files in selected directories in CSV format. [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) lists cas data including verts/tris count.\
-* Campaign Map - Strat Models (characters)\
+* Campaign Map - [Strat Models (static)](documentation/strat_models.md) - Editing of residences, trees, resources in Milkshape/Blender/Max.
+* Campaign Map - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv) - Lists all texture names referenced by .cas files in selected directories in CSV format.
+* Campaign Map - [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) - Lists cas data including verts/tris count.  
+* Campaign Map - Strat Models (characters)  
 Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
 * Campaign Map - Map Editing\
 Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
@@ -81,22 +80,20 @@ A simple painting process editor which supports basic editing of several file ty
 
 ## Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
-* Campaign Map - [Map Mesh - Rome Remastered Only](documentation/RR_Map_Mesh_Production.md)\
-Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
+* Campaign Map - [Map Mesh - Rome Remastered Only](documentation/RR_Map_Mesh_Production.md) - Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
 * Campaign Map - Map Editing\
 Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
-* Campaign Map - [Strat Models (static)](documentation/strat_models.md)\
-Editing of residences, trees, resources in Milkshape/Blender/Max.
+* Campaign Map - [Strat Models (static)](documentation/strat_models.md) -Editing of residences, trees, resources in Milkshape/Blender/Max.
 * Character Extraction - Rome Remastered Only\
 Extracts and converts .cas files for battlemap units and campaign map figures from .pack files.
 * Skeletons and Animations:\
 Unpacks Rome Remastered skeletons and animations and provides skeleton to text and back option. Allows editing of animations, including in 'chained' format to view and edit multiple animations together.
-* Battlemap Settlements:\
-Provides [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte). Provides [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) including a 2d window option to edit plans including wall layouts and a conversion to 3d option to allow editing in Blender. [Cas collision Check CSV](documentation/cas_checking_tasks.md#cas_collision_csv) enables checking for correct names and flatness of 'collision' meshes in info files.
-* Battlemap - Environment:\
-Allows read/edit of geography.db
-* Misc - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv)\
-Lists all texture names referenced by .cas files in selected directories in CSV format. [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) lists cas data including verts/tris count and numbers and types of meshes.
+* Battlemap Settlements - [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte) - (useful if .cas files were not supplied with mod). 
+* Battlemap Settlements - [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) - Includes a 2d window option to edit plans including wall layouts and a conversion to 3d option to allow editing in Blender.
+* Battlemap Settlements - [Cas collision Check CSV](documentation/cas_checking_tasks.md#cas_collision_csv) - Enables checking for correct names and flatness of 'collision' meshes in info files.
+* Battlemap - Environment - Allows read/edit of geography.db
+* Misc - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv) - Lists all texture names referenced by .cas files in selected directories in CSV format.
+* Misc - [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) - Lists cas data including verts/tris count and numbers and types of meshes.
 * Misc - dds Conversion:\
 Decompresses dds image files that use LZ4 compression, also applies LZ4 compression
 
