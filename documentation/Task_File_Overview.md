@@ -22,7 +22,12 @@ There are a few simply syntax items anyone wanting to use this process should be
 10. Relative paths, **downwards** from the IWTE.exe directory can generally be used, start the path with /
 11. Whilst not a rule if something goes splat its worth checking the messages above the error to see if that tells you why.  If something goes splat with a 'divided by zero' message that is normally a deliberate stop point as you've reached an unsupported issue.
 
-[Example task files](https://github.com/makanyane/IWTE/tree/main/task_file_examples) have been supplied in the task_file_examples folder, their names indicate to which process they apply.
+[Example task files](../task_file_examples) have been supplied in the task_file_examples folder, their names indicate to which process they apply.
+
+## Task IDs
+
+* cas_bone_name_change - [example](../task_file_examples/CAS_bone_name_change_task.txt) 
+* cas_to_extract - [example](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt) - [documentation](../documentation/strat_models.md)
 
 ## Change Log Relating to Tasks
 IWTE_v22_09_C\
