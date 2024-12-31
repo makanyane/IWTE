@@ -25,9 +25,14 @@ There are a few simply syntax items anyone wanting to use this process should be
 [Example task files](../task_file_examples) have been supplied in the task_file_examples folder, their names indicate to which process they apply.
 
 ## Task IDs
-
-* cas_bone_name_change - [example](../task_file_examples/CAS_bone_name_change_task.txt) 
-* cas_to_extract - [example](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt) - [documentation](../documentation/strat_models.md)
+| ID | Example task/s | Documentation | Notes |
+| ----|----|----|----|
+| cas_bone_name_change | [CAS_bone_name_change_task.txt](../task_file_examples/CAS_bone_name_change_task.txt) |
+| cas_to_extract | [CAS_cas_to_extract_no_anim_task.txt](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt) | [strat_models.md)](../documentation/strat_models.md)
+| extract_to_cas | [CAS_extract_to_CAS_with_multiple_anims_task.txt](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt)
+| cas_data_csv | [CAS_data_to_csv_task.txt](../task_file_examples/CAS_data_to_csv_task.txt)
+| cas_texture_csv | [CAS_texture_tga_list_to_csv_task.txt](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
+| world_effects_and_shading | [M2_SETTLEMENT_world_effect_and_shading_task.txt](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | | M2 only |
 
 ## Change Log Relating to Tasks
 IWTE_v22_09_C\
