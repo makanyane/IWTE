@@ -1,0 +1,8 @@
+# used to create a CSV file of cas files used for building collisions in RR/RTW .
+# use the csv file in Excel or similar spreadsheet program to view and check that mesh names are correct, e.g. starting collision, collision3d or collision_3d
+# filter to check that all meshes starting collision are flat, e.g. diff Y column should = 0
+
+<task_id>                                           cas_collision_csv                             
+<directory_in>                                     "J:\RRMods\My Mods\mod_name\data\models_building\info"   
+<directory_out>                                    "J:\IWTE\my_test_folder"                 
+<all_subdirectories>                               yes 			# yes or no to include/exclude subdirectories
