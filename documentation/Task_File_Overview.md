@@ -33,6 +33,11 @@ There are a few simply syntax items anyone wanting to use this process should be
 | cas_data_csv | [CAS_data_to_csv_task.txt](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv_task.txt](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
 | world_effects_and_shading | [M2_SETTLEMENT_world_effect_and_shading_task.txt](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | | M2 only |
+| dds_to_texture_directory | [M2_TEXTURE_dds_to_texture_directory_task.txt](../task_file_examples/M2_TEXTURE_dds_to_texture_directory_task.txt) | | M2 only |
+| texture_to_dds_directory | [M2_TEXTURE_texture_to_dds_directory_task.txt](../task_file_examples/M2_TEXTURE_texture_to_dds_directory_task.txt) | | M2 only |
+| unit_card_data | [M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt](../task_file_examples/M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt) | | M2 only |
+| convert_from_skeleton_to_new |
+| extract_to_mesh | [M2_UNIT_extract_to_mesh_body_WEAPON_SHIELD_anims_task.txt](../task_file_examples/M2_UNIT_extract_to_mesh_body_WEAPON_SHIELD_anims_task.txt) | | M2 only |
 
 ## Change Log Relating to Tasks
 IWTE_v22_09_C\
