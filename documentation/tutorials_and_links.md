@@ -16,11 +16,17 @@ https://drive.google.com/file/d/1b4hKawiIf2ZoqsBnGUNpsGQowbgMrusI/view?usp=drive
 
 IWTE Project section on TWC https://www.twcenter.net/forums/forumdisplay.php?2047-The-IWTE-Project
 
-Fynn's - Medieval 2 Modding: How to convert mesh to dae using IWTE to edit models in blender
+Fynn's - Medieval 2 Modding: How to convert mesh to dae using IWTE to edit models in blender  
 https://www.youtube.com/watch?v=3Tx_xjQJPYk
 
-Lerynian's - Basic Unit Modding in Medieval 2/ Blender and IWTE
+Lerynian's - Basic Unit Modding in Medieval 2/ Blender and IWTE  
 https://www.youtube.com/watch?v=P3j9T1TTIQY&t=1876s
 
-WK's   - IWTE tutorials part 1: Introduction to IWTE
+Lerynian's - Spear making for Medieval 2  
+https://www.youtube.com/watch?v=eON1J3SERog
+
+WK's   - IWTE tutorials part 1: Introduction to IWTE  
 https://www.youtube.com/watch?v=tGKOLph84GU
+
+WK's - Medieval-2-Toolkit  
+https://github.com/WK-313/Medieval-2-Toolkit
