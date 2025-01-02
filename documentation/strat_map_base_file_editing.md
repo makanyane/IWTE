@@ -19,3 +19,13 @@ Red colours on the 2d and 3d map heights representation indicate RGB 0,0,0 - you
 ![image](../IWTEgithub_images/strat_map_viewing.jpg)
 
 Manipulating the opacity and order of map images you have loaded will allow you to see how the files interact.  Each region 'pixel' will overlap one central pixel of map_heights/climates/ground_types, this central pixel will control the accessibility and climate of that region pixel in game.  The region pixel will also overlap 8 map_heights/climates/ground_types around the perimeter, these pixels add detail to the campaign map and battle map but do not affect pathfinding.
+
+Simple editing of the map files is possible using the brush controls and 2d screen, however for major alterations you will find a dedicated image editor such as Photoshop more useful.
+
+For mapping tools which provide checking functions including interaction with text files see:
+* Dagovax's Rome: Total War - Campaign Tools  
+  https://github.com/Dagovax/Rome-Total-War-Tools-and-Features/tree/master/RTW.CampaignTools
+* Geomod Tool for Mapping - for M2TW  
+  http://www.twcenter.net/forums/showthread.php?201955-Geomod-Tool-for-Mapping
+
+
