@@ -73,16 +73,14 @@ Single file and directory level conversion of texture>dds>texture and tga>textur
 * Campaign Map - [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) - Lists cas data including verts/tris count.  
 * Campaign Map - Strat Models (characters)  
 Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
-* Campaign Map - Map Editing\
-Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
+* Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights map.
 * Misc - Image Editing\
 A simple painting process editor which supports basic editing of several file types (terrain masks can be edited shown at actual size in relation to settlement).
 
 ## Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
 * Campaign Map - [Map Mesh - Rome Remastered Only](documentation/RR_Map_Mesh_Production.md) - Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
-* Campaign Map - Map Editing\
-Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights HGT map.
+* Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights map.
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md) -Editing of residences, trees, resources in Milkshape/Blender/Max.
 * Character Extraction - Rome Remastered Only\
 Extracts and converts .cas files for battlemap units and campaign map figures from .pack files.
