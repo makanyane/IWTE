@@ -26,6 +26,7 @@ Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfin
 Editing and creation of new wall, gate and tower animations.
 * Battlemap - Environment:\
 Editing of vegetation.db, Descr_geography_new.db and .lighting files. Adding/amending of vegetation models and generation of vegetation sprites.
+* Battlemap Environment - [Editing .lighting files](documentation/M2_battlemap_lighting.md)
 * Battlemap - Mesh Models:\
 Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
 * Battlemap - Model Traversable Network:\
