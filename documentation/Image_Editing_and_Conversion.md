@@ -29,6 +29,10 @@ M2TW '.texture' files are .dds files with an additional header section which is 
 
 ![image](../IWTEgithub_images/M2-texture-options.jpg)
 
+Also available via task file see:   
+[M2_TEXTURE_dds_to_texture_directory_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/M2_TEXTURE_dds_to_texture_directory_task.txt)  
+[M2_TEXTURE_texture_to_dds_directory_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/M2_TEXTURE_texture_to_dds_directory_task.txt)
+
 ## RR dds LZ4 Compression Conversion Options
 
 Some .tga.dds files used in Rome Remastered have been compressed using lz4.  IWTE provides various options for uncompressing or compressing the dds files.
@@ -36,3 +40,6 @@ Some .tga.dds files used in Rome Remastered have been compressed using lz4.  IWT
 ![image](../IWTEgithub_images/RR-dds-lz4-compression.jpg)
 
 If your graphics program still can't open the uncompressed dds files (they may be in DXT10 format) you can use [TexConv.exe](https://github.com/Microsoft/DirectXTex/wiki/Texconv) to convert them to another form of dds or to tga.
+
+Also available via task file see:   
+[RR_dds_extract_to_dds_directory_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_dds_extract_to_dds_directory_task.txt)
