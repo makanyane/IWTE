@@ -27,3 +27,5 @@ Select the file type you want produced
   
 Press OK to process selected files  
 Press Cancel to close the packs  
+
+Note that Rome Remastered also has readily accessible unit/figure related .cas files in data/animals, data/characters, data/models_strat and data/models_engine
