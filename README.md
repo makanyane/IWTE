@@ -12,6 +12,7 @@ Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are no
 #### Table of Contents
 * [Functions for M2TW](#Functions-for-M2TW)
 * [Functions for RTW and Rome Remastered](#Functions-for-RTW-and-Rome-Remastered)
+* [Functions for Rome Remastered Only](#Functions-for-Rome-Remastered-Only)
 * [Task File Processes](#Task-File-Processes)
 * [Preferences](#preferences)
 * [Launching and Error Reporting](#Launching-and-Error-Reporting)
@@ -19,18 +20,13 @@ Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are no
 
 ## Functions For M2TW
 The following list is a quick round-up of IWTE's current capabilities for M2TW:
-* Battlemap Settlements:\
-Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfinding, .worldvegetation and .worldpkgdesc files. Using these files you can completely change the settlement layout, models, textures, effects and lighting.
+* Battlemap Settlements - Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfinding, .worldvegetation and .worldpkgdesc files. Using these files you can completely change the settlement layout, models, textures, effects and lighting.
 * Battlemap Settlements - [Terrain Mask Editing](documentation/Image_Editing_and_Conversion.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
-* Battlemap - Building Animations:\
-Editing and creation of new wall, gate and tower animations.
-* Battlemap - Environment:\
-Editing of vegetation.db, Descr_geography_new.db and .lighting files. Adding/amending of vegetation models and generation of vegetation sprites.
+* Battlemap Settlements - Building Animationss -Editing and creation of new wall, gate and tower animations.
+* Battlemap Environment - Editing of vegetation.db, Descr_geography_new.db. Adding/amending of vegetation models and generation of vegetation sprites.
 * Battlemap Environment - [Editing .lighting files](documentation/M2_battlemap_lighting.md)
-* Battlemap - Mesh Models:\
-Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
-* Battlemap - Model Traversable Network:\
-For siege engines, editing by conversion to .txt and back.
+* Battlemap - Mesh Models - Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
+* Battlemap - Model Traversable Network - For siege engines, editing by conversion to .txt and back.
 * Battlemap - [Texture Conversion](documentation/Image_Editing_and_Conversion.md#m2-texture-conversion-options) - Single file and directory level conversion of texture>dds>texture and tga>texture
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md) - Editing of residences, trees, resources in Milkshape/Blender/Max.
 * Campaign Map - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv) - Lists all texture names referenced by .cas files in selected directories in CSV format.
@@ -42,20 +38,26 @@ Editing of animated character .cas models in Milkshape/Blender/Max. Includes the
 
 ## Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
-* Campaign Map - [Map Mesh - Rome Remastered Only](documentation/RR_Map_Mesh_Production.md) - Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
+
 * Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights map.
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md) -Editing of residences, trees, resources in Milkshape/Blender/Max.
-* RR Units and Strat Figures - [Character Extraction](documentation/RR_Character_Extraction.md) - Extracts and converts .cas files for battlemap units and campaign map figures from Rome Remastered .pak files.
-* Skeletons and Animations:\
-Unpacks Rome Remastered skeletons and animations and provides skeleton to text and back option. Allows editing of animations, including in 'chained' format to view and edit multiple animations together.
+* Units and Strat Figures - Editing of .cas files with a bone structure and weighting.
+* Skeletons and Animations - Allows editing of animations, including in 'chained' format to view and edit multiple animations together.
 * Battlemap Settlements - [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte) - (useful if .cas files were not supplied with mod). 
 * Battlemap Settlements - [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) - Includes a 2d window option to edit plans including wall layouts and a conversion to 3d option to allow editing in Blender.
 * Battlemap Settlements - [Cas collision Check CSV](documentation/cas_checking_tasks.md#cas_collision_csv) - Enables checking for correct names and flatness of 'collision' meshes in info files.
-* Battlemap - Environment - Allows read/edit of geography.db
+* Battlemap Environment - Allows read/edit of geography.db
 * Misc - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv) - Lists all texture names referenced by .cas files in selected directories in CSV format.
 * Misc - [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) - Lists cas data including verts/tris count and numbers and types of meshes.
-* Misc - [dds Conversion](documentation/Image_Editing_and_Conversion.md#rr-dds-lz4-compression-conversion-options) - Decompresses dds image files that use LZ4 compression, also applies LZ4 compression
 * Misc - [Basic Image Editing](/documentation/Image_Editing_and_Conversion.md#basic-image-editing) - A simple painting process to open and edit various image file types including M2 .texture files.
+
+## Functions for Rome Remastered Only
+
+* Campaign Map - [Map Mesh Creation](documentation/RR_Map_Mesh_Production.md) - Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
+* Units and Strat Figures - [Character Extraction](documentation/RR_Character_Extraction.md) - Extracts and converts .cas files for battlemap units and campaign map figures from Rome Remastered .pak files.
+* Skeletons and Animations - Unpacks Rome Remastered skeletons and animations and provides skeleton to text and back option.
+* Misc - [dds Conversion](documentation/Image_Editing_and_Conversion.md#rr-dds-lz4-compression-conversion-options) - Decompresses dds image files that use LZ4 compression, also applies LZ4 compression
+
   
 ## Task File Processes
 Many processes undertaken by IWTE are accessible and/or easier to use via the task file process.  The process is initiated by selecting a task file from the button shown below.
