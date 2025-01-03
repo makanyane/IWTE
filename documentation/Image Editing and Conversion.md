@@ -1,6 +1,13 @@
 # IWTE Image Processing Functions
 
-## Image Editing
+Whilst not primarily a graphics program IWTE has a variety of image editing/viewing/processing functions:
+*  [Basic Image Editing](#Basic-Image-Editing) 
+*  [M2 Terrain Mask Editing](#M2-Terrain-Mask-Editing)
+*  [M2 Texture Conversion Options](#M2-Texture-Conversion-Options)
+*  [RR dds LZ4 Compression Conversion Options](#rr-dds-lz4-compression-conversion-options)
+*  [Strat Map tga/hgt Editing](strat_map_base_file_editing.md)
+
+## Basic Image Editing
 
 ![image](../IWTEgithub_images/Image-editing.jpg)
 
