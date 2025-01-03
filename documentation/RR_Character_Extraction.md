@@ -10,8 +10,9 @@ The .cas files provided will be the same whether using the IWTE or Feral method.
 
 To launch the process use the buttons:  
 ***Rome Remastered > Units > Characters model extraction***  
-Navigate to the folder containing the .pak files, probably *C:\Steam\steamapps\common\Total War ROME REMASTERED\Contents\Resources\Data\data\characters\packs*
-then navigate to the folder you want any extracted files to be written to  
+Navigate to the folder containing the .pak files, probably  
+*C:\Steam\steamapps\common\Total War ROME REMASTERED\Contents\Resources\Data\data\characters\packs*
+then navigate to the folder you want any extracted files to be written to    
 please now wait while IWTE reads the packs
 
 ![image](../IWTEgithub_images/RR-character-extraction.jpg)
