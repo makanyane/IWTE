@@ -31,15 +31,14 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md) - Editing of residences, trees, resources in Milkshape/Blender/Max.
 * Campaign Map - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv) - Lists all texture names referenced by .cas files in selected directories in CSV format.
 * Campaign Map - [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) - Lists cas data including verts/tris count.  
-* Campaign Map - Strat Models (characters)  
-Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
-* Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights map.
+* Campaign Map - Strat Models (characters) - Editing of animated character .cas models in Milkshape/Blender/Max. Includes the ability to chain animations together, edit and save back to separate anims.
+* Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. Shows a 3d view of the strat map being edited and selection of colour schemes for the heights map.
 * Misc - [Basic Image Editing](/documentation/Image_Editing_and_Conversion.md#basic-image-editing) - a simple painting process to open and edit various image file types including M2 .texture files.
 
 ## Functions For RTW and Rome Remastered
 The following list is a quick round-up of IWTE's current capabilities for RTW (including BI and Alexander) and [Rome Total War Remastered.](https://github.com/FeralInteractive/romeremastered).
 
-* Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. This also shows a 3d view of the strat map being edited as well as selection of different colour schemes for the heights map.
+* Campaign Map - [Strat Map Base .tga Editing](documentation/strat_map_base_file_editing.md) - Supports simple editing of the stratmap TGA and HGT files with files shown at correct relative sizes. Shows a 3d view of the strat map being edited and selection of colour schemes for the heights map.
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md) -Editing of residences, trees, resources in Milkshape/Blender/Max.
 * Units and Strat Figures - Editing of .cas files with a bone structure and weighting.
 * Skeletons and Animations - Allows editing of animations, including in 'chained' format to view and edit multiple animations together.
