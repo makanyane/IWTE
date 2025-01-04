@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Strat Map Editing with IWTE
 
 To open the map_*.tga files used in RTW/RR/M2TW maps in IWTE use the buttons  
