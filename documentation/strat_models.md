@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Strat Models (static)
 
 General Modding Points to Note:
