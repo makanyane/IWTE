@@ -52,7 +52,7 @@ The table section for the bones works as follows;
 * column 1 - special bone indicator - certain bones such as the hands in units and saddle bones in mounts have an indicator number
 * columns 2,3,4 - x,y,z coordinates **RELATIVE TO THE PARENT BONE**
 * column 5 - bone index for that bone's parent bone - so 0 for bones parented to bone_pelvis in units
-* columns 6,7 - indicators related to special functions - these appear to turn the ability of bones to follow terrain/enemy movement but only work in RR RTW version not under RR BI version!
+* columns 6,7 - indicators related to special functions - these appear to activate the ability of bones to follow terrain/enemy movement but only work in RR RTW version not under RR BI version!
 RR and RTW unit skeletons will accept a maximum of 24 bones.
 
 After the bone data the animations are listed;
@@ -70,6 +70,12 @@ The example section above shows that **anim ready_to_stand** uses the animation 
 In the above section no animations are assigned to ready_idle_1 or ready_idle_2.  You could add animations for those settings by copying the format used for similar animations and adding your animation name/path.
 
 The list of possible animations should be evident from the file but is also available on TWC Wiki [here](https://wiki.twcenter.net/index.php?title=Rome:_Total_War%27s_Animation_Modification).  Some animations will be definitely required for certain unit/character types and functions.  Other animations such as numbered idle versions may be optional.  Adding a new animation to a skeleton does not guarantee that it will be used in game.  Do not forget to check the game's message log to see if it is objecting to an unwanted or missing animation.
+
+The file ends with speeds, 0/1 for 'uses missile' and 0/1 for 'can turn in place'  
+
+         1.8240    5.0000    6.8309                              # walk, run, charge speeds
+    0                                                            # uses missile 
+    1                                                            # can turn in place 
 
 
 ## Animations Unpacking with IWTE
