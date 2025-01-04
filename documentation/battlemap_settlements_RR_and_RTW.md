@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Battlemap Settlement Editing - RR and RTW
 
 Battlemap Settlements in RR and RTW are created and modified via settlement plans in text format.  The settlement plans list positions of wall sections, dbb entries and other components.  The components used originate as models in .cas format. Some .cas files are converted by the game into .item files or .bpi files.
