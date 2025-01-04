@@ -26,6 +26,7 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
 * Battlemap Environment - Editing of vegetation.db, Descr_geography_new.db. Adding/amending of vegetation models and generation of vegetation sprites.
 * Battlemap Environment - [Editing .lighting files](documentation/M2_battlemap_lighting.md)
 * Battlemap - Mesh Models - Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
+* Battlemap Units - [battle_models.modeldb](documentation/M2_modeldb.md) - Error checking, re-formatting and editing function via conversion to csv file and back.
 * Battlemap - [Model Traversable Network](documentation/M2_Model_Traversable_Network.md) - For siege ladders and towers, editing by conversion to .txt and back.
 * Battlemap - [Texture Conversion](documentation/Image_Editing_and_Conversion.md#m2-texture-conversion-options) - Single file and directory level conversion of texture>dds>texture and tga>texture
 * Campaign Map - [Strat Models (static)](documentation/strat_models.md) - Editing of residences, trees, resources in Milkshape/Blender/Max.
