@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # M2TW battle_models.modeldb
 
 The battle_models.modeldb is found in data/unit_models.  It controls which meshes, textures and skeletons are used for battlemap unit and mounts. Errors in the modeldb including incorrect counts of characters in paths/names can cause the game to CTD.
