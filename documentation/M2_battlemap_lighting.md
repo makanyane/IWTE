@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Editing M2TW .lighting files
 
 M2TW .lighting files are short binary files found in data/globalighting.  They are referenced by the weather_db.xml file.
