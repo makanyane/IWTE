@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Rome Remastered Skeletons and Animations
 
 The Rome Remastered skeletons and animations are broadly similar to the OG RTW ones. Differences include:
