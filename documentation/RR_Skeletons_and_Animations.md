@@ -5,8 +5,10 @@ The Rome Remastered skeletons and animations are broadly similar to the OG RTW o
 * Voice/sound bank changes inside skeletons
 * Different pack version number
 * 2 additional anims per skeleton
-* Additional anims added via descr_skeleton_feral_overrides.txt and not packed
+* Additional anims added via descr_skeleton_feral_overrides.txt and not 'packed' - these are the same format as the packed chunks extracted from packs.dat
 * Scaling process is different - RR has scale modified at skeleton level only - duplicate anims per scaled variant aren't required
+  * RR does not use differently scaled anims within the pack files. For packed anims the skeleton scale is simply applied to them. This avoids the problems of working with unpacked animations where differently scaled anims with the same name overwrite each other.
+  * However, this scaling system DOES NOT work for the .anim files used via descr_skeleton_feral_overrides.txt. If you want a scaled skeleton to use an override animation you need to make yourself a new .anim with the same scale as the skeleton. 
 * Mods only require additional/changed skeletons/anims - modders do not need to include all vanilla content in their packs
 
 Some of these changes make it impractical to use the same tools as for RTW skeletons, so you can either use IWTE and work with the RR format, or work with the old RTW format/files and convert using Feral's [Skeleton Converter](https://github.com/FeralInteractive/romeremastered/blob/main/tools/SkeletonConverter/SkeletonConverter.md).
@@ -51,6 +53,9 @@ The table section for the bones works as follows;
 * columns 2,3,4 - x,y,z coordinates **RELATIVE TO THE PARENT BONE**
 * column 5 - bone index for that bone's parent bone - so 0 for bones parented to bone_pelvis in units
 * columns 6,7 - indicators related to special functions - these appear to turn the ability of bones to follow terrain/enemy movement but only work in RR RTW version not under RR BI version!
+RR and RTW unit skeletons will accept a maximum of 24 bones.
+
+After the bone data the animations are listed;
 
       <ANIM_READY_TO_STAND>                     "data/animations/LID_48_Standing ready 2 STAND.cas"        # anim  26
       anim_data      0   0.0000  0.0000  1.6000    0    0.0000    10   179    0.0000    0.0000    1.0000   # resetangle, impact xyz, impact frame, distance(look up animation), turn (deg) min/max, launch xyz 
@@ -59,6 +64,13 @@ The table section for the bones works as follows;
       anim_data      0   0.0000  0.0000  1.6000    0    0.0000    10   179    0.0000    0.0000    1.0000   # resetangle, impact xyz, impact frame, distance(look up animation), turn (deg) min/max, launch xyz 
       <ANIM_READY_IDLE_1>                                                                                  # anim  28
       <ANIM_READY_IDLE_2>                                                                                  # anim  29
+
+The example section above shows that **anim ready_to_stand** uses the animation *data/animations/LID_48_Standing ready 2 STAND.cas* and plays the sound assigned to the event *footstep, walk* between frames 14/15.  Other settings are explained in the comments after the # symbol.
+
+In the above section no animations are assigned to ready_idle_1 or ready_idle_2.  You could add animations for those settings by copying the format used for similar animations and adding your animation name/path.
+
+The list of possible animations should be evident from the file but is also available on TWC Wiki [here](https://wiki.twcenter.net/index.php?title=Rome:_Total_War%27s_Animation_Modification).  Some animations will be definitely required for certain unit/character types and functions.  Other animations such as numbered idle versions may be optional.  Adding a new animation to a skeleton does not guarantee that it will be used in game.  Do not forget to check the game's message log to see if it is objecting to an unwanted or missing animation.
+
 
 ## Animations Unpacking with IWTE
 To unpack skeletons use buttons:  
