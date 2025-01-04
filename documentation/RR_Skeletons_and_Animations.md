@@ -11,3 +11,12 @@ The Rome Remastered skeletons and animations are broadly similar to the OG RTW o
 Some of these changes make it impractical to use the same tools as for RTW skeletons, so you can either use IWTE and work with the RR format, or work with the old RTW format/files and convert using Feral's [Skeleton Converter](https://github.com/FeralInteractive/romeremastered/blob/main/tools/SkeletonConverter/SkeletonConverter.md).
 
 ## Skeleton Unpacking with IWTE
+To unpack skeletons use buttons:  
+***Rome Remastered > Units > Skeletons extraction***  
+Select the folder where your skeletons.dat and skeletons.idx are located. Select the folder where you want the extracted files to be written. 
+![RR skeleton unpacking](../IWTEgithub_images/RR-skeleton-unpacking.jpg)
+
+## Animations Unpacking with IWTE
+To unpack skeletons use buttons:  
+***Rome Remastered > Units > Animations extraction***  
+Select the folder where your pack.dat and pack.idx are located. Select the folder where you want the extracted files to be written. 
