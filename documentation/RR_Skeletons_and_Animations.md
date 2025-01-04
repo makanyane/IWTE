@@ -6,7 +6,7 @@ The Rome Remastered skeletons and animations are broadly similar to the OG RTW o
 * Different pack version number
 * 2 additional anims per skeleton
 * Additional anims added via descr_skeleton_feral_overrides.txt and not 'packed' - these are the same format as the packed chunks extracted from packs.dat
-* Scaling process is different - RR has scale modified at skeleton level only - duplicate anims per scaled variant aren't required
+* Scaling process is different:
   * RR does not use differently scaled anims within the pack files. For packed anims the skeleton scale is simply applied to them. This avoids the problems of working with unpacked animations where differently scaled anims with the same name overwrite each other.
   * However, this scaling system DOES NOT work for the .anim files used via descr_skeleton_feral_overrides.txt. If you want a scaled skeleton to use an override animation you need to make yourself a new .anim with the same scale as the skeleton. 
 * Mods only require additional/changed skeletons/anims - modders do not need to include all vanilla content in their packs
