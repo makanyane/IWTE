@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # IWTE Image Processing Functions
 
 Whilst not primarily a graphics program IWTE has a variety of image editing/viewing/processing functions:
