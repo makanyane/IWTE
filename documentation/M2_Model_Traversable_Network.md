@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # M2TW Model Traversable Network Files
 
 The M2TW .modeltraversablenetwork files are found in data/siege_engines. All seige engines have one but most are basically a null entry. Ladders and towers do use the file which sets the entry points for troops, paths to ascend/descend the engine, and platforms where they can stand on/in the engine.
