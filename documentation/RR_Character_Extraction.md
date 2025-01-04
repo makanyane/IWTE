@@ -1,3 +1,4 @@
+![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Extracting .cas Files from Character Packs in Rome Remastered
 
 IWTE provides a viewer for selecting models included in the Rome Remastered character packs and extracting them to .cas and .dae or .glb.
