@@ -30,7 +30,7 @@ There are a few simply syntax items anyone wanting to use this process should be
 | ----|----|----|----|
 | cas_bone_name_change | [CAS_bone_name_change_task.txt](../task_file_examples/CAS_bone_name_change_task.txt) |
 | cas_to_extract | [CAS_cas_to_extract_no_anim_task.txt](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt)<br>[CAS_extract_to_CAS_with_multiple_anims_task.txt](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt) | [strat_models.md](../documentation/strat_models.md)
-| cas_to_extract_directory | [CAS_cas_to_extract_directory_task.txt]([../task_file_examples/CAS_cas_to_extract_directory_task.txt)
+| cas_to_extract_directory | [CAS_cas_to_extract_directory_task.txt](../task_file_examples/CAS_cas_to_extract_directory_task.txt)
 | extract_to_cas | [CAS_extract_to_CAS_with_multiple_anims_task.txt](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt)
 | cas_data_csv | [CAS_data_to_csv_task.txt](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv_task.txt](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
