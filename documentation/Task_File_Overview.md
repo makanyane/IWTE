@@ -46,7 +46,7 @@ There are a few simply syntax items anyone wanting to use this process should be
 | create_map_pieces_V2 | [RR_MAP_MESH_v2_modified_textures](../task_file_examples/RR_MAP_MESH_v2_modified_textures_task.txt) | RR only (map) |
 | combine_piece_textures_v2 | [RR_MAP_MESH_combine_piece_textures](../task_file_examples/RR_MAP_MESH_combine_piece_textures_task.txt) |  RR only (map) |
 | settlement_plan_edit  | [RR_SETTLEMENT_plan_edit](../task_file_examples/RR_SETTLEMENT_plan_edit_task.txt) | [battlemap_settlements_RR_and_RTW.md](../documentation/battlemap_settlements_RR_and_RTW.md)  |
-| extract_to_settlement_plan | [RR_extract_to_SETTLEMENT_plan](../task_file_examples/RR_extract_to_SETTLEMENT_plan.txt)  | RR (/RTW\*)
+| extract_to_settlement_plan | [RR_extract_to_SETTLEMENT_plan](../task_file_examples/RR_extract_to_SETTLEMENT_plan_task.txt)  | RR (/RTW\*)
 | rrdds_extract_to_dds_directory | [RR_dds_extract_to_dds_directory](../task_file_examples/RR_dds_extract_to_dds_directory_task.txt) | [RR dds LZ4 Compression Conversion Options](Image_Editing_and_Conversion.md#rr-dds-lz4-compression-conversion-options)  |
 | task_tex_conv_tga_to<br>_dxt1_nomipmaps_dds | [TEXCONV_tga_to_dds_albedos](../task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt)  | launches TexConv |
 | task_tex_conv_tga_to_dxt5_dds | [TEXCONV_tga_to_dds_materials](../task_file_examples/TEXCONV_tga_to_dds_materials_task.txt)  |  launches TexConv |
