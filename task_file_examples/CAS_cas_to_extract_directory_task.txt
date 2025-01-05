@@ -1,0 +1,10 @@
+# FOR ANY FOLDER OF CAS FILES TO DAE/GLB/MS3D
+# produces separate files for each .cas
+
+<task_id>                                           cas_to_extract_directory                               #  
+<directory_in>                                      "j:/rrmods/my mods/my_mod/data/models_strat"           # path to directory containing cas files, can be relative if inside IWTE folder
+<directory_out>                                     "/to_extract"                                          # optional tag, if not specified the settings default folder will be used, full or relative path accepted  
+<directory_out_increment>                           "no"                                                   # optional to increment output directory and avoid overwriting 
+<extract_file_type>                                 dae                                                    # must end .dae or .ms3d or .glb to determine file type produced  
+<create_task_file_from_input>                       yes                                                    # shows task run 
+<create_text_file>                                  no                                                     # or 'yes' or 'full' if you are bug-tracing technical problems with the files   
