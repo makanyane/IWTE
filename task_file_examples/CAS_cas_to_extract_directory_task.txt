@@ -1,5 +1,6 @@
 # FOR ANY FOLDER OF CAS FILES TO DAE/GLB/MS3D
 # produces separate files for each .cas
+# does not include sub-directories
 
 <task_id>                                           cas_to_extract_directory                               #  
 <directory_in>                                      "j:/rrmods/my mods/my_mod/data/models_strat"           # path to directory containing cas files, can be relative if inside IWTE folder
