@@ -34,3 +34,8 @@ So *my_settlement.world* requires *my_settlement.worldcollision* in the same fol
 FOLDER NAMES ARE IRRELEVANT, apart from making sure you have the paths correct. Adding things to the *settlements/north_european* folder does not make the northern_european culture use them!!!  (apart from anything else it's not even spelt the same! - sorry rant over...)
 
 ## Which files are loaded from the .world?
+
+![M2-world-referenced-paths.jpg](../IWTEgithub_images/M2-world-referenced-paths.jpg)
+
+![M2-worldterrain-mask-paths.jpg](../IWTEgithub_images/M2-worldterrain-mask-paths.jpg)
+
