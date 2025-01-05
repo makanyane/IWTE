@@ -26,5 +26,11 @@ The important bits:
 * its the CONTENTS that matter
 * it really is the CONTENTS that matter, if you've got old copies of pkgs called *xxxxNotUsed.worldpkgdesc* the game will still use it, the only way to stop that is change the extension, or make sure its not in the folder/s listed in the packagedb.txt
 * location doesn't matter so long as its in the folder/s listed in the packagedb.txt - it doesn't need to be in the same folder as the .world it's calling!  For your sanity though, either keep them in the same folder as their .world OR put all the pkg files in one folder with self-explanatory names, e.g. huge_city_for_spain.worldpkgdesc
+* each .worldpkgdesc will load one .world file - multiple pkgs can refer to the same .world if you need to re-use it for other factions/purposes
+
+When a .world is loaded it will load the .worldcollision file that is in the same folder and which has the same name.
+So *my_settlement.world* requires *my_settlement.worldcollision* in the same folder. ALL other paths are specified INSIDE the .world or .worldterrain.
+
+FOLDER NAMES ARE IRRELEVANT, apart from making sure you have the paths correct. Adding things to the *settlements/north_european* folder does not make the northern_european culture use them!!!  (apart from anything else it's not even spelt the same! - sorry rant over...)
 
 ## Which files are loaded from the .world?
