@@ -26,30 +26,30 @@ There are a few simply syntax items anyone wanting to use this process should be
 [Example task files](../task_file_examples) have been supplied in the task_file_examples folder, their names indicate to which process they apply.
 
 ## Task IDs
-| ID | Example task/s | Documentation (inc button options) | Notes |
-| ----|----|----|----|
+| ID | Example task/s | Documentation / Notes | 
+| ----|----|----|
 | cas_bone_name_change | [CAS_bone_name_change](../task_file_examples/CAS_bone_name_change_task.txt) |
 | cas_to_extract | [CAS_to_extract_no_anim](../task_file_examples/CAS_cas_to_extract_no_anim_task.txt)<br>[VAS_to_extract_with_multiple_anims](../task_file_examples/CAS_cas_to_extract_with_multiple_anims_task.txt) | [strat_models.md](../documentation/strat_models.md)
 | cas_to_extract_directory | [CAS_to_extract_directory](../task_file_examples/CAS_cas_to_extract_directory_task.txt)
 | extract_to_cas | [extract_to_CAS_with_multiple_anims](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt)
 | cas_data_csv | [CAS_data_to_csv](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
-| world_effects_and_shading | [M2_SETTLEMENT_effect_and_shading](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | | M2 only |
+| world_effects_and_shading | [M2_SETTLEMENT_effect_and_shading](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | M2 only |
 | dds_to_texture_directory | [M2_TEXTURE_dds_to_texture_directory](../task_file_examples/M2_TEXTURE_dds_to_texture_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | M2 only |
-| texture_to_dds_directory | [M2_TEXTURE_texture_to_dds_directory](../task_file_examples/M2_TEXTURE_texture_to_dds_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | M2 only |
-| unit_card_data | [M2_UNIT_CARD_data_for_Blender_addon](../task_file_examples/M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt) | | M2 only |
+| texture_to_dds_directory | [M2_TEXTURE_texture_to_dds_directory](../task_file_examples/M2_TEXTURE_texture_to_dds_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | 
+| unit_card_data | [M2_UNIT_CARD_data_for_Blender_addon](../task_file_examples/M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt) | M2 only |
 | convert_from_skeleton_to_new |
 | extract_to_mesh | [M2_UNIT_extract_to_mesh_with_WEAPON_SHIELD_anims](../task_file_examples/M2_UNIT_extract_to_mesh_body_WEAPON_SHIELD_anims_task.txt) | | M2 only |
 | mesh_to_extract | [M2_UNIT_mesh_to_extract_with_anims_list](../task_file_examples/M2_UNIT_mesh_to_extract_with_anims_list_task.txt)<br> [M2_UNIT_mesh_to_extract_body_and_WEAPON_anims](../task_file_examples/M2_UNIT_mesh_to_extract_body_and_WEAPON_anims_task.txt)<br>[M2_UNIT_mesh_to_extract_body_WEAPON_and_MOUNT](../task_file_examples/M2_UNIT_mesh_to_extract_body_WEAPON_and_MOUNT_task.txt)  | | M2 only |
-| modeldb_mesh_to_extract | [M2_UNIT_modeldb_mesh_to_extract](../task_file_examples/M2_UNIT_modeldb_mesh_to_extract_task.txt) | | M2 only |
-| create_map_pieces | [RR_MAP_MESH_older_version](../task_file_examples/RR_MAP_MESH_older_version_task.txt) | | RR only (map) |
-| create_map_pieces_V2 | [RR_MAP_MESH_v2_modified_textures](../task_file_examples/RR_MAP_MESH_v2_modified_textures_task.txt) | | RR only (map) |
-| combine_piece_textures_v2 | [RR_MAP_MESH_combine_piece_textures](../task_file_examples/RR_MAP_MESH_combine_piece_textures_task.txt) | | RR only (map) |
-| settlement_plan_edit  | [RR_SETTLEMENT_plan_edit](../task_file_examples/RR_SETTLEMENT_plan_edit_task.txt) | [battlemap_settlements_RR_and_RTW.md](../documentation/battlemap_settlements_RR_and_RTW.md)| RR (/RTW\*) |
-| extract_to_settlement_plan | [RR_extract_to_SETTLEMENT_plan](../task_file_examples/RR_extract_to_SETTLEMENT_plan.txt) | | RR (/RTW\*)
-| rrdds_extract_to_dds_directory | [RR_dds_extract_to_dds_directory](../task_file_examples/RR_dds_extract_to_dds_directory_task.txt) | [RR dds LZ4 Compression Conversion Options](Image_Editing_and_Conversion.md#rr-dds-lz4-compression-conversion-options) | RR only (Lz4 dds) |
-| task_tex_conv_tga_to_dxt1_nomipmaps_dds | [TEXCONV_tga_to_dds_albedos](../task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt) | | launches TexConv |
-| task_tex_conv_tga_to_dxt5_dds | [TEXCONV_tga_to_dds_materials](../task_file_examples/TEXCONV_tga_to_dds_materials_task.txt) | |  launches TexConv |
+| modeldb_mesh_to_extract | [M2_UNIT_modeldb_mesh_to_extract](../task_file_examples/M2_UNIT_modeldb_mesh_to_extract_task.txt) |  M2 only |
+| create_map_pieces | [RR_MAP_MESH_older_version](../task_file_examples/RR_MAP_MESH_older_version_task.txt) | RR only (map) |
+| create_map_pieces_V2 | [RR_MAP_MESH_v2_modified_textures](../task_file_examples/RR_MAP_MESH_v2_modified_textures_task.txt) | RR only (map) |
+| combine_piece_textures_v2 | [RR_MAP_MESH_combine_piece_textures](../task_file_examples/RR_MAP_MESH_combine_piece_textures_task.txt) |  RR only (map) |
+| settlement_plan_edit  | [RR_SETTLEMENT_plan_edit](../task_file_examples/RR_SETTLEMENT_plan_edit_task.txt) | [battlemap_settlements_RR_and_RTW.md](../documentation/battlemap_settlements_RR_and_RTW.md)  |
+| extract_to_settlement_plan | [RR_extract_to_SETTLEMENT_plan](../task_file_examples/RR_extract_to_SETTLEMENT_plan.txt)  | RR (/RTW\*)
+| rrdds_extract_to_dds_directory | [RR_dds_extract_to_dds_directory](../task_file_examples/RR_dds_extract_to_dds_directory_task.txt) | [RR dds LZ4 Compression Conversion Options](Image_Editing_and_Conversion.md#rr-dds-lz4-compression-conversion-options)  |
+| task_tex_conv_tga_to<br>_dxt1_nomipmaps_dds | [TEXCONV_tga_to_dds_albedos](../task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt)  | launches TexConv |
+| task_tex_conv_tga_to_dxt5_dds | [TEXCONV_tga_to_dds_materials](../task_file_examples/TEXCONV_tga_to_dds_materials_task.txt)  |  launches TexConv |
 
 ## Change Log Relating to Tasks
 IWTE_v22_09_C\
