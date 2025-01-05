@@ -17,7 +17,7 @@ Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are no
 * [Task File Processes](#Task-File-Processes)
 * [Preferences](#preferences)
 * [Launching and Error Reporting](#Launching-and-Error-Reporting)
-* [About IWTE](#About IWTE)
+* [About IWTE](#About-IWTE)
 * [License](#License)
 
 ## Functions For M2TW
