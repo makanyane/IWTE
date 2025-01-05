@@ -100,10 +100,9 @@ Useful information will normally be found just before the 'Traceback' part of th
 # About IWTE
 IWTE stands for Integrated World Terrain Editor, the tool is developed and maintained by **wilddog**. It has been the major tool used for modifying battlemap buildings and environments in M2TW.  It has been expanded in recent years to aid unit/animation editing and provide a map mesh creation function for Rome Remastered. **Makanyane** has been the main tester and documentation writer (and still knows very little about programming!).
 
-The tool's early development for M2TW settlements was based partly on prior research and development by **Argantonio** and **KnightErrant**. We'd extend special thanks to KnightErrant who's code and advice was used as the initial basis for this tool.
+The tool's early development for M2TW settlements was based partly on prior research and development by **Argantonio** and **KnightErrant**. We'd extend special thanks to KnightErrant whose code and advice was used as the initial basis for the tool.
 
-Please always work on copies of files. If you don't, then don't use this tool.. the rest as they say is at your own risk.
-IWTE was created for use with our own mod and is provided free of charge to help other modders. 
+IWTE was created for use with our own mod and is provided free of charge to help other modders. Use of the tool is entirely at your own risk.
 
 # License
 **IWTE disclaimer**  
