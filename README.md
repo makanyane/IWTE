@@ -17,6 +17,7 @@ Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are no
 * [Task File Processes](#Task-File-Processes)
 * [Preferences](#preferences)
 * [Launching and Error Reporting](#Launching-and-Error-Reporting)
+* [About IWTE](#About IWTE)
 * [License](#License)
 
 ## Functions For M2TW
@@ -96,10 +97,16 @@ The pop-up window allows you to show/hide details, although it will normally be 
 
 Useful information will normally be found just before the 'Traceback' part of the error message, and just after the Files listed in the Traceback.
 
+# About IWTE
+IWTE stands for Integrated World Terrain Editor, the tool is developed and maintained by **wilddog**. It has been the major tool used for modifying battlemap buildings and environments in M2TW.  It has been expanded in recent years to aid unit/animation editing and provide a map mesh creation function for Rome Remastered. **Makanyane** has been the main tester and documentation writer (and still knows very little about programming!).
 
+The tool's early development for M2TW settlements was based partly on prior research and development by **Argantonio** and **KnightErrant**. We'd extend special thanks to KnightErrant who's code and advice was used as the initial basis for this tool.
+
+Please always work on copies of files. If you don't, then don't use this tool.. the rest as they say is at your own risk.
+IWTE was created for use with our own mod and is provided free of charge to help other modders. 
 
 # License
-**IWTE disclaimer**\
+**IWTE disclaimer**  
 IWTE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
 THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
 
