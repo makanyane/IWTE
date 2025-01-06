@@ -55,6 +55,9 @@ So *my_settlement.world* requires *my_settlement.worldcollision* in the same fol
 
 FOLDER NAMES ARE IRRELEVANT, apart from making sure you have the paths correct. Adding things to the *settlements/north_european* folder does not make the northern_european culture use them!!!  (apart from anything else it's not even spelt the same! - sorry rant over...)
 
+### Overwriting vanilla .world files
+Although you can't overwrite the .worldpkgdesc files by including different ones in your mod-folder you can over-ride the .world file.  If the .world currently loaded for a settlement you want to change is *data\settlements\north_european\settlements\town\north_european_town_a.world* you can name your .world and .worldcollision to the same name and place it in the same folder in your mod - your .world and whichever files it refers to will be loaded instead.
+
 ## Which files are loaded from the .world?
 
 When you load the 3 binary files .world, .worldcollision and .animinstances in IWTE you will have access to the ***update referenced paths*** button:
