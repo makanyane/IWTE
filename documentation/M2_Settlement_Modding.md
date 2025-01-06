@@ -68,12 +68,22 @@ This will show you the file paths listed INSIDE the .world for .worldterrain, .w
 
 If the path to the .worldterrain is not found the settlement will load but the buildings may be floating/buried as the terrain will not be reset.  Missing the other files tends to cause a CTD.
 
+### Building Textures
+Textures are assigned per structure. Special indicators need to be applied if the texture is for a reflective plane or if the texture needs its alpha layer to be used.  To change the texture details, load the 3 binary files, select the texture you want to change in the *textures* window, use ***Structures > Change Texture info***.
+
 ![M2_world_change_texture_info.jpg](../IWTEgithub_images/M2_world_change_texture_info.jpg)
 
+When IWTE reloads structures you've amended in Blender it assumes that the name of the normal texture is:  
+*whateverTheMainTextureIsCalled_normal.texture*  
+
+If main textures are not found the buildings will appear black in game, if the _normal textures are not found the lighting will look very very bad!
+
+### Building Animations
 ![M2_world_animation_selection.jpg](../IWTEgithub_images/M2_world_animation_selection.jpg)
 
 ![M2_world_animations_list.jpg](../IWTEgithub_images/M2_world_animations_list.jpg)
 
+### Building Effects
 ![M2_world_collision_effects.jpg](../IWTEgithub_images/M2_world_collision_effects.jpg)
 
 ## Files loaded from .worldterrain
