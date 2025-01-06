@@ -36,6 +36,9 @@ You can load the csv into Excel or similar spreadsheet program
 ![M2_worldpkgdesc_to_csv_sheet.jpg](../IWTEgithub_images/M2_worldpkgdesc_to_csv_sheet.jpg)
 
 Each element of the pkg files is displayed in a separate column.   If you want IWTE to overwrite the files change no to yes in the Update column before saving as csv and using the 
-***Medieval 2 > Worldpkgdesc > csv to worldpkgdesc*** button.
+***Medieval 2 > Worldpkgdesc > csv to worldpkgdesc*** button.  
+The pkgfilename column includes the full folder path and the file name, these must remain unique or they will overwrite each other.
+
+The csv to worldpkgdesc function will not delete unwanted .worldpkgdesc files, if you need to remove them you will have to use the package file name/path to find them and do it manually.  You may find it easier to place all your pkg files in the same folder (ensuring they have unique names first), that way you can run the to csv function, delete/move the original files somewhere out of the mod and use the csv to worldpkgdesc function to write just the files you want back to the folder.
 
 
