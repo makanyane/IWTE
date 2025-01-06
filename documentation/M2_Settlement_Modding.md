@@ -5,11 +5,6 @@ Modding battlemap settlements in M2TW is a relatively complex task.  IWTE is the
 All buildings and some other objects that appear on M2TW battlemaps are loaded from .world files. 
 Some information about the structure of the .world file is provided on [TWC Wiki](https://wiki.twcenter.net/index.php?title=.world_file_-_M2TW) (info for geeks only, not needed for modding).
 
-.world files are used for:
-* settlements
-* techtrees inside settlements
-* bridges
-* ambient objects
 
 ## Loading Tree
 
@@ -35,6 +30,12 @@ Some information about the structure of the .world file is provided on [TWC Wiki
 
 ## Which .world is loaded?
 
+.world files are used for:
+* settlements
+* techtrees inside settlements
+* bridges
+* ambient objects
+
 The .world chosen is determined by the CONTENTS of .worldpkgdesc files.  More information about .worldpkgdesc files is provided on [TWC Wiki](https://wiki.twcenter.net/index.php?title=.worldpkgdesc_-_M2TW).  See [M2_worldpkgdesc.md](M2_worldpkgdesc.md) for how to edit them with IWTE.
 
 The important bits:
@@ -54,6 +55,7 @@ When a .world is loaded it will load the .worldcollision file that is in the sam
 So *my_settlement.world* requires *my_settlement.worldcollision* in the same folder. ALL other paths are specified INSIDE the .world or .worldterrain.
 
 FOLDER NAMES ARE IRRELEVANT, apart from making sure you have the paths correct. Adding things to the *settlements/north_european* folder does not make the northern_european culture use them!!!  (apart from anything else it's not even spelt the same! - sorry rant over...)
+
 
 ### Overwriting vanilla .world files
 Although you can't overwrite the .worldpkgdesc files by including different ones in your mod-folder you can over-ride the .world file.  If the .world currently loaded for a settlement you want to change is *data\settlements\north_european\settlements\town\north_european_town_a.world* you can name your .world and .worldcollision to the same name and place it in the same folder in your mod - your .world and whichever files it refers to will be loaded instead.
@@ -79,9 +81,18 @@ When IWTE reloads structures you've amended in Blender it assumes that the name 
 If main textures are not found the buildings will appear black in game, if the _normal textures are not found the lighting will look very very bad!
 
 ### Building Animations
+
+NB:  CUSTOM ANIMS - ANY CUSTOM ANIM, INCLUDING JUST RE-NAMED VANILLA ONES, WILL CTD THE GAME FOR MAC/LINUX USERS
+
+To view the animations used in a .world use ***M2 WorldFiles > upadate animation paths***, select the animation set you want to view/amend from the drop-down list and click OK.
+
 ![M2_world_animation_selection.jpg](../IWTEgithub_images/M2_world_animation_selection.jpg)
 
+You will then see the paths for each transition within that animation set.
+
 ![M2_world_animations_list.jpg](../IWTEgithub_images/M2_world_animations_list.jpg)
+
+Only the .anim files are named, the .evt and .mesh files need to be supplied with the same name and in the same folder.
 
 ### Building Effects
 
