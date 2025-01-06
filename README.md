@@ -22,9 +22,9 @@ Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are no
 
 ## Functions For M2TW
 The following list is a quick round-up of IWTE's current capabilities for M2TW:
-* Battlemap Settlements - Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfinding, .worldvegetation and .worldpkgdesc files. Using these files you can completely change the settlement layout, models, textures, effects and lighting.
+* Battlemap Settlements - [M2TW Settlement Modding](documentation/M2_Settlement_Modding.md) - Editing of .world, .worldcollision, .animinstances, .worldterrain, .worldpathfinding, .worldvegetation and .worldpkgdesc files. Using these files you can completely change the settlement layout, models, textures, effects and lighting.
 * Battlemap Settlements - [Terrain Mask Editing](documentation/Image_Editing_and_Conversion.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
-* Battlemap Settlements - Building Animationss -Editing and creation of new wall, gate and tower animations.
+* Battlemap Settlements - [Building Animations](documentation/M2_building_animation_editing.md) - Editing and creation of new wall, gate and tower animations.
 * Battlemap Environment - Editing of vegetation.db, Descr_geography_new.db. Adding/amending of vegetation models and generation of vegetation sprites.
 * Battlemap Environment - [Editing .lighting files](documentation/M2_battlemap_lighting.md)
 * Battlemap - Mesh Models - Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
