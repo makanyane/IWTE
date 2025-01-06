@@ -35,7 +35,22 @@ FOLDER NAMES ARE IRRELEVANT, apart from making sure you have the paths correct. 
 
 ## Which files are loaded from the .world?
 
+When you load the 3 binary files .world, .worldcollision and .animinstances in IWTE you will have access to the ***update referenced paths*** button:
+
 ![M2-world-referenced-paths.jpg](../IWTEgithub_images/M2-world-referenced-paths.jpg)
 
+This will show you the file paths listed INSIDE the .world for .worldterrain, .worldpathfinding, .worldvegetation and .animinstances, you can edit the paths/names here if necessary, click OK and then ***Save 3 Binary Files*** to save the changes.  The paths are relative to the data folder.  Any folder names and file names can be used but it's a lot easier if you keep all the files related to a settlement in the same folder and with the same name.  Splitting .worldTerrain and it's masks into a separate folder seems to have a bad effect on rendering in game with 'cliff' textures not being applied to steep slopes.  The .worldcollision file does not have a settable path here, it must have the same name and be in the same folder as the .world.
+
+If the path to the .worldterrain is not found the settlement will load but the buildings may be floating/buried as the terrain will not be reset.  Missing the other files tends to cause a CTD.
+
+## Files loaded from .worldterrain
+
+Use buttons ***Terrain1 > Amend WT Mask TGA paths*** to view the paths listed INSIDE .worldterrain:
+
 ![M2-worldterrain-mask-paths.jpg](../IWTEgithub_images/M2-worldterrain-mask-paths.jpg)
+
+Terrain files can have up to 4 masks and each mask controls a macro and micro texture placement.  The paths and names of all the masks and textures are editable. All the files must end .tga in these entries, but the actual files supplied should be .texture.  The scaled size of the textures can also be changed.
+
+If the path to a mask texture is not found you will get the macro/micro textures applied over the whole terrain.  Missing macro/micro textures will display as black.
+
 
