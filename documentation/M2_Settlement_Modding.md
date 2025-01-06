@@ -25,7 +25,7 @@ Some information about the structure of the .world file is provided on [TWC Wiki
       * any included graphics/sounds
     * textures and _normal.textures (assigned to structures)
     * .anims (assigned to objects)
-      * .evt (same named) - *(not sure this is used though)*
+      * .evt (same named) - for sound effects
       * .mesh (same named)
         * textures and _normal.textures
       * effect sets (called from anim)
