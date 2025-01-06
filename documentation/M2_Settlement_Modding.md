@@ -5,6 +5,14 @@ Modding battlemap settlements in M2TW is a relatively complex task.  IWTE is the
 All buildings and some other objects that appear on M2TW battlemaps are loaded from .world files. 
 Some information about the structure of the .world file is provided on [TWC Wiki](https://wiki.twcenter.net/index.php?title=.world_file_-_M2TW) (info for geeks only, not needed for modding).
 
+#### Table of Contents
+* [Loading Tree](#Loading-Tree)
+* [Which .world is loaded?](#Which-.world-is-loaded?)
+* [Which files are loaded from the .world?](#Which-files-are-loaded-from-the-.world?)
+  * [Building Textures](#Building-Textures)
+  * [Building Animations](#Building-Animations)
+  * [Building Effects](#Building-Effects)
+* [Files loaded from .worldterrain](#Files-loaded-from-.worldterrain)
 
 ## Loading Tree
 
