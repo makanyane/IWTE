@@ -84,7 +84,13 @@ If main textures are not found the buildings will appear black in game, if the _
 ![M2_world_animations_list.jpg](../IWTEgithub_images/M2_world_animations_list.jpg)
 
 ### Building Effects
-![M2_world_collision_effects.jpg](../IWTEgithub_images/M2_world_collision_effects.jpg)
+
+Effects are assigned to object collisions, if multiple objects use the same collision the same effect will be applied.  To be able to select an effect to apply the effect must be included in the effect list within the .world.
+
+![M2_world_collision_effects_list.jpg](../IWTEgithub_images/M2_world_collision_effects_list.jpg)
+
+The names of the effects can be any name of a set included in any of the text files listed in *descr_effects.txt*.
+Calling an effect which does not exist does not cause a CTD.  Lighting effects are applied by adding number indexes and strength values to vertexes within the meshes.  If changes have not been updated and number indexes on vertexes exceed the number of effect instances in the .world you will get 'disco lighting' effects!
 
 ## Files loaded from .worldterrain
 
