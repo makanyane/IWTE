@@ -7,12 +7,12 @@ Some information about the structure of the .world file is provided on [TWC Wiki
 
 #### Table of Contents
 * [Loading Tree](#Loading-Tree)
-* [Which .world is loaded?](#Which-.world-is-loaded?)
-* [Which files are loaded from the .world?](#Which-files-are-loaded-from-the-.world?)
+* [Which .world is loaded?](#Which-world-is-loaded?)
+* [Which files are loaded from the .world?](#Which-files-are-loaded-from-the-world?)
   * [Building Textures](#Building-Textures)
   * [Building Animations](#Building-Animations)
   * [Building Effects](#Building-Effects)
-* [Files loaded from .worldterrain](#Files-loaded-from-.worldterrain)
+* [Files loaded from .worldterrain](#Files-loaded-from-worldterrain)
 
 ## Loading Tree
 
