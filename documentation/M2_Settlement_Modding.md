@@ -13,7 +13,7 @@ Some information about the structure of the .world file is provided on [TWC Wiki
 
 ## Which .world is loaded?
 
-The .world chosen is determined by the CONTENTS of .worldpkgdesc files.  More information about .worldpkgdesc files is provided on [TWC Wiki](https://wiki.twcenter.net/index.php?title=.worldpkgdesc_-_M2TW).
+The .world chosen is determined by the CONTENTS of .worldpkgdesc files.  More information about .worldpkgdesc files is provided on [TWC Wiki](https://wiki.twcenter.net/index.php?title=.worldpkgdesc_-_M2TW).  See [M2_worldpkgdesc.md](M2_worldpkgdesc.md) for how to edit them with IWTE.
 
 The important bits:
 * you need a *packagedb.txt* file in your mod-folder for your .worldpkgdesc files to be read, its contents will normally be:
