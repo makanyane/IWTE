@@ -11,6 +11,28 @@ Some information about the structure of the .world file is provided on [TWC Wiki
 * bridges
 * ambient objects
 
+## Loading Tree
+
+* .worldpkgdesc
+  * .world (and same named .worldcollision)
+    * .animinstances
+    * .worldpathfinding
+    * .worldvegetation
+    * .worldterrain
+      * masks
+      * micro and macro textures
+    * effect sets (assigned to objects in world)
+      * any included graphics/sounds
+    * textures and _normal.textures (assigned to structures)
+    * .anims (assigned to objects)
+      * .evt (same named) - *(not sure this is used though)*
+      * .mesh (same named)
+        * textures and _normal.textures
+      * effect sets (called from anim)
+        * any included graphics
+    * .worldpkgdesc (if techtree slots included)
+      * .world etc...
+
 ## Which .world is loaded?
 
 The .world chosen is determined by the CONTENTS of .worldpkgdesc files.  More information about .worldpkgdesc files is provided on [TWC Wiki](https://wiki.twcenter.net/index.php?title=.worldpkgdesc_-_M2TW).  See [M2_worldpkgdesc.md](M2_worldpkgdesc.md) for how to edit them with IWTE.
@@ -42,6 +64,14 @@ When you load the 3 binary files .world, .worldcollision and .animinstances in I
 This will show you the file paths listed INSIDE the .world for .worldterrain, .worldpathfinding, .worldvegetation and .animinstances, you can edit the paths/names here if necessary, click OK and then ***Save 3 Binary Files*** to save the changes.  The paths are relative to the data folder.  Any folder names and file names can be used but it's a lot easier if you keep all the files related to a settlement in the same folder and with the same name.  Splitting .worldTerrain and it's masks into a separate folder seems to have a bad effect on rendering in game with 'cliff' textures not being applied to steep slopes.  The .worldcollision file does not have a settable path here, it must have the same name and be in the same folder as the .world.
 
 If the path to the .worldterrain is not found the settlement will load but the buildings may be floating/buried as the terrain will not be reset.  Missing the other files tends to cause a CTD.
+
+![M2_world_change_texture_info.jpg](../IWTEgithub_images/M2_world_change_texture_info.jpg)
+
+![M2_world_animation_selection.jpg](../IWTEgithub_images/M2_world_animation_selection.jpg)
+
+![M2_world_animations_list.jpg](../IWTEgithub_images/M2_world_animations_list.jpg)
+
+![M2_world_collision_effects.jpg](../IWTEgithub_images/M2_world_collision_effects.jpg)
 
 ## Files loaded from .worldterrain
 
