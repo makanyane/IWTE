@@ -22,3 +22,16 @@ There are up to three sections in a .worldterrain file:
 ![M2-worldterrain-triangle-grid.jpg](../IWTEgithub_images/M2-worldterrain-triangle-grid.jpg)
 
 The heights contained in the .worldterrain are applied IN-GAME in an 8m grid with triangles patterned as shown.  This effect is not mod-able.
+
+![M2_worldterrain_create_tgas.jpg](../IWTEgithub_images/M2_worldterrain_create_tgas.jpg)
+
+![M2_worldterrain_tgas.jpg](../IWTEgithub_images/M2_worldterrain_tgas.jpg)
+
+![M2_worldterrain_replace_tgas.jpg](../IWTEgithub_images/M2_worldterrain_replace_tgas.jpg)
+
+![M2_worldterrain_resize.jpg](../IWTEgithub_images/M2_worldterrain_resize.jpg)
+
+![M2_worldterrain_open2d.jpg](../IWTEgithub_images/M2_worldterrain_open2d.jpg)
+
+![M2_worldterrain_edit2d.jpg](../IWTEgithub_images/M2_worldterrain_edit2d.jpg)
+
