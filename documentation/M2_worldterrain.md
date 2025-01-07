@@ -28,7 +28,7 @@ The heights contained in the .worldterrain are applied IN-GAME in an 8m grid wit
 To create .tga images representing the .worldterrain parts use the screen/buttons:  
 ***Terrain1 > Create Terrain TGA's***  
 After selecting the .worldterrain you will see 3 height parameters, you can leave the default values in or modify them.  The height parameters may be needed as the process converts float values that allow fine detail to RGB values which only allow 0 to 255 values.
-Adding more increments per height will increase the level of detail shown but mean the range might not extend far enough to show the highest/lowest areas.
+Adding more increments per height will increase the level of detail shown but mean the range might not extend far enough to show the highest/lowest areas.   MAKE A NOTE OF THE VALUES YOU USED IF DIFFERENT FROM THE DEFAULT!
 
 ![M2_worldterrain_create_tgas.jpg](../IWTEgithub_images/M2_worldterrain_create_tgas.jpg)
 
@@ -36,23 +36,30 @@ Example tga files shown below have used a high value for increments per height, 
 
 ![M2_worldterrain_tgas.jpg](../IWTEgithub_images/M2_worldterrain_tgas.jpg)
 
-When you've edited the tga files use screen/button:  
+When you've edited the tga files use screen/buttons:  
 ***Terrain1 > Replace Terrain * TGA***  
-Each tga can only be read in individually, you will be asked for a .worldterrain file to modify each time.  To load them in sequence;
-* press Replace Terrain Base TGA button
-* select original .worldterrain and then your _wtbase.tga
-* file ending _wtnewtga.worldterrain will be written
-* press Replace Terrain Merge TGA button
-* select  _wtnewtga.worldterrain and then your _wtmerge.tga
-* file ending _wtnewtga_wtm.worldterrain will be written
-* press Replace Battle Merge TGA button
-* select _wtnewtga_wtm.worldterrain and then your _wtbattlemerge.tga
-* file ending _wtnewtga_wtm_btm.worldterrain will be written
+
+When you replace the base tga (the one with heights not merge values) you will be asked for the height TGA parameters, these must be the same as the ones used when creating the tga.
+
+Each tga can only be read in individually, you will be asked for a .worldterrain file to modify each time.  If you need to change all three you can load them in sequence as follows;
+* press **Replace Terrain Base TGA** button
+* select original .worldterrain and then your **_wtbase**.tga
+* file ending **_wtnewtga**.worldterrain will be written
+* press **Replace Terrain Merge TGA** button
+* select  _wtnewtga.worldterrain and then your **_wtmerge**.tga
+* file ending _wtnewtga**_wtm**.worldterrain will be written
+* press **Replace Battle Merge TGA** button
+* select _wtnewtga_wtm.worldterrain and then your **_wtbattlemerge**.tga
+* file ending _wtnewtga_wtm**_btm**.worldterrain will be written
 * rename the final file as needed to be used in game
   
 ![M2_worldterrain_replace_tgas.jpg](../IWTEgithub_images/M2_worldterrain_replace_tgas.jpg)
 
 ## Resizing worldterrain files
+
+This is the only way to change the overall size (rows and columns) of a .worldterrain file, do not try and do it by changing the 2d or 3d representations.  Use the scree/button:
+***Terrain1 > Resize .worldterrain***  
+You will see the current size in the X/Y boxes, change these as desired.  If you are reducing the size of the .worldterrain you can use the button below to **Apply** merge distances, this will ensure the outside of the terrain merge is set to 0 (black in tga view) with a merge inwards to 1 (white).
 
 ![M2_worldterrain_resize.jpg](../IWTEgithub_images/M2_worldterrain_resize.jpg)
 
