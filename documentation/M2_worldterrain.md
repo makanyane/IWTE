@@ -13,6 +13,8 @@ See also:
 #### Table of Contents
 * [.worldterrain File Structure](#worldterrain-File-Structure)
 
+In addition to the editing methods mentioned on this page the worldterrain > ms3d and back option still exists, however we do not advise using ms3d due to size and other limitations.
+
 ## .worldterrain File Structure
 There are up to three sections in a .worldterrain file:  
 * heights - float values (+ or -) in a list for a specified number of rows and columns - applied by the game at 8 metre spacing
@@ -68,4 +70,10 @@ You will see the current size in the X/Y boxes, change these as desired.  If you
 ![M2_worldterrain_open2d.jpg](../IWTEgithub_images/M2_worldterrain_open2d.jpg)
 
 ![M2_worldterrain_edit2d.jpg](../IWTEgithub_images/M2_worldterrain_edit2d.jpg)
+
+## Editing worldterrain in Blender
+
+![M2_worldterrain_to_extract.jpg](../IWTEgithub_images/M2_worldterrain_to_extract.jpg)
+
+![M2_worldterrain_in_blender.jpg](../IWTEgithub_images/M2_worldterrain_ine_blender.jpg)
 
