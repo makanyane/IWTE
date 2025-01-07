@@ -11,7 +11,11 @@ See also:
 * [.worldterrain - M2TW](https://wiki.twcenter.net/index.php?title=.worldterrain_-_M2TW) - on TWC Wiki
 
 #### Table of Contents
-* [.worldterrain File Structure](#worldterrain-File-Structure)
+* [.worldterrain file structure](#worldterrain-File-Structure)
+* [Editing .worldterrain via tgas](editing-worldterrain-via-tgas)
+* [Resizing .worldterrain files](#resizing-worldterrain-files)
+* [Editing .worldterrain in IWTE 2d window](#editing-worldterrain-in-iwte-2d-window)
+* [Editing .worldterrain in Blender](#editing-worldterrain-in-blender)
 
 In addition to the editing methods mentioned on this page the worldterrain > ms3d and back option still exists, however we do not advise using ms3d due to size and other limitations.
 
@@ -67,13 +71,26 @@ You will see the current size in the X/Y boxes, change these as desired.  If you
 
 ## Editing worldterrain in IWTE 2d window
 
+A complete .worldterrain file can be loaded in IWTE so the heights and merge elements can be viewed and edited alongside the .world file elements and terrain masks.  Use the screen/buttons:  
+***Medieval 2 > Battle Map Settlements > .worldterrain*** to open the terrain file within IWTE
+
 ![M2_worldterrain_open2d.jpg](../IWTEgithub_images/M2_worldterrain_open2d.jpg)
+
+When you select the Edit option and zoom into to the 2d window you will be able to view the heights of each point.  If you load the 3 binaries for the .world and select *View World - 2d* for that you will see how the building mesh and other aspects relate.  There are various brush controls that allow you to edit each aspect of the terrain.  The heights element will also be viewable in the 3d window.
 
 ![M2_worldterrain_edit2d.jpg](../IWTEgithub_images/M2_worldterrain_edit2d.jpg)
 
 ## Editing worldterrain in Blender
 
+To extract a .worldterrain to work on in Blender, select either dae or glb in the *Extract File* box, then use the screen/buttons:  
+***Medieval 2 > Battle Map Settlements > World extract/imports > Export Worldterrain***  
+
 ![M2_worldterrain_to_extract.jpg](../IWTEgithub_images/M2_worldterrain_to_extract.jpg)
 
-![M2_worldterrain_in_blender.jpg](../IWTEgithub_images/M2_worldterrain_ine_blender.jpg)
+Import the file you have created into via the appropriate Blender import interface, Collada for .dae or glTF 2.0 for .glb.  
+When working on the terrain file in Blender it is important not to move any vertexes along the x or y axis, you must only adjust the height (z axis).  Most tools in Blender have options that allow you to lock x and y, or activate only z.  Optionally you can also import buildings from your settlement into the same file.  IWTE will look for and separate the mesh names worldterrain for re-import.
+
+![M2_worldterrain_in_blender.jpg](../IWTEgithub_images/M2_worldterrain_in_blender.jpg)
+
+When finished export to .dae or .glb from Blender, and use the Import Worldterrain function in IWTE.  You will be asked for a .worldterrain file to update first, this is required as the dae/glb does not store the mesh or merge information, only heights.
 
