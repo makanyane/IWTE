@@ -1,7 +1,7 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # M2TW .worldpathfinding file
 
-Most .worlds in M2TW battlemaps uses a .worldpathfinding file, the file controls where troops can walk/stand.  Most techtree buildings do not have a .worldpathfinding file assigned, but they can have them added.
+Most .worlds in M2TW battlemaps use a .worldpathfinding file, the file controls where troops can walk/stand.  Most techtree buildings do not have a .worldpathfinding file assigned, but they can have them added.
 
 The .worldpathfinding for settlements includes blocked areas under walls and gates, these objects need to have 'breaches' assigned so that troops can cross them when the wall is destroyed or the gate opened.
 
