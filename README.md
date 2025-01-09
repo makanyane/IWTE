@@ -41,10 +41,13 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
   * Editing [.worldvegetation](documentation/M2_worldvegetation.md) - controls where grass/trees/shrubs are shown around the settlement
   * Editing [.worldterrain](documentation/M2_worldterrain.md) - controls heights around settlement
   * Editing [Terrain Masks](documentation/Image_Editing_and_Conversion.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
-
-* Battlemap Environment - Editing of vegetation.db, Descr_geography_new.db. Adding/amending of vegetation models and generation of vegetation sprites.
-* Battlemap Environment - [Editing .lighting files](documentation/M2_battlemap_lighting.md)
-* Battlemap - Mesh Models - Editing of skydome mesh and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
+* Battlemap Environment
+  * Editing of vegetation.db
+  * Editing Descr_geography_new.db.
+  * Adding/amending of vegetation models and generation of vegetation sprites.
+  * Editing [.lighting files](documentation/M2_battlemap_lighting.md)
+  * Editing skydome mesh
+* Battlemap - Mesh Models - Editing of unit models and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
 * Battlemap Units - [battle_models.modeldb](documentation/M2_modeldb.md) - Error checking, re-formatting and editing function via conversion to csv file and back.
 * Battlemap - [Model Traversable Network](documentation/M2_Model_Traversable_Network.md) - For siege ladders and towers, editing by conversion to .txt and back.
 * Battlemap - [Texture Conversion](documentation/Image_Editing_and_Conversion.md#m2-texture-conversion-options) - Single file and directory level conversion of texture>dds>texture and tga>texture
