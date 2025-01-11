@@ -49,6 +49,8 @@ https://www.twcenter.net/forums/showthread.php?657346-Re-Grass-editing-in-vegeta
 
 ## Creating Vege_Models
 
+See TWC tutorial for creation of vege_models using Milkshape https://www.twcenter.net/forums/showthread.php?577141-IWTE-Vegetation-editing  
+
 ## Creating Vege_Sprites
 
 The Vege_Sprites are small binary files that list a diffuse and a normal texture and give coordinates to be used within those textures for 8 possible viewpoints.  The picture below shows the vanilla textures for the willow sprite.  Note that the 'normal' texture is nothing like the sort of normal map produced by the nvidia plug-in, the information on it is taken from the models geometry and not a translation of the diffuse texture.  
