@@ -28,6 +28,8 @@ You can click on one of the boxes to activate the drop down and select a differe
 
 ### Getting from campaign ground_type to battle ground_type
 
+![geography-cgt-to-bgt](../IWTEgithub_images/geography-cgt-to-bgt.jpg)
+
 
 ### M2 specific elements
 
