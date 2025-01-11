@@ -9,6 +9,12 @@
 * End file name with _damageTransition0 or as required
 * Import to animation
 
+
+
+![M2_building_anim_to_extract](../IWTEgithub_images/M2_building_anim_to_extract.jpg)
+
+change name to include DamageTransition0 etc
+
 ## Changing M2TW Building Animation Effects  
 
 The visual effects triggered by animations can be changed using the screen/button ***Animations/Amend .anim effects***  
