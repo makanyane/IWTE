@@ -26,7 +26,10 @@ You can add textures to ground_types that are currently listed as 'none', howeve
 You can click on one of the boxes to activate the drop down and select a different ground_type for each intersection of 'Hardness' and 'Quality'.
 
 
-## M2 specific elements
+### Getting from campaign ground_type to battle ground_type
+
+
+### M2 specific elements
 
 M2TW has the ability to regenerate the geography db file from the text file however this process wipes out all the distance colour values and can also cause memory problems as ALL the battlemap textures are read and held in memory.
 
