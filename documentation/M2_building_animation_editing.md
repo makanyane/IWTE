@@ -24,7 +24,9 @@ Ending an object name with *__fade* will make IWTE set the indicator for the obj
 
 Effects are stored with an object name starting *effectset*, then double underscore *effect_set_name*, double underscore *time in multiples of 1/10sec*, the position is taken from the location the object has been moved to (do not apply transforms).
 
-When you export from Blender remember to include the required transition name at the end of the file name , e.g. _DamageTransition0.glb etc
+Building anims do not use a skeleton or bone weighting.
+
+When you export from Blender remember to include the required transition name at the end of the file name , e.g. _DamageTransition0.glb etc.  Use ***Medieval 2 > Battle Map Settlements > World Animation > Import Animation*** to convert back.
 
 ## Changing M2TW Building Animation Effects  
 
