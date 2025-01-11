@@ -67,10 +67,12 @@ For model_name.vege_model IWTE will produce:
 * IWTEsave/model_name_**norm**.tga
 * IWTEsave/textures/model_name_**diff**.textures
 * IWTEsave/textures/model_name_**norm**.textures
+* 
 If you want to alter the sprite images use the .tga files and process them to .dds/texture.  If you're happy with them just use the .texture files and transfer them and the .vege_sprite to the folders:
 * data/vegetation/sprites
 * data/vegetation/sprites/diffuse_maps
 * data/vegetation/sprites/normal_maps
+* 
 IWTE adds _diff and _norm to the diffuse and normal textures for ease of identification. The vege_sprite produced will be set up for this naming, the names do not need to be changed.
 
-There are Vege_Sprite editing options *VegSprite to text* and *Text to VegSprite* - you are unlikely to need to use or understand these unless something has gone wrong with the sprite creation process and you need to make adjustments.
+There are also Vege_Sprite editing options *VegSprite to text* and *Text to VegSprite* - you are unlikely to need to use or understand these unless something has gone wrong with the sprite creation process and you need to make adjustments.
