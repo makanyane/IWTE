@@ -51,7 +51,7 @@ https://www.twcenter.net/forums/showthread.php?657346-Re-Grass-editing-in-vegeta
 
 ## Creating Vege_Sprites
 
-The VegSprites are small binary files that list a diffuse and a normal texture and give coordinates to be used within those textures for 8 possible viewpoints.  The picture below shows the vanilla textures for the willow sprite.  Note that the 'normal' texture is nothing like the sort of normal map produced by the nvidia plug-in, the information on it is taken from the models geometry and not a translation of the diffuse texture.  
+The Vege_Sprites are small binary files that list a diffuse and a normal texture and give coordinates to be used within those textures for 8 possible viewpoints.  The picture below shows the vanilla textures for the willow sprite.  Note that the 'normal' texture is nothing like the sort of normal map produced by the nvidia plug-in, the information on it is taken from the models geometry and not a translation of the diffuse texture.  
 
 ![M2_vegsprite_textures](../IWTEgithub_images/M2_vegsprite_textures.jpg)
 
@@ -61,4 +61,4 @@ The image below shows sprite textures created by IWTE from the same model. Both 
 
 
 
-There are VegSprite editing options *VegSprite to text* and *Text to VegSprite* - you are unlikely to need to use or understand these unless something has gone wrong with the sprite creation process and you need to make adjustments.
+There are Vege_Sprite editing options *VegSprite to text* and *Text to VegSprite* - you are unlikely to need to use or understand these unless something has gone wrong with the sprite creation process and you need to make adjustments.
