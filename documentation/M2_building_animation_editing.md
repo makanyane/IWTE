@@ -1,19 +1,30 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Editing M2TW settlement building animations
 
-# VERY VERY WIP TO BE DONE
+***NOTE: Any custom anims or re-named vanilla anims will crash the game for Mac/Linux computer users.  We therefore no longer recommend using modified anims.  Gates are the only world objects that must have animations to function. Walls and towers can simply jump between damaged states.***
 
+M2TW building animation components are referenced from the .world file, they are normally located in *data/blockset/cultureRef/animations/type_of_anim/anim_set*, the components are:
+* .anim - this controls the movement of the objects
+* .evt - for sounds
+* .mesh - controls vert to 'bone' assignment and texture used
 
-* Export existing animation to dae (collada)
-* Amend anim export from Blender
-* End file name with _damageTransition0 or as required
-* Import to animation
+The vertex positions and lighting assigned to specific instances of an animation are included in the .animinstances file associated with each .world file.
 
+## Editing .anims in Blender
 
+Check the Extract File type you want is set and use ***Medieval 2 > Battle Map Settlements > World Animation > Export Animation***, select the .anim you want.
 
 ![M2_building_anim_to_extract](../IWTEgithub_images/M2_building_anim_to_extract.jpg)
 
-change name to include DamageTransition0 etc
+Load the dae/glb extract from an existing anim into Blender, you will see that they comprise some static objects, some with animations and some that simply store information about the effects:
+
+![M2_building_anim_in_Blender](../IWTEgithub_images/M2_building_anim_in_Blender.jpg)
+
+Ending an object name with *__fade* will make IWTE set the indicator for the object to fade out towards the end of the animation.  Please note that this feature doesn't work that well in game as parts of the anim that should become visible behind the fading part are not rendered!
+
+Effects are stored with an object name starting *effectset*, then double underscore *effect_set_name*, double underscore *time in multiples of 1/10sec*, the position is taken from the location the object has been moved to (do not apply transforms).
+
+When you export from Blender remember to include the required transition name at the end of the file name , e.g. _DamageTransition0.glb etc
 
 ## Changing M2TW Building Animation Effects  
 
