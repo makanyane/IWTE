@@ -51,6 +51,10 @@ https://www.twcenter.net/forums/showthread.php?657346-Re-Grass-editing-in-vegeta
 
 See TWC tutorial for creation of vege_models using Milkshape https://www.twcenter.net/forums/showthread.php?577141-IWTE-Vegetation-editing  
 
+To convert a vege_model to dae/glb/ms3d, check the extract file type you want is selected in the drop-down box then use ***Medieveal 2 > Vegetation models and sprites > Vege_model_to_extract***.  
+
+![M2_vege_model_to_extract](../IWTEgithub_images/M2_vege_model_to_extract.jpg)
+
 ## Creating Vege_Sprites
 
 The Vege_Sprites are small binary files that list a diffuse and a normal texture and give coordinates to be used within those textures for 8 possible viewpoints.  The picture below shows the vanilla textures for the willow sprite.  Note that the 'normal' texture is nothing like the sort of normal map produced by the nvidia plug-in, the information on it is taken from the models geometry and not a translation of the diffuse texture.  
