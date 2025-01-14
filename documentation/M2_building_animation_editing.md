@@ -8,7 +8,12 @@ M2TW building animation components are referenced from the .world file, they are
 * .evt - for sounds
 * .mesh - controls vert to 'bone' assignment and texture used
 
-The vertex positions and lighting assigned to specific instances of an animation are included in the .animinstances file associated with each .world file.  Unfortunately even minor amendments to existing .anims will still trigger you needing to go through the whole 'create new animation' process, converting the anim to glb/dae and back will change the vertex order which will create a mismatch between the .anim and the contents of the world's .animinstances content for the objects using that .anim.
+The vertex positions and lighting assigned to specific instances of an animation are included in the  
+*  .animinstances file associated with each settlement's .world file.
+
+Unfortunately even minor amendments to existing .anims will still trigger you needing to go through the whole 'create new animation' process, converting the anim to glb/dae and back will change the vertex order which will create a mismatch between the .anim and the contents of the world's .animinstances content for the objects using that .anim.
+
+See Also: https://wiki.twcenter.net/index.php?title=Building_Animations_-_M2TW
 
 ## Creating and Applying an Animation
 
