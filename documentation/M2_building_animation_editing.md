@@ -8,7 +8,22 @@ M2TW building animation components are referenced from the .world file, they are
 * .evt - for sounds
 * .mesh - controls vert to 'bone' assignment and texture used
 
-The vertex positions and lighting assigned to specific instances of an animation are included in the .animinstances file associated with each .world file.
+The vertex positions and lighting assigned to specific instances of an animation are included in the .animinstances file associated with each .world file.  Unfortunately even minor amendments to existing .anims will still trigger you needing to go through the whole 'create new animation' process, converting the anim to glb/dae and back will change the vertex order which will create a mismatch between the .anim and the contents of the world's .animinstances content for the objects using that .anim.
+
+## Creating and Applying an Animation
+
+* use ***Medieval 2 > Battle Map Settlements > World Animation > Export Animation*** to get a dae/glb to work from
+* amend file in Blender and export result to dae/glb
+* name the file to end in the appropriate transition name
+* ***Medieval 2 > Battle Map Settlements > World Animation > Import Animation***
+* repeat for all the damage transitions the object will use
+* check you have .packed files for all the transitions in one folder
+* load your settlement's 3 binary files in IWTE
+* select object that will use animation and use screen/button ***Animations > New Animation/Collision*** navigate to folder with the .packed files
+* follow any prompts if required to set up wall/gate breach attributes
+* correct naming of animations using screen/button ***M2 WorldFiles > update animation paths***
+* apply to any other objects that need the same animation set by selecting object and using screen/button ***Animations > Assign Animation/Collision*** selecting the object that has the correct anim/collision from the drop-down
+* save 3 binaries
 
 ## Editing .anims in Blender
 
