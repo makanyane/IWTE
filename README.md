@@ -42,7 +42,7 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
   * Editing [.worldterrain](documentation/M2_worldterrain.md) - controls heights around settlement
   * Editing [Terrain Masks](documentation/Image_Editing_and_Conversion.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
 * Battlemap Environment
-  * Editing of vegetation.db
+  * Editing [vegetation.db](documentation/M2_vegetation_db.md)
   * Editing [Descr_geography_new.db](documentation/geography_db.md).
   * Adding/amending of vegetation models and generation of vegetation sprites.
   * Editing [.lighting files](documentation/M2_battlemap_lighting.md)
