@@ -43,7 +43,7 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
   * Editing [Terrain Masks](documentation/Image_Editing_and_Conversion.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
 * Battlemap Environment
   * Editing of vegetation.db
-  * Editing Descr_geography_new.db.
+  * Editing [Descr_geography_new.db](documentation/geography_db.md).
   * Adding/amending of vegetation models and generation of vegetation sprites.
   * Editing [.lighting files](documentation/M2_battlemap_lighting.md)
   * Editing skydome mesh
@@ -68,7 +68,7 @@ The following list is a quick round-up of IWTE's current capabilities for RTW (i
 * Battlemap Settlements - [.items to .cas conversions](documentation/battlemap_settlements_RR_and_RTW.md#item-to-cas-conversion-with-iwte) - (useful if .cas files were not supplied with mod). 
 * Battlemap Settlements - [settlement plan editing options](documentation/battlemap_settlements_RR_and_RTW.md#settlement-plan-editing-with-iwte) - Includes a 2d window option to edit plans including wall layouts and a conversion to 3d option to allow editing in Blender.
 * Battlemap Settlements - [Cas collision Check CSV](documentation/cas_checking_tasks.md#cas_collision_csv) - Enables checking for correct names and flatness of 'collision' meshes in info files.
-* Battlemap Environment - Allows read/edit of geography.db
+* Battlemap Environment - Allows read/edit of [descr_geography.db](documentation/geography_db.md)
 * Misc - [Cas Texture Check CSV](documentation/cas_checking_tasks.md#cas_texture_csv) - Lists all texture names referenced by .cas files in selected directories in CSV format.
 * Misc - [Cas Data Check CSV](documentation/cas_checking_tasks.md#cas_data_csv) - Lists cas data including verts/tris count and numbers and types of meshes.
 * Misc - [Basic Image Editing](/documentation/Image_Editing_and_Conversion.md#basic-image-editing) - A simple painting process to open and edit various image file types including M2 .texture files.
