@@ -34,11 +34,15 @@ Use the IWTE screen/button ***Veg/GeogDB > Edit Vegetation.db*** and load the .d
 
 ![M2-vegetation-db-edit](../IWTEgithub_images/M2-vegetation-db-edit.jpg)
 
-You can adjust the models and settings used for each climate's summer and winter.  The models are selected by drop-down which includes the entire contents of your vegmodel list.  You can have up to 4 models per vegetation type.  Note that not all vegetation types appear to be used in game, and some such as water_cover are only used in specific zones.
+You can adjust the models and settings used for each climate's summer and winter.  The models are selected by drop-down which includes the entire contents of your vegmodel list.  You can have up to 4 models per vegetation type.  Note that not all vegetation types appear to be used in game.  Cactii are useable and can be set to add less common tree models. Mangroves  and water_cover are only displayed around water.  The radius setting can help stop troops walking through large objects such as rocks, however it appears to be limited in scope, setting values from 10 to 99m resulted in the same sized blocked area as shown in the picture below.
+
+![max-block-size.jpg](../IWTEgithub_images/max-block-size.jpg)
+
+The Veg Distance Table gives the viewing distance for models and sprites at Low/Medium/High quality settings.  'None' in any of the boxes means that the item will not be displayed at all at that quality setting. Infinity means the item will not switch off in distant views.
 
 ![M2-vegetation-db-veg-distance](../IWTEgithub_images/M2-vegetation-db-veg-distance.jpg)
 
-The Veg Distance Table gives the viewing distance for models and sprites at Low/Medium/High quality settings.
+
 
 ## Editing the vegetation.db via text
 
@@ -54,6 +58,8 @@ See TWC tutorial for creation of vege_models using Milkshape https://www.twcente
 To convert a vege_model to dae/glb/ms3d, check the extract file type you want is selected in the drop-down box then use ***Medieveal 2 > Vegetation models and sprites > Vege_model_to_extract***.  
 
 ![M2_vege_model_to_extract](../IWTEgithub_images/M2_vege_model_to_extract.jpg)
+
+NOTE:  Do not allow uv maps for the vege_models to exceed the 0 to 1 range.  Do not use textures for the vege_models that are larger than other vegetation textures.  The game compiles all the vegetation textures into one texture map in game, change of size or uv's exceeding range will result in models using parts of other models textures!
 
 ## Creating Vege_Sprites
 
