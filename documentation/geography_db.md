@@ -40,3 +40,7 @@ The M2TW geography db has set-able options for the density of the individual veg
 ![geography-db-m2-vegetation](../IWTEgithub_images/geography-db-m2-vegetation.jpg)
 
 Be conservative when setting amounts of vegetation to add.  In the image above you can see the 0.6 value that is set in vanilla M2 for forest trees on forest_dense section of the alpine climate.  This setting tends to produce battlemaps with dense tree areas that flicker on and off due to graphics overload!
+
+
+
+gn bias doesn't seem to do anything in M2 and also seems to be set at 0.0 for all vanilla entries
