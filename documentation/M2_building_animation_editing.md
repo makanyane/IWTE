@@ -50,6 +50,9 @@ When you export from Blender remember to include the required transition name at
 
 If exporting as .glb you need to untick the 'Optimize Animation Size' option.
 ![glb_setting](../IWTEgithub_images/glb_setting.jpg)
+Also do not use 'group by NLA track'.  
+![glb_setting2](../IWTEgithub_images/glb_setting2.jpg)
+Please be aware that despite having a 'Remember Export Settings' button, Blender tends to forget...
 
 ## Changing M2TW Building Animation Effects  
 
