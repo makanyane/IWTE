@@ -17,7 +17,8 @@ See Also: https://wiki.twcenter.net/index.php?title=Building_Animations_-_M2TW
 
 ## Creating and Applying an Animation
 
-* use ***Medieval 2 > Battle Map Settlements > World Animation > Export Animation*** to get a dae/glb to work from
+* use ***Medieval 2 > Battle Map Settlements > World Animation > Export Animation*** to [work from an existing animation](M2_building_animations_in_Blender.md#editing-existing-anims-in-blender) or
+* [work from an existing static object](M2_building_animations_in_Blender.md#finding-your-starting-point)
 * amend file in Blender and export result to dae/glb
 * name the file to end in the appropriate transition name
 * ***Medieval 2 > Battle Map Settlements > World Animation > Import Animation***
@@ -30,27 +31,7 @@ See Also: https://wiki.twcenter.net/index.php?title=Building_Animations_-_M2TW
 * apply to any other objects that need the same animation set by selecting object and using screen/button ***Animations > Assign Animation/Collision*** selecting the object that has the correct anim/collision from the drop-down
 * save 3 binaries
 
-## Editing .anims in Blender
-
-Check the Extract File type you want is set and use ***Medieval 2 > Battle Map Settlements > World Animation > Export Animation***, select the .anim you want.
-
-![M2_building_anim_to_extract](../IWTEgithub_images/M2_building_anim_to_extract.jpg)
-
-Load the dae/glb extract from an existing anim into Blender, you will see that they comprise some static objects, some with animations and some that simply store information about the effects:
-
-![M2_building_anim_in_Blender](../IWTEgithub_images/M2_building_anim_in_Blender.jpg)
-
-Ending an object name with *__fade* will make IWTE set the indicator for the object to fade out towards the end of the animation.  Please note that this feature doesn't work that well in game as parts of the anim that should become visible behind the fading part are not rendered!
-
-Effects are stored with an object name starting *effectset*, then double underscore *effect_set_name*, double underscore *time in multiples of 1/10sec*, the position is taken from the location the object has been moved to (do not apply transforms).
-
-Building anims do not use a skeleton or bone weighting.
-
-When you export from Blender remember to include the required transition name at the end of the file name , e.g. _DamageTransition0.glb etc.  Use ***Medieval 2 > Battle Map Settlements > World Animation > Import Animation*** to convert back.
-
-Please see [required glb export options for animations](Blender_4plus_and_glb.md#for-animations).
-
-## Changing M2TW Building Animation Effects  
+## Changing Animation Effects in the IWTE screen
 
 The visual effects triggered by animations can be changed using the screen/button ***Animations/Amend .anim effects***  
 
