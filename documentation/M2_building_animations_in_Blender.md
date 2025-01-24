@@ -11,7 +11,7 @@ To find that for an object that has been added to a .world file, export the .wor
 ![m2_build_anim_select](../IWTEgithub_images/m2_build_anim_select.jpg)
 
 Bring up the side-bar and you will see Blender show's its location relative to the Complex it is a child of.
-Use right-click > Parent > **Clear and Keep Transform**.  The object won't have moved but you will notice the location is now shown relative to the whole scene and the object is no-longer listed inside a complex:
+Use right-click > Parent > **Clear and Keep Transformation**.  The object won't have moved but you will notice the location is now shown relative to the whole scene and the object is no-longer listed inside a complex:
 
 ![m2_build_anim_de-parent](../IWTEgithub_images/m2_build_anim_de-parent.jpg)
 
