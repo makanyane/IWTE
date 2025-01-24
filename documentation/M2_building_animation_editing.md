@@ -48,13 +48,7 @@ Building anims do not use a skeleton or bone weighting.
 
 When you export from Blender remember to include the required transition name at the end of the file name , e.g. _DamageTransition0.glb etc.  Use ***Medieval 2 > Battle Map Settlements > World Animation > Import Animation*** to convert back.
 
-If exporting as .glb you need to untick the 'Optimize Animation Size' option.
-![glb_setting](../IWTEgithub_images/glb_setting.jpg)
-
-Also do not use 'group by NLA track'.  
-![glb_setting2](../IWTEgithub_images/glb_setting2.jpg)
-
-Please be aware that despite having a 'Remember Export Settings' button, Blender tends to forget...
+Please see [required glb export options for animations](Blender_4plus_and_glb.md#for-animations).
 
 ## Changing M2TW Building Animation Effects  
 
