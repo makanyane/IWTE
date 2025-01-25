@@ -34,15 +34,29 @@ You'll have noticed from the texture list that the available 'ground_types' on t
 
 ## Battle ground type variation
 
-The variability settings for each strat ground type affect 
+The variability settings for each strat ground type affect the extent to which adjacent battle ground types are mixed in.  These experiments use a flat battle-map on the coast where height variations and biases have been removed from the climate's height section, all land pixels of the strat map surrounding the area use the same climate and fertile_low ground_type.  Brightly coloured textures with the BGT name written in are used for easy identification.
+
+Fertile Low has been set to start at Swamp/Qual_Very_High, which is the only segment using 'sand' (the yellow colour).  Inspection of the map shows shrub_dense, mud and gravel are also being used.
 
 ![geog-fertile-low-startpoint](../IWTEgithub_images/geog-fertile-low-startpoint.jpg)
 
-![geog-gt-no-vary](../IWTEgithub_images/geog-gt-no-vary.jpg)
+These are the variability settings used in conjunction with the above table:
 
 ![geog-gt-vary](../IWTEgithub_images/geog-gt-vary.jpg)
 
+Changing the fertile_low ground type variability settings all to 0 gives a map that is purely using the sand ground type, except along the shore line where the slope is using mud and gravel.
+
+![geog-gt-no-vary](../IWTEgithub_images/geog-gt-no-vary.jpg)
+
+Experimenting by changing just the gs_median values give the results shown for the values 7,8,9,10 and 15, values of 6 and below seemed to remove all variation.
+
 ![geog-gs-median-values](../IWTEgithub_images/geog-gs-median-values.jpg)
+
+Experimenting with gn_std_dev gave similar results, very low values switched off variation, values >10 gave a more speckled appearance.  Neither experiment changed which battle ground types were selected for the mix.
+
+Fade-in/out is difficult to understand, and needs work!!!!
+
+Experimenting with gn_bias doesn't seem to do anything in M2, and also seems to be set at 0.0 for all vanilla entries
 
 ## M2 specific elements
 
@@ -56,4 +70,4 @@ Be conservative when setting amounts of vegetation to add.  In the image above y
 
 
 
-gn bias doesn't seem to do anything in M2 and also seems to be set at 0.0 for all vanilla entries
+
