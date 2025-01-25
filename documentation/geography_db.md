@@ -26,14 +26,25 @@ You can add textures to ground_types that are currently listed as 'none', howeve
 You can click on one of the boxes to activate the drop down and select a different ground_type for each intersection of 'Hardness' and 'Quality'.
 
 
-### Getting from campaign ground_type to battle ground_type
+## Getting from campaign ground_type to battle ground type
 
-You'll have noticed from the texture list that the available 'ground_types' on the battle-map are different from the strat-map types.  The SGT_To_G-Hardness gives settings for each strat-map ground_type including selections for a g-hardness and g-quality combination.  These settings affect where in the G-Hardness_to_BGT table that strat-map ground_type will start to look for battle-map textures.  In the picture below you see that a fertile_medium pixel on map_ground_types.tga will trigger the battle map to use Shale/Qual_Normal, looking at the intersection of the Shale and Qual_Normal row/column you'll see that gives 'grass_dry'.  However that is just the starting point, other influences on the battle-map such as height/slope or proximity to water will affect which battle-ground-type is actually used.
+You'll have noticed from the texture list that the available 'ground_types' on the battle-map are different from the strat-map types.  The SGT_To_G-Hardness gives settings for each strat-map ground_type including selections for a g-hardness and g-quality combination.  These settings affect where in the G-Hardness_to_BGT table that strat-map ground type will start to look for battle-map textures.  In the picture below you see that a fertile_medium pixel on map_ground_types.tga will trigger the battle map to use Shale/Qual_Normal, looking at the intersection of the Shale and Qual_Normal row/column you'll see that gives 'grass_dry'.  However that is just the starting point, other influences on the battle-map such as height/slope or proximity to water will affect which battle ground type is actually used.
 
 ![geography-cgt-to-bgt](../IWTEgithub_images/geography-cgt-to-bgt.jpg)
 
+## Battle ground type variation
 
-### M2 specific elements
+The variability settings for each strat ground type affect 
+
+![geog-fertile-low-startpoint](../IWTEgithub_images/geog-fertile-low-startpoint.jpg)
+
+![geog-gt-no-vary](../IWTEgithub_images/geog-gt-no-vary.jpg)
+
+![geog-gt-vary](../IWTEgithub_images/geog-gt-vary.jpg)
+
+![geog-gs-median-values](../IWTEgithub_images/geog-gs-median-values.jpg)
+
+## M2 specific elements
 
 M2TW has the ability to regenerate the geography db file from the text file however this process wipes out all the distance colour values and can also cause memory problems as ALL the battlemap textures are read and held in memory.
 
