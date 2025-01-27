@@ -1,6 +1,6 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # M2TW unit meshes
-Battle-map unit models in M2TW are in .mesh format which differs substantially from the .cas format used for strat-map characters and battle-map units in RTW/RR.  A major difference is that the .mesh does not contain bone positions, e.g. no 'skeleton'.
+Battle-map unit models in M2TW are in .mesh format which differs substantially from the .cas format used for strat-map characters and battle-map units in RTW/RR.  The .mesh files do not A major difference is that the .mesh does not contain bone positions, e.g. no 'skeleton'.
 
 ## Double/single textures
 
@@ -39,7 +39,7 @@ Using any of the button processes above will have generated two task files:
 and  
 *iwte_extract_to_mesh_incoming_model_name_task*  
 
-Open the mesh_to_extract task and add any further animations you want included below the *<cas_file_full_path_in_action_list>* tag.  This will get you a task file that looks similar to the [example here](../task_file_examples/M2_UNIT_mesh_to_extract_with_anims_list_task.txt).
+Open the mesh_to_extract task and add any further animations you want included, each on a separate line, below the *<cas_file_full_path_in_action_list>* tag.  This will get you a task file that looks similar to the [example here](../task_file_examples/M2_UNIT_mesh_to_extract_with_anims_list_task.txt).
 
 Running that task file will generate an extract file that will show all the listed animations chained together.  Each anim will start with the main bone (e.g. pelvis) set at the end location of the previous anim, so that a sequence of stand_to_walk, walk, walk_to_stand anims will result in a smooth flow of movement.
 
