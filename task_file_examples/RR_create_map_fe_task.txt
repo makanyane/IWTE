@@ -1,0 +1,8 @@
+<task_id>                             create_map_fe                            # 
+<directory_in>      "J:\RRMods\My Mods\MM\data\terrain\campaign\imperial_campaign"  
+<map_pieces_longest_dimension>                      13                                                                   # 
+
+<directory_out>     "/MM_new_fe" 
+<map_heights_tga>                    "J:\RRMods\My Mods\MM\data\world\maps\base\map_heights.tga"
+<map_regions_tga>                    "J:\RRMods\My Mods\MM\data\world\maps\base\map_regions.tga" 
+<map_ground_types_tga>               "J:\RRMods\My Mods\MM\data\world\maps\base\map_ground_types.tga" 
