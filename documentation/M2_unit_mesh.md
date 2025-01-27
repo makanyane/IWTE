@@ -22,12 +22,28 @@ to make the amended mesh.  To accurately view how the uvs in the 1 to 2 zone ali
 
 ## Unit mesh to extract
 
-IWTE provides three buttons for the mesh_to_extract task process, they all launch the same task but will ask you for slightly different information.  To use choose the type of extract file you want first, glb/dae/ms3d, from the drop down box on settings.  This choice will be saved to your settings file. 
+IWTE provides three buttons for the **mesh_to_extract** task process, they all launch the same task but will ask you for slightly different information.  To use choose the type of extract file you want first, glb/dae/ms3d, from the drop down box on settings.  This choice will be saved to your settings file. 
 
 If you don't need an animation applied to the unit you can use any button A, B or C and simply press cancel when asked for the 2nd and 3rd file.  For double textured units select that option after menu option A or B.
 
 ![M2_unit_mesh_to_extract](../IWTEgithub_images/M2_unit_mesh_to_extract.jpg)
 
 To apply animations to a double textured unit you need either:  
-A - **Unit mesh/skel/casanim to extract > Double Textured** and a skeleton file and animation as obtained by unpacking with Toolbox of XIDX, or
+A - **Unit mesh/skel/casanim to extract > Double Textured** and a skeleton file and animation as obtained by unpacking with Toolbox of XIDX, or  
 B - **Unit mesh to extract > Double Textured** and Caliban/Devkit style full cas animations for the default (basepose) and your desired animation.
+
+## Adding multiple animations
+
+Using any of the button processes above will have generated two task files:  
+*iwte_mesh_to_extract_incoming_model_name_task*  
+and  
+*iwte_extract_to_mesh_incoming_model_name_task*  
+
+Open the mesh_to_extract task and add any further animations you want included below the *<cas_file_full_path_in_action_list>* tag.  This will get you a task file that looks similar to the [example here](../task_file_examples/M2_UNIT_mesh_to_extract_with_anims_list_task.txt).
+
+Running that task file will generate an extract file that will show all the listed animations chained together.  Each anim will start with the main bone (e.g. pelvis) set at the end location of the previous anim, so that a sequence of stand_to_walk, walk, walk_to_stand anims will result in a smooth flow of movement.
+
+When you run a mesh_to_extract task with animations IWTE will write a return extract_to_mesh task file which lists the names and start/end frames of each incoming anim.  This allows multiple animations to be edited in the same file and then be written out individually.
+See [unit animations in Blender](https://github.com/makanyane/IWTE/blob/main/documentation/unit_animations_in_blender.md) for some further information relevant to cas and mesh models.
+
+
