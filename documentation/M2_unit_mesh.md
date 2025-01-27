@@ -14,3 +14,5 @@ Opening the same model using IWTE
 
 ![M2_unit_as_double_textured](../IWTEgithub_images/M2_unit_as_double_textured.jpg)
 
+Assigning the attachment texture to characterlod0__attach and the main texture to characterlod0__main will give you a correct view of the model **IN BLENDER**.  The assignment of the textures cannot be saved to the .mesh file.  To get the textures used correctly in game you need to have all the uvs to be displayed on the main texture in the 0 to 1 range and all the uvs to be displayed on the attachment texture in the 1 to 2 range, export the file and use IWTE  
+**Mesh Models > Unit Extract to Mesh > Double Textured** to make the amended mesh.  To accurately view how the uvs in the 1 to 2 zone align you can toggle the 'Repeat Image' button in Blender.
