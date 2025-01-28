@@ -56,7 +56,21 @@ Experimenting with gn_std_dev gave similar results, very low values switched off
 
 Fade-in/out is difficult to understand, and needs work!!!!
 
-Experimenting with gn_bias doesn't seem to do anything in M2, and also seems to be set at 0.0 for all vanilla entries
+Experimenting with gn_bias doesn't seem to do anything in M2, and also seems to be set at 0.0 for all vanilla entries.
+
+## Variation by slope and starting position
+
+The following pictures use the same map_*.tga files and the same geography settings except for moving the 'starting point' for fertility_low, which is the only climate used.
+
+Starting at qual_very_high and swamp, which is the top right corner of the table gives the most variation on the sloping map:
+![geog-qual-vh-swamp-alt-textures-plus-vary_inandout-minus8](../IWTEgithub_images/geog-qual-vh-swamp-alt-textures-plus-vary_inandout-minus8.jpg)
+
+Qual_very_high and rock, at the bottom right corner gives variants from the bottle of the table only:
+![geog-qual-vh-rock-alt-textures-plus-vary_inandout-minus8](../IWTEgithub_images/geog-qual-vh-rock-alt-textures-plus-vary_inandout-minus8.jpg)
+
+Qual_none and rock, at the bottom left of the table gives least variants:
+![geog-qual-none-rock-alt-textures-plus-vary_inandout-minus8](../IWTEgithub_images/geog-qual-none-rock-alt-textures-plus-vary_inandout-minus8.jpg)
+
 
 ## M2 specific elements
 
