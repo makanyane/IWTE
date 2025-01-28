@@ -6,6 +6,12 @@ M2TW has a *descr_geography_new.db* file which can be regenerated from *descr_ge
 See also:
 * [Muizer's Guide to battlemap modification](https://www.twcenter.net/forums/showthread.php?55785-Muizer-s-guide-to-battlemap-modification) - to understand the db
 
+#### Table of Contents
+* [Editing geography db files in IWTE](#editing-geography-db-files-in-iwte)
+* [Getting from campaign ground_type to battle ground type](#getting-from-campaign-ground_type-to-battle-ground-type)
+* [Battle ground type variation](#battle-ground-type-variation)
+* [Variation by slope and starting position](#variation-by-slope-and-starting-position)
+* [M2 specific elements](#m2-specific-elements)
 
 ## Editing geography db files in IWTE
 
@@ -54,7 +60,7 @@ Experimenting by changing just the gs_median values give the results shown for t
 
 Experimenting with gn_std_dev gave similar results, very low values switched off variation, values >10 gave a more speckled appearance.  Neither experiment changed which battle ground types were selected for the mix.
 
-Fade-in/out is difficult to understand, and needs work!!!!
+Exact functioning of fade-in/out is difficult to understand, and needs work, however a high negative value for both fade in and fade out (e.g. -8 as shown in the section below) gives a smooth outline to the transition between battle ground types.
 
 Experimenting with gn_bias doesn't seem to do anything in M2, and also seems to be set at 0.0 for all vanilla entries.
 
