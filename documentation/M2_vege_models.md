@@ -20,13 +20,15 @@ NOTE:  Do not allow uv maps for the vege_models to exceed the 0 to 1 range.  Do 
 
 ## Double sided planes with co-planar normals
 
-The work around for achieving this in milkshape is explained in the TWC tutorial https://www.twcenter.net/forums/showthread.php?577141-IWTE-Vegetation-editing.  Unfortunately it isn't possible to get Blender to retain coplanar normals without adding extra non-shared vertexes to each triangle.  IWTE has a special  method of converting vege_models to retain double_sided sections.
+The work around for achieving this in milkshape is explained in the TWC tutorial https://www.twcenter.net/forums/showthread.php?577141-IWTE-Vegetation-editing.  Unfortunately it isn't possible to get Blender to retain co-planar normals without adding extra non-shared vertexes to each triangle.  IWTE has a special  method of converting vege_models to retain double_sided sections.
 
 An extract from a vanilla vege_model in Blender will look like the below picture, you'll see that many parts are double sided and have separate normals for each side at 90 degrees to the triangle plane.
 
 ![M2_vege_model_normals_in_blender](../IWTEgithub_images/M2_vege_model_normals_in_blender.jpg)
 
-Converted back to vege_model and viewed in IWTEs 3d view with normals switched on, you'll see those sections have been converted back to double sided with co-planar normals.
+Converted back to vege_model and viewed in IWTEs 3d view with normals switched on, you'll see those sections have been converted back to double sided with co-planar normals (they follow the plane of the triangle).
 
 ![M2_vege_model_normals_in_iwte](../IWTEgithub_images/M2_vege_model_normals_in_iwte.jpg)
+
+Trunk sections or other 'solid' objects where the reverse side cannot be seen should be made as normal single sided planes.  
 
