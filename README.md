@@ -40,11 +40,12 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
   * Editing [.worldpathfinding](documentation/M2_worldpathfinding.md) - controls where troops can stand/travel
   * Editing [.worldvegetation](documentation/M2_worldvegetation.md) - controls where grass/trees/shrubs are shown around the settlement
   * Editing [.worldterrain](documentation/M2_worldterrain.md) - controls heights around settlement
-  * Editing [Terrain Masks](documentation/Image_Editing_and_Conversion.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
+  * Editing [Terrain Masks](documentation/M2_worldterrain_masks.md#m2-terrain-mask-editing) - masks can be edited shown at actual size in relation to settlement outline and terrain.
 * Battlemap Environment
-  * Editing [vegetation.db](documentation/M2_vegetation_db.md)
   * Editing [Descr_geography_new.db](documentation/geography_db.md).
-  * Adding/amending of vegetation models and generation of vegetation sprites.
+  * Editing [vegetation.db](documentation/M2_vegetation_db.md)
+  * Creating/amending [vegetation models](documentation/M2_vege_models.md)
+  * Creating [vegetation sprites](documentation/M2_vege_sprites.md)
   * Editing [.lighting files](documentation/M2_battlemap_lighting.md)
   * Editing skydome mesh
 * Battlemap - Mesh Models - Editing of unit models and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
