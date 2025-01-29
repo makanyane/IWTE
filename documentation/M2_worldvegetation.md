@@ -8,7 +8,7 @@ All .worlds in M2TW battlemaps use a .worldvegetation file, the file controls wh
 * forest density
 * shrub density
 
-These elements will only appear if the climate the battle is being played on has them, as specified and controlled by the [vegetaion.db](M2_vegetation_db.md) and distribution in [geography.db](geography_db.md#m2-specific-elements).  The individual trees and forest density sections will produce the same selection of tree models, the individual tree section simply allows you to align them more specifically, e.g. if you want a tree to appear in a planting box.
+These elements will only appear if the climate the battle is being played on has them, as specified and controlled by the [vegetation.db](M2_vegetation_db.md) and distribution in [geography.db](geography_db.md#m2-specific-elements).  The individual trees and forest density sections will produce the same selection of tree models, the individual tree section simply allows you to align them more specifically, e.g. if you want a tree to appear in a planting box.
 
 #### Table of Contents
 
