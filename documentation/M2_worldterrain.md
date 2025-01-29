@@ -2,13 +2,7 @@
 # M2TW .worldterrain file
 
 Each .world (settlement, techtree, ambient or bridge) in M2TW battlemaps uses a .worldterrain file.  
-The worldterrain controls the terrain heights and how they merge with surroundings, it also loads masks and textures that are applied to the ground surface.  The merge applied to the heights will also control how much of the information on the .worldvegetation is applied.
-
-See also:
-* [M2TW Settlement Modding](M2_Settlement_Modding.md#m2tw-settlement-modding) - overview here
-* [M2 Terrain Mask Editing](Image_Editing_and_Conversion.md#m2-terrain-mask-editing)
-* [Files loaded from .worldterrain](M2_Settlement_Modding.md#files-loaded-from-worldterrain)
-* [.worldterrain - M2TW](https://wiki.twcenter.net/index.php?title=.worldterrain_-_M2TW) - on TWC Wiki
+The worldterrain controls the terrain heights and how they merge with surroundings, it also loads masks and textures that are applied to the ground surface.  The merge applied to the heights will also control how much of the information on the [.worldvegetation](M2_worldvegetation.md) is applied.
 
 #### Table of Contents
 * [.worldterrain file structure](#worldterrain-File-Structure)
@@ -16,6 +10,12 @@ See also:
 * [Resizing .worldterrain files](#resizing-worldterrain-files)
 * [Editing .worldterrain in IWTE 2d window](#editing-worldterrain-in-iwte-2d-window)
 * [Editing .worldterrain in Blender](#editing-worldterrain-in-blender)
+
+See also:
+* [M2TW Settlement Modding](M2_Settlement_Modding.md#m2tw-settlement-modding) - overview here
+* [M2 Terrain Mask Editing](Image_Editing_and_Conversion.md#m2-terrain-mask-editing)
+* [Files loaded from .worldterrain](M2_Settlement_Modding.md#files-loaded-from-worldterrain)
+* [.worldterrain - M2TW](https://wiki.twcenter.net/index.php?title=.worldterrain_-_M2TW) - on TWC Wiki
 
 In addition to the editing methods mentioned on this page the worldterrain > ms3d and back option still exists, however we do not advise using ms3d due to size and other limitations.
 
