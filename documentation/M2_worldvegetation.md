@@ -36,22 +36,22 @@ Use **Medieval 2 > Battle Map Settlements > Worldvegetation Editing > Create all
 ![M2_worldvegetation_create_tgas](../IWTEgithub_images/M2_worldvegetation_create_tgas.jpg)
 
 The .tgas produced will be in the same folder as your .worldvegetation and named as follows:
-* file_name_tree_veg.tga - single orange pixels for tree locations
-* file_name_grass_veg.tga - light green for grass, dark green or black for no grass
-* file_name_forest_veg.tga - grayscale with black for no forest
-* file_name_shrub_veg.tga - grayscale with black for no shrubs
+* *file_name_tree_veg.tga* - single orange pixels for tree locations
+* *file_name_grass_veg.tga* - light green for grass, dark green or black for no grass
+* *file_name_forest_veg.tga* - grayscale with black for no forest
+* *file_name_shrub_veg.tga* - grayscale with black for no shrubs
 
 ![M2_worldvegetation_tgas](../IWTEgithub_images/M2_worldvegetation_tgas.jpg)
 
 Amend the tga files as required and load them back in individually using the **Read (veg type) tga** buttons.  You will be asked for a .worldvegetation file to load into on each read tga process. Make sure you load the .worldvegetation that already has your amended information. e.g:
 * press Read tree tga
-* select file_name.worldvegetation
+* select *file_name.worldvegetation*
 * select your tree_veg.tga
-* file_name_**new_tree**.worldvegetation will be produced
+* *file_name_**new_tree**.worldvegetation* will be produced
 * press Read grass tga
-* select file_name_**new_tree**.worldvegetation
+* select *file_name_**new_tree**.worldvegetation*
 * select your grass_veg.tga
-* file_name_new_tree_**new_grass**.worldvegetation will be produced, etc.
+* *file_name_new_tree_**new_grass**.worldvegetation* will be produced, etc.
 When you have all the changes you want re-name the last .worldvegetation file so it can be used in game.
 
 ## Resizing .worldvegetation files
