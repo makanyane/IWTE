@@ -1,6 +1,6 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 
-M2TW uses vege_sprites to replace rendering of vege_models at a distance set by the vegetation.db file in combination with the users graphics settings.  The Vege_Sprites themselves are small binary files that list a diffuse and a normal texture and give coordinates to be used within those textures for 8 possible viewpoints.
+M2TW uses vege_sprites to replace rendering of [vege_models](M2_vege_models.md) at a distance set by the [vegetation.db](M2_vegetation_db.md) file in combination with the users graphics settings.  The Vege_Sprites themselves are small binary files that list a diffuse and a normal texture and give coordinates to be used within those textures for 8 possible viewpoints.
 
 ## Creating Vege_Sprites
 
