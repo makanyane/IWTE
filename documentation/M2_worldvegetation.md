@@ -21,6 +21,9 @@ See also:
 
 ## Editing .worldvegetation via tgas
 
+![M2_worldvegetation_create_tgas](../IWTEgithub_images/M2_worldvegetation_create_tgas.jpg)
+
+![M2_worldvegetation_tgas](../IWTEgithub_images/M2_worldvegetation_tgas.jpg)
 
 ## Resizing .worldvegetation files
 
