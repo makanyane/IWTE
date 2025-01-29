@@ -76,9 +76,11 @@ A complete .worldterrain file can be loaded in IWTE so the heights and merge ele
 
 ![M2_worldterrain_open2d.jpg](../IWTEgithub_images/M2_worldterrain_open2d.jpg)
 
-When you select the Edit option and zoom into to the 2d window you will be able to view the heights of each point.  If you load the 3 binaries for the .world and select *View World - 2d* for that you will see how the building mesh and other aspects relate.  There are various brush controls that allow you to edit each aspect of the terrain.  The heights element will also be viewable in the 3d window.
+When you select the Edit option and zoom into to the 2d window you will be able to view the heights of each point.  If you load the 3 binaries for the .world and select *View World - 2d* for that you will see how the building mesh and other aspects relate.  There are various brush controls that allow you to edit each aspect of the terrain.  The heights element will also be viewable in the 3d window.  There are a variety of colour range options which change the colour by height on the view, this is just a cosmetic change to help you visualise the heights.
 
 ![M2_worldterrain_edit2d.jpg](../IWTEgithub_images/M2_worldterrain_edit2d.jpg)
+
+When you save changes from the painter process window the new .worldterrain will be saved to **IWTEsave** folder.
 
 ## Editing worldterrain in Blender
 
@@ -92,5 +94,5 @@ When working on the terrain file in Blender it is important not to move any vert
 
 ![M2_worldterrain_in_blender.jpg](../IWTEgithub_images/M2_worldterrain_in_blender.jpg)
 
-When finished export to .dae or .glb from Blender, and use the Import Worldterrain function in IWTE.  You will be asked for a .worldterrain file to update first, this is required as the dae/glb does not store the mesh or merge information, only heights.
+When finished export to .dae or .glb from Blender, and use the Import Worldterrain function in IWTE.  You will be asked for a .worldterrain file to update first, this is required as the dae/glb does not store the textures or merge information, only heights.
 
