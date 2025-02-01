@@ -23,6 +23,28 @@ When effects are added to collisions they can be classed as 'light emitting'.  L
 
 ![M2_world_light_effects](../IWTEgithub_images/M2_world_light_effects.jpg)
 
-![M2_world_light_effects](../IWTEgithub_images/M2_world_light_damaged.jpg)
+Viewing with the *View objects last group* option selected shows where the damage effects are having most effect.
+
+![M2_world_light_effects_damaged](../IWTEgithub_images/M2_world_light_effects_damaged.jpg)
+
+Each vertex can be illuminated by up to 3 effects. Each complex can have up to 69 effects illuminating vertexes in its objects.  The multiple colours in the IWTE view occur as a different colour is used for 1st, 2nd and 3rd effects.  Each vertex holds the information:  
+*  Effect Number (in .world), Percentage Applied - for 1st effect if there is one
+*  Effect Number (in .world), Percentage Applied - for 2nd effect if there is one
+*  Effect Number (in .world), Percentage Applied - for 3rd effect if there is one
+
+The % applied has to be calculated and is used to simulate the fall off of illumination from the effect, the colour that is applied to the illumination effect in game is taken from the information in the effect_set in files such as descr_burning_building.txt.  If your .world or .animinstances have vertexes that include a reference to an effect number greater than the number of effects in that particular .world then you will get the 'disco lighting' bug, where the game doesn't know what colour it should be applying or when the effect is 'on'.
+
+The lighting effect information is not stored in world components exported to Milkshape or Blender. After amending world components in Milkshape/Blender and/or just exporting and re-importing them, you will need to reset lighting and shading to get the effect of effects back!
+
+## Resetting lighting and shading
+
+To reset the shading and lighting effects recorded on vertexes in the .world use screen/button  
+**Animations > Full world shading/effects inc anims**. Click OK if you wish to accept the default values, select unpacked data/blockset folder, then select your_mod/data/blockset folder if you have amended animations.
+
+![M2_world_light_effects_reset](../IWTEgithub_images/M2_world_light_effects_reset.jpg)
+
+If you increase the maximum effect distance for undamaged lights your lights will appear to be stronger in game and illuminate a wider area.  Setting the value too high can make the IWTE process very, very slow!
+
+IWTE takes into account structures that are in between the light source and the vertexes to allow intervening structures to cast shadows.  The minimum blocking distance is included to stop items such as grills around braziers, which look transparent in game due to alphad textures, from blocking out the lights behind within them.  
 
 
