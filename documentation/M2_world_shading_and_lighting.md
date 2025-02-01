@@ -2,7 +2,7 @@
 
 # M2TW world shading and lighting effects
 
-Buildings (or any mesh objects in a .world) have values for shading and influence from lighting effects assigned per vertex.  The shading value applies an adjustment from black to white as a modifier to the texture around each vertex.
+Buildings (or any mesh objects in a .world) have values for shading and influence from lighting effects assigned per vertex.  The shading value applies an adjustment from black to white as a modifier to the texture around each vertex.  Applying the full black shading makes buildings appear black in game, which is apparently how CA managed to create partly black settlements in a Steam update of M2!
 
 ## Shading effects
 The shading effect can be viewed in IWTE's 3d window.  The picture below shows vanilla stone_fort_c, you can see there is some shading around corners and under overhangs, and some random splotches on walls.
