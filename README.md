@@ -28,7 +28,7 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
     * Changing models using Blender
     * Adding or deleting structures and complexes
     * Managing/resetting [complex blocks](documentation/M2_world_complex_blocks.md)
-    * Adding effects and resetting effects/lighting
+    * Adding effects and [resetting effects/lighting](documentation/M2_world_shading_and_lighting.md)
     * Making objects work as walls/towers/gates
     * Assigning objects to perimeters
     * Adding on [wall deployment blocks](documentation/M2_building_on_wall_deployment.md) and link/ladders
