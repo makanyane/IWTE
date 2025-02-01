@@ -19,8 +19,10 @@ Exporting and re-importing parts of world meshes will therefore retain their ori
 
 ## Lighting effects
 
-When effects are added to collisions they can be classed as 'light emitting'.  Light emitting effects can have a value applied to surrounding vertexes which applies a percentage of the effect to that vertex when the effect is 'on'.  Vertexes that have a light effect can be viewed in IWTE 3d view.  In the view of stone_fort_c below the arched niche the arrow is indicating has an object using a torch effect in it, which causes the lighting effect.
+When effects are added to collisions they can be classed as 'light emitting'.  Light emitting effects can have a value applied to surrounding vertexes which applies a percentage of the effect to that vertex when the effect is 'on'.  Vertexes that have a light effect can be viewed in IWTE 3d view.  In the view of stone_fort_c below the arched niche the arrow is indicating has an object using a torch effect in it, which causes the lighting effect.  Most of the other areas that show effects are from overspill from damaged state fire effects.
 
 ![M2_world_light_effects](../IWTEgithub_images/M2_world_light_effects.jpg)
+
+![M2_world_light_effects](../IWTEgithub_images/M2_world_light_damaged.jpg)
 
 
