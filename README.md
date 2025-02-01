@@ -30,9 +30,10 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
     * Managing/resetting complex to block assignment
     * Making objects work as walls/towers/gates
     * Assigning objects to perimeters
-    * Adding on wall deployment blocks and link/ladders
+    * Adding on [wall deployment blocks](/M2_building_on_wall_deployment.md) and link/ladders
     * Adding/assigning collisions and assigning existing animations
-    * Creating new building animations
+    * [Editing and applying building animations](documentation/M2_building_animation_editing.md)
+    * [Creating new building animations in Blender](documentation/M2_building_animations_in_Blender.md)
     * Adding 'bridges'
     * Adding effects and resetting effects/lighting
     * Changing the initial deployment area outline
@@ -48,7 +49,7 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
   * Creating [vegetation sprites](documentation/M2_vege_sprites.md)
   * Editing [.lighting files](documentation/M2_battlemap_lighting.md)
   * Editing skydome mesh
-* Battlemap - Mesh Models - Editing of unit models and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
+* Battlemap - Mesh Models - Editing of [unit models](documentation/M2_unit_mesh.md) and banners. Editing of .mesh unit/siege models whilst merged to .cas skeleton and chained anims. Animation editing including use of animated bone_weapon groups. (via Blender/Max only)
 * Battlemap Units - [battle_models.modeldb](documentation/M2_modeldb.md) - Error checking, re-formatting and editing function via conversion to csv file and back.
 * Battlemap - [Model Traversable Network](documentation/M2_Model_Traversable_Network.md) - For siege ladders and towers, editing by conversion to .txt and back.
 * Battlemap - [Texture Conversion](documentation/Image_Editing_and_Conversion.md#m2-texture-conversion-options) - Single file and directory level conversion of texture>dds>texture and tga>texture
