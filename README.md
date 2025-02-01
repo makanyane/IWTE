@@ -30,7 +30,7 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
     * Managing/resetting complex to block assignment
     * Making objects work as walls/towers/gates
     * Assigning objects to perimeters
-    * Adding on [wall deployment blocks](/M2_building_on_wall_deployment.md) and link/ladders
+    * Adding on [wall deployment blocks](documentation/M2_building_on_wall_deployment.md) and link/ladders
     * Adding/assigning collisions and assigning existing animations
     * [Editing and applying building animations](documentation/M2_building_animation_editing.md)
     * [Creating new building animations in Blender](documentation/M2_building_animations_in_Blender.md)
