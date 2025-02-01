@@ -27,7 +27,8 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
   * Editing of .world, .worldcollision, .animinstances - these files inter-relate and are edited together, aspects include:
     * Changing models using Blender
     * Adding or deleting structures and complexes
-    * Managing/resetting complex to block assignment
+    * Managing/resetting [complex blocks](documentation/M2_world_complex_blocks.md)
+    * Adding effects and resetting effects/lighting
     * Making objects work as walls/towers/gates
     * Assigning objects to perimeters
     * Adding on [wall deployment blocks](documentation/M2_building_on_wall_deployment.md) and link/ladders
@@ -35,7 +36,6 @@ The following list is a quick round-up of IWTE's current capabilities for M2TW:
     * [Editing and applying building animations](documentation/M2_building_animation_editing.md)
     * [Creating new building animations in Blender](documentation/M2_building_animations_in_Blender.md)
     * Adding 'bridges'
-    * Adding effects and resetting effects/lighting
     * Changing the initial deployment area outline
     * Adding/changing plaza positions, techtree slots, road markers and defence points
   * Editing [.worldpathfinding](documentation/M2_worldpathfinding.md) - controls where troops can stand/travel
