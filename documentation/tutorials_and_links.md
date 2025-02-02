@@ -12,6 +12,8 @@ https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions
 Kirsi's - mapping guide  
 https://drive.google.com/file/d/1b4hKawiIf2ZoqsBnGUNpsGQowbgMrusI/view?usp=drivesdk
 
+How to create brand new Engines in RR - by Sirrianus Dagovax
+https://www.youtube.com/watch?v=5fXI1Wkgegw
 
 ## Medieval 2
 
