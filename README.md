@@ -1,14 +1,10 @@
 ![IWTE banner](IWTEgithub_images/IWTEbanner.jpg)
-# IWTE
-# *****PLEASE NOTE THIS REPOSITORY IS WIP AND SOME TASKS/INFO RELATE TO THE AS YET UNRELEASED 2025 VERSION OF IWTE*****
+# IWTE 
+### The documentation in this depository is still a work in progress - the information relates to IWTE_25_02A and later
 
 Repository for the IWTE tool, developed by wilddog to enable modding of the Total War games, Medieval 2 Total War, Rome Total War and Rome Remastered.
 
-Information about IWTE and Total War modding is also available on [TWC WIKI](https://wiki.twcenter.net/index.php?title=IWTE)\
-Other tutorials and links are listed [here](documentation/tutorials_and_links.md).
-
-Information in this repository relates to using IWTE in conjunction with [Blender](https://www.blender.org/).  Blender is a powerful and FREE 3d modelling program. 
-Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are not supported by the IWTE team.  The original Milkshape (ms3d) options have been retained but are not generally detailed here.  If you are new to modding with IWTE we do not recommend using ms3d as it has size and other limitations.
+Information in this repository relates to using IWTE in conjunction with [Blender](https://www.blender.org/).  Blender is a powerful and FREE 3d modelling program. Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are not supported by the IWTE team.  The original Milkshape (ms3d) options have been retained but are not generally detailed here.  If you are new to modding with IWTE we do not recommend using ms3d as it has size and other limitations.
 
 #### Table of Contents
 * [Functions for M2TW](#Functions-for-M2TW)
@@ -19,6 +15,12 @@ Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are no
 * [Launching and Error Reporting](#Launching-and-Error-Reporting)
 * [About IWTE](#About-IWTE)
 * [License](#License)
+
+#### See also
+* [Tutorials and links](documentation/tutorials_and_links.md)
+* IWTE section on [TWC WIKI](https://wiki.twcenter.net/index.php?title=IWTE)
+* IWTE project section on [TWC Forum](https://www.twcenter.net/forums/forumdisplay.php?2047-The-IWTE-Project)
+
 
 ## Functions For M2TW
 The following list is a quick round-up of IWTE's current capabilities for M2TW:
