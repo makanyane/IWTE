@@ -126,6 +126,8 @@ The tool's early development for M2TW settlements was based partly on prior rese
 
 IWTE was created for use with our own mod and is provided free of charge to help other modders. Use of the tool is entirely at your own risk.
 
+The change log for IWTE can be viewed [here](documentation/IWTE_change_log.md).
+
 # License
 **IWTE disclaimer**  
 IWTE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
