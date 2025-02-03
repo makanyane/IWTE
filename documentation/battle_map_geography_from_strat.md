@@ -6,7 +6,7 @@ This article uses images from M2TW but similar principles (except vegetation dis
 
 IWTE was used to change the geography.db settings for demonstration purposes.  It's quite hard to identify where changes to the battle map come from unless you remove a lot of variability from the climate/s you are testing!
 
-The picture below shows our test battlfield which is completely flat in map_heights and gas ground_type stripes of fertility_low and fertility_medium. In this pic the climate is rocky_desert which has been set up to have no ground_type or height variation and to use bright coloured battlefield textures with their names added:
+The picture below shows our test battlfield which is completely flat in map_heights and has ground_type stripes of fertility_low and fertility_medium. In this pic the climate is rocky_desert which has been set up to have no ground_type or height variation and to use bright coloured battlefield textures with their names added:
 
 ![strat_to_battle_one_climate](../IWTEgithub_images/strat_to_battle_one_climate.jpg)
 
