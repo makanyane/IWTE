@@ -12,11 +12,11 @@ The picture below shows our test battlfield which is completely flat in map_heig
 
 The added overlay by the mini-map attempts to show how the strat map ground types are influencing the map.
 
-Adding some pixels of sandy desert climate results in the picture below.  The textures used are still from rocky desert but the ground type variation factors in the corner have been picked up from sandy desert's settings.
+Adding some pixels of sandy desert climate towards the top left corner results in the picture below.  The textures used are still from rocky desert but the other climate's ground type variation factors are being used in the corner.
 
 ![strat_to_battle_with_part_other_gvary](../IWTEgithub_images/strat_to_battle_with_part_other_gvary.jpg)
 
-In the image below the climate has been switched to only include sandy desert. Sandy desert has been altered in the geography.db to have a very obvious height variation applied, and distribution of forest and rocks increased. 
+In the image below the climate has been switched to only include sandy desert. Sandy desert has now been altered in the geography.db to have a very obvious height variation applied, and distribution of forest and rocks increased. 
 
 ![strat_to_battle_other_climate](../IWTEgithub_images/strat_to_battle_other_climate.jpg)
 
