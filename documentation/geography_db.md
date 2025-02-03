@@ -34,6 +34,8 @@ You can click on one of the boxes to activate the drop down and select a differe
 
 ## Getting from campaign ground_type to battle ground type
 
+For an explanation of how the battle map is influenced by the pixels on map_ground_types.tga etc please see [battle_map_geography_from_strat.md](https://github.com/makanyane/IWTE/blob/main/documentation/battle_map_geography_from_strat.md)
+
 You'll have noticed from the texture list that the available 'ground_types' on the battle-map are different from the strat-map types.  The SGT_To_G-Hardness gives settings for each strat-map ground_type including selections for a g-hardness and g-quality combination.  These settings affect where in the G-Hardness_to_BGT table that strat-map ground type will start to look for battle-map textures.  In the picture below you see that a fertile_medium pixel on map_ground_types.tga will trigger the battle map to use Shale/Qual_Normal, looking at the intersection of the Shale and Qual_Normal row/column you'll see that gives 'grass_dry'.  However that is just the starting point, other influences on the battle-map such as height/slope or proximity to water will affect which battle ground type is actually used.
 
 ![geography-cgt-to-bgt](../IWTEgithub_images/geography-cgt-to-bgt.jpg)
