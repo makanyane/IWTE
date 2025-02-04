@@ -1,5 +1,7 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
-# Rome Remastered Map Making using IWTE
+# The Rome Remastered Campaign Map
+
+For more information about the RR map please see: https://wiki.twcenter.net/index.php?title=Creating_New_Campaign_Map_in_Rome_Remastered
 
 The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW. It requires various mesh components and textures to be made by the modder. The components required include:
 * mesh pieces
@@ -9,14 +11,19 @@ The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW
 * river mesh
 * frame and textures 
 * map tiles and coastlines text files
-
-IWTE will produce these based on the data/world/maps/ tga files.
+* The picture below shows some of the components converted and opened in Blender
 
 ![image](../IWTEgithub_images/RR-mesh-components.jpg)
 
-## Main Differences between Task Versions 
+## Rome Remastered Map Making using IWTE
+
+IWTE will produce all the map components based on the data/world/maps/ tga files and your choice of input textures.
 
 IWTE's original version of the map mesh process was released soon after Rome Remastered.  V2 is more recent and by default uses some textures built into IWTE which attempt to emulate a vanilla feel on the map.
+
+As the map mesh can vary from a strict interpretation of the campaign map_*.tga files IWTE has introduced several new features that allow more variety, including a 'map_heights_lakes.tga' that is used to avoid coastlines and excessive sinking of inland lakes, and dummy map climates that can be used to alter the albedo textures generated.
+
+## Main Differences between Task Versions 
 
 | | Original Version | Version V2 | Notes |
 |---|-------------------------|---|---|
