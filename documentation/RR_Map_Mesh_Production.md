@@ -22,19 +22,18 @@ IWTE will produce all the map components based on the data/world/maps/ tga files
 The simplest possible version of this process can be run from the buttons:   
 *IWTE > Rome Remastered > Create Strat Map Mesh*   
 button.  This will produce the mesh and all necessary components including vanilla style textures.  
-The only inputs required are the FOLDER containing your;  
+The only inputs required are:
+* The FOLDER containing your;  
   * map_regions.tga
   * map_features.tga
   * map_heights.tga
   * map_ground_types.tga
   * map_climates.tga
   * map_snow.tga		(optional - if you want snow applied to your winter textures)
-  * map_heights_lakes.tga	(optional - use if you want lakes shown on the mesh higher than sea level and without surf)  
-Specify your output folder - if this folder has the same name as your campaign folder the text files will be created with the correct path.  If you use a differently named folder you will have to manually edit the descr_map_coastlines.txt and descr_map_tiles.txt
-
-If you specify the folder:
+  * map_heights_lakes.tga	(optional - use if you want lakes shown on the mesh higher than sea level and without surf) 
+* The FOLDER you want the output written in - if this folder has the same name as your campaign folder the text files will be created with the correct path.  If you use a differently named folder you will have to manually edit the descr_map_coastlines.txt and descr_map_tiles.txt.  If you specify the actual folder:  
 	*your_mod/data/terrain/campaign/campaign_name*
-then all the files will be placed in position ready to be used in game.
+then all the files will be placed directly in position ready to be used in game.
 
 Running the process from the button will generate a task file with the task ID **create_map_pieces_v2** for you,  which you can use to repeat the same process or amend to adjust settings.
 
