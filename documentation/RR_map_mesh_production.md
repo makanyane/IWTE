@@ -1,10 +1,18 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # The Rome Remastered campaign map
 
-The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW. It requires various mesh components and textures to be made by the modder. More information about the map is available on [TWC Wiki](https://wiki.twcenter.net/index.php?title=Creating_New_Campaign_Map_in_Rome_Remastered).
+The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW. It requires various mesh components and textures to be made by the modder.
 
-The picture below shows some of the components converted and opened in Blender
+#### Table of Contents
+* [About the Rome Remastered campaign map](https://github.com/makanyane/IWTE/edit/main/documentation/RR_map_mesh_production.md#about-the-rome-remastered-campaign-map)
+* [Rome Remastered map making using IWTE](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#rome-remastered-map-making-using-iwte)
+* [Alternative options](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#alternative-options)
+* [Version _V2 task file settings](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#version-_v2-task-file-settings)
+* [Changing textures](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#changing-textures)
 
+## About the Rome Remastered campaign map
+
+The picture below shows some of the components of the 3d map converted and opened in Blender
 ![RR-mesh-components](../IWTEgithub_images/RR-mesh-components.jpg)
 
  The components required include:
@@ -15,6 +23,8 @@ The picture below shows some of the components converted and opened in Blender
 * river mesh
 * frame and textures 
 * map tiles and coastlines text files
+
+More information about the map is available on [TWC Wiki](https://wiki.twcenter.net/index.php?title=Creating_New_Campaign_Map_in_Rome_Remastered).
 
 
 ## Rome Remastered map making using IWTE
