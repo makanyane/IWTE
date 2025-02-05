@@ -1,6 +1,8 @@
 ![IWTE banner](../IWTEgithub_images/IWTEbanner.jpg)
 # Rome Remastered Map Mesh - Version Options
 
+For information on the latest process please see [RR_map_mesh_production.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md)
+
 IWTE's original version of the map mesh process was released soon after Rome Remastered.  V2 is more recent and by default uses some textures built into IWTE which attempt to emulate a vanilla feel on the map.
 
 As the map mesh can vary from a strict interpretation of the campaign map_*.tga files IWTE introduced several new features that allow more variety, including a 'map_heights_lakes.tga' that is used to avoid coastlines and excessive sinking of inland lakes, and dummy map climates that can be used to alter the albedo textures generated.  Dummy climates are an example of giving IWTE different data to that which will be used in game, this is fine but should be used with caution in case it confuses players about where they can move, or what they should expect on a battle map.
