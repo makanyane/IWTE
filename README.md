@@ -79,6 +79,7 @@ The following list is a quick round-up of IWTE's current capabilities for RTW (i
 
 ## Functions for Rome Remastered Only
 
+* Campaign Map - [Simple 3d Map Creation Method](documentation/RR_map_mesh_simple_method.md) - Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
 * Campaign Map - [Map Mesh Creation](documentation/RR_Map_Mesh_Production.md) - Provides various options for creating the 3d map mesh and textures required in Rome Remastered.
 * Campaign Map - [Creating Feral 2d Map](documentation/RR_map_mesh_create_feral_map.md) - Generates a large tga view from the map mesh and textures produced by the map mesh creation process.
 * Units and Strat Figures - [Character Extraction](documentation/RR_Character_Extraction.md) - Extracts and converts .cas files for battlemap units and campaign map figures from Rome Remastered .pak files.
