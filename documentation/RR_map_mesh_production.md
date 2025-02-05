@@ -60,27 +60,22 @@ as part of the process IWTE will modify the cas pieces uv mapping and produce th
 <task_id>   **create_map_pieces_v2** 
 
 
-## Additional Settings
-
-TO BE CHECKED
-
 ## Changing Textures 
 
 To change the textures used away from the default ones included in IWTE.exe add a tag and path to your task file, e.g.
-	<strat_map_texture_descr>        "D:\IWTE_folder\my_strat_map_texture_descr.txt" 
-That text file will then control the textures used for each climate/ground_type/height_zone combination.
+	<strat_map_texture_descr>        "D:\IWTE_folder\my_strat_map_texture_descr.txt"  
+If you use a relative path like  
+	<strat_map_texture_descr>        "\my_folder\my_strat_map_texture_descr.txt"  
+that path will be RELATIVE TO THE LOCATION OF THE IWTE EXE
 
-EXAMPLE TEXTURE DESCR FILES
-	tutorials_and_guides/RR_MAP_v2_TEXTURES_vanilla_example_texture_descr.txt
-shows the set-up used to generate a set of textures that look similar in style to the RR vanilla map using the inbuilt IWTE default/generated textures
+The text file specified will then control the textures used for each climate/ground_type/height_zone combination.
 
-*RR_MAP_v2_TEXTURES_basic_example_texture_descr.txt*  
-gives a simplified set-up removing the additional tags for steep/valley/flat/ridge etc, and removing the variation by height zone (it is not recommended that you use this version as-is, it's just to show that you don't have to include the extra tags/zones)
+Some example text files are provided here:
+* [RR_MAP_v2_TEXTURES_vanilla_example_texture_descr.txt](https://github.com/makanyane/IWTE/blob/main/documentation/misc_files/RR_MAP_v2_TEXTURES_vanilla_example_texture_descr.txt) - is very similar to the default texture set-up included INSIDE IWTE.exe
+* [RR_MAP_v2_TEXTURES_basic_example_texture_descr.txt](https://github.com/makanyane/IWTE/blob/main/documentation/misc_files/RR_MAP_v2_TEXTURES_basic_example_texture_descr.txt) - is a reduced version to show what can be omitted if you do not wish to take advantage of height zones or the ridge/peak/valley/flat additional 'ground_types'
+* [RR_MAP_v2_TEXTURES_own_textures_example_texture_descr.txt](https://github.com/makanyane/IWTE/blob/main/documentation/misc_files/RR_MAP_v2_TEXTURES_own_textures_example_texture_descr.txt) - shows what a simple file using some of the new ground_type tags and your own textures could look like - the example is from a work-in-progress mod based on Britain, the climate variations are minimal so the climate default textures are used for most climates except where variations such as white cliffs are required
 
-* RR_MAP_v2_TEXTURES_own_textures_example_texture_descr.txt*
-shows what a simple file using some of the new ground_type tags and your own textures could look like - the example is from a work-in-progress mod based on Britain, the climate variations are minimal so the climate default textures are used for most climates except where variations such as white cliffs are required
-
-Paths inside the texture descr files are relative, those starting \iwtepack will look inside the IWTE.exe
+Paths inside the texture descr files are relative, those starting \iwtepack will look inside the IWTE.exe regardless of the location of the texture descr file, all other paths will be RELATIVE TO THE TEXTURE DESCR FILE.
 
 ### Recommended Further Reading (V2)
 TWC Wiki:	https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions
