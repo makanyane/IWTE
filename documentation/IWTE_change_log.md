@@ -2,8 +2,60 @@
 
 When using IWTE we recommend always using the most up-to-date version, but also keep a copy of version/s you have been using successfully.  Sometimes a version upgrade can introduce a problem on a specific process and we may have to advise you to return to an earlier version until the problem is fixed.
 
-## Changes in reverse date order
+##  RR Map Mesh Change Notes       
+IWTE_v22_02_B : added <sea_drop_list> and <drop_loop_factor> to control drop in sea depths
 
+IWTE_v22_06_C : added beach parameters
+```
+# beach related parameters
+<beach_factor>                    0.50               # 0 to 1 ratio for beach v non beach texture (higher makes beach color stronger)
+<beach_rgb_list>                 208 187 161         # RGB color for the beach)
+<beach_high>                      1.1                # Beach height high point (beach will cover up to this height at 100 percent color)
+<beach_merge_high>                1.5                # additional height to merge beach color eg merge from 1.1 to 2.6
+```
+IWTE_v22_07_A : added parameters
+```
+# added 4 dummy climates - they can be used in the climates tga that IWTE will use but should NOT be used in game.
+# set up is the same as other climates and are identified by the rgb values indicated.
+<dummy_white_gt_dir>                           "I:\IWTE_v22_07_A\base-textures\dummy_white"		#255 255 255
+<dummy_black_gt_dir>                           "I:\IWTE_v22_07_A\base-textures\dummy_black"		#0 0 0
+<dummy_green_gt_dir>                           "I:\IWTE_v22_07_A\base-textures\dummy_green"		#0 255 0
+<dummy_blue_gt_dir>                           "I:\IWTE_v22_07_A\base-textures\dummy_blue"		#0 0 255
+
+#river height parameter value is equivalent to applying a greyscale reduction. 
+#if you use extreme values you will get extreme results and I would advise amending your TGA heights.
+<river_drop_height>                     1.5                     # rgb equivalent drop in river height. A value above 10 may look extreme and best to amend your map heights tga
+
+#Added parameters to set the background colors for River (beds/edges), Fords, and Volcanos.
+#They are RGB values
+<river_rgb_list>                 75 67 55                      # rgb for river bed and edge
+<ford_rgb_list>                  146 125 88                    # rgb for Ford edge 
+<volcano_rgb_list>               101 90 73                     # rgb for volcano
+```
+IWTE_v22_07_C : parameter for textures
+```
+<texture_size>        1024             # will generate textures at 2048 pixel size instead of 2048. You need to make sure your textures tile correctly.
+```
+
+IWTE_v23_02_B
+```
+list of dummy climates has been updated.
+ <dummy_black_gt_dir>            "I:\IWTE_v23_02_B\base-textures\dummy_black"		# 0 0 0 has been removed (due to a clash within IWTE).
+
+<dummy_white_gt_dir>             "I:\IWTE_v22_07_A\base-textures\dummy_white"		# 255 255 255 existing
+<dummy_green_gt_dir>             "I:\IWTE_v22_07_A\base-textures\dummy_green"		#   0 255   0 existing
+<dummy_blue_gt_dir>              "I:\IWTE_v22_07_A\base-textures\dummy_blue"		#   0   0 255 existing
+
+<dummy_yellow_gt_dir>            "I:\IWTE_v23_02_B\base-textures\dummy_yellow"            # 255 255   0 added
+<dummy_cyan_gt_dir>              "I:\IWTE_v23_02_B\base-textures\dummy_cyan"              #   0 255 255 added
+<dummy_magenta_gt_dir>           "I:\IWTE_v23_02_B\base-textures\dummy_magenta"           # 255   0 255 added
+<dummy_navy_gt_dir>              "I:\IWTE_v23_02_B\base-textures\dummy_navy"              #   0   0 128 added
+<dummy_grey_gt_dir>              "I:\IWTE_v23_02_B\base-textures\dummy_grey"              # 128 128 128 added
+<dummy_purple_gt_dir>            "I:\IWTE_v23_02_B\base-textures\dummy_grey"              # 128   0 128 added
+<dummy_silver_gt_dir>            "I:\IWTE_v23_02_B\base-textures\dummy_grey"              # 192 192 192 added 
+```
+
+## Other Changes in reverse date order
 
 with version24_09_A (bug fixes)
 1) M2/RR  - milkshape bug fix (format type).
@@ -273,9 +325,6 @@ with version 22_01_A
         New skeleton from Model option (RR versions only - also modifies the unpacked animations referenced in the unpacked skeleton)
         YOU need to separately convert OG stuff to RR versions before using any of the above.
 6) RR - Further speed up on Map texturing.
-
-
-
 
 
 ## Copy of some earlier release information
