@@ -22,22 +22,16 @@ The only inputs required are:
 	*your_mod/data/terrain/campaign/campaign_name*
 then all the files will be placed directly in position ready to be used in game.
 
-Running the process from the button will generate a task file with the task ID **create_map_pieces_v2** for you,  which you can use to repeat the same process or amend to adjust settings.
+Running the process from the button will generate a task file with the task ID **create_map_pieces_v2** for you,  which you can use to repeat the same process or amend to adjust settings.  See [RR_map_mesh_production.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md) for more details.
 
 To create the large 2d map and radar maps also needed in game see [RR_map_mesh_create_feral_map.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_create_feral_map.md) 
 
 ### Region Boundaries at Rivers
-For region boundaries that align properly with rivers you WILL NEED to copy in the supplied  
-*descr_aerial_map_tile_models.txt*  
+For region boundaries that align properly with rivers you should copy the *descr_aerial_map_tile_models.txt* and *river_a.cas* supplied in the IWTE folder into your mod on these paths:  
 
-text file into the folder:  
-*...mod_name/data/*   
-
-and add the supplied or created  
-*rivers_a.cas*  
-
-file to the folder:  
-*...mod_name/data/terrain/aerial_map/tile_models/river_a*  
+*...mod_name/data/descr_aerial_map_tile_models.txt*    
+  
+*...mod_name/data/terrain/aerial_map/tile_models/river_a/rivers_a.cas* 
 
 Ignoring both files will result in misalignment between rivers and region borders, adding one but not both will result in very messed up region borders!
 
