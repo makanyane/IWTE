@@ -47,7 +47,7 @@ Both map generation processes contain options to accentuate certain features and
 
 ## Version _V2 task file settings
 
-<task_id>   **create_map_pieces_v2** 
+    <task_id>   create_map_pieces_v2
 
 See task file example:  
 * [RR_MAP_MESH_v2_vanilla_style_textures_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_MAP_MESH_v2_vanilla_style_textures_task.txt) - shows optional tags for altering various settings
@@ -96,9 +96,8 @@ Ignoring both files will result in misalignment between rivers and region border
 ## Large Maps with a Large Number of Textures
 Very large maps which have hundreds of piece tiles may get the dissappearing frame bug due to too many textures.  
 
-  **combine_piece_textures**   
-task can be used to join 4 adjoining textures into one - this should be applied to the textures whilst they are in tga format
-as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
+    <task_id>     combine_piece_textures  
+task can be used to join 4 adjoining textures into one - as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
 
 
 
