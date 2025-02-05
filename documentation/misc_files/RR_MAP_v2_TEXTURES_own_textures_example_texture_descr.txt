@@ -1,0 +1,311 @@
+;climate setup for strat map generation
+;NOTE THESE TEXTURES ARE NOT INCLUDED IN THE IWTE PACKAGE - IT'S JUST AN EXAMPLE OF WHAT SPECIFYING YOUR OWN TEXTURES MIGHT LOOK LIKE!
+
+climate default
+{
+	sea_zone
+	{
+        	heights -999 -999
+
+                default_gt       		\textures\pkh\sea_shallow.tga
+		sea_shallow			\textures\pkh\sea_shallow.tga
+       		sea_deep			\textures\pkh\sea_deep.tga
+       		ocean				\textures\pkh\ocean.tga
+                shore_gt			\textures\pkh\shore.tga
+	}
+        land_zone 
+	{
+        	heights 0.0 0.15
+
+		sea_shallow			\textures\pkh\sea_shallow.tga		\textures\pkh\beach_bump.tga	
+       		sea_deep			\textures\pkh\sea_deep.tga		\textures\pkh\beach_bump.tga
+       		ocean				\textures\pkh\ocean.tga			\textures\pkh\beach_bump.tga
+		beach				\textures\pkh\beach.tga			\textures\pkh\beach_bump.tga
+		swamp				\textures\pkh\swamp.tga			\textures\pkh\swamp_bump.tga
+		fertility_low			\textures\pkh\fertility_low.tga		\textures\pkh\plain_bump.tga							
+		fertility_medium		\textures\pkh\fertility_medium.tga		\textures\pkh\plain_bump.tga								
+		fertility_high			\textures\pkh\fertility_high.tga		\textures\pkh\fertility_high_bump.tga							
+		forest_dense			\textures\pkh\hills.tga			\textures\pkh\forest_sparse_bump.tga					
+		forest_sparse			\textures\pkh\forest_sparse.tga		\textures\pkh\forest_sparse_bump.tga				
+		wilderness			\textures\pkh\wilderness.tga			\textures\pkh\plain_bump.tga		
+		hills				\textures\pkh\hills.tga			\textures\pkh\hills_bump.tga		
+		hills_ridge			\textures\pkh\hills.tga			\textures\pkh\hills_bump.tga			
+		hills_valley			\textures\pkh\hills.tga			\textures\pkh\hills_bump.tga	
+		hills_steep			\textures\pkh\mountains_steep.tga		\textures\pkh\mountains_steep_bump.tga
+		mountains_low			\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga				
+		mountains_low_ridge		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga			
+		mountains_low_valley		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga				
+		mountains_low_flat		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga	
+		mountains_low_steep		\textures\pkh\mountains_steep.tga		
+		mountains_high			\textures\pkh\mountains_high_foot.tga			
+		mountains_high_ridge		\textures\pkh\mountains_high_ridge.tga			
+		mountains_high_valley		\textures\pkh\mountains_high_valley.tga		
+		mountains_high_flat		\textures\pkh\mountains_high_flat.tga			
+		mountains_high_steep		\textures\pkh\mountains_steep.tga
+                cliff				\textures\pkh\mountains_steep.tga            
+                river_bed_gt			\textures\pkh\swamp_dark.tga
+                river_gt			\textures\pkh\mountains_low.tga
+                ford_gt				\textures\pkh\ford.tga
+                shore_gt			\textures\pkh\shore.tga
+                volcano_gt			\textures\pkh\mountains_high.tga
+                lake				\textures\pkh\swamp_dark.tga			\textures\pkh\swamp_bump.tga
+                high_snow_gt			\textures\pkh\mountains_high_red.tga
+                snow_gt				\textures\pkh\mountains_high_red.tga
+        }
+        zone2
+	{
+        	heights 20.00 35.0
+
+		mountains_low			\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga		
+		mountains_low_ridge		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga			
+		mountains_low_valley		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga				
+		mountains_low_flat		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga		
+		mountains_high			\textures\pkh\mountains_high_foot.tga		
+		mountains_high_ridge		\textures\pkh\mountains_high_ridge.tga		
+		mountains_high_valley		\textures\pkh\mountains_high_valley.tga		
+		mountains_high_flat		\textures\pkh\mountains_high_flat.tga
+        }
+        zone3
+        {
+        	heights 45.00 60.0
+
+		mountains_low			\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga		
+		mountains_low_ridge		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga		
+		mountains_low_valley		\textures\pkh\mountains_mid.tga		\textures\pkh\mountains_mid_bump.tga		
+		mountains_low_flat		\textures\pkh\mountains_high_flat.tga		
+		mountains_high			\textures\pkh\mountains_high.tga		
+		mountains_high_ridge		\textures\pkh\mountains_high_ridge.tga		
+		mountains_high_valley		\textures\pkh\mountains_high_valley.tga	
+		mountains_high_flat		\textures\pkh\mountains_high_flat.tga
+        }
+        zone4
+        {
+        	heights 65.0 80.0
+
+		mountains_low			\textures\pkh\mountains_high_mid.tga	
+		mountains_low_ridge		\textures\pkh\mountains_high_ridge.tga	
+		mountains_low_valley		\textures\pkh\mountains_high_valley.tga		
+		mountains_low_flat		\textures\pkh\mountains_high_flat.tga	
+		mountains_high			\textures\pkh\mountains_high_mid.tga	
+		mountains_high_ridge		\textures\pkh\mountains_high_ridge.tga		
+		mountains_high_valley		\textures\pkh\mountains_high_valley.tga	
+		mountains_high_flat		\textures\pkh\mountains_high_flat.tga
+        }
+        zone5
+        {
+        	heights 90.0 110.0
+
+		mountains_low			\textures\pkh\mountains_high_high.tga		
+		mountains_low_ridge		\textures\pkh\mountains_high_ridge.tga	
+		mountains_low_valley		\textures\pkh\mountains_high_valley.tga		
+		mountains_low_flat		\textures\pkh\mountains_high_flat.tga		
+		mountains_high			\textures\pkh\mountains_high_high.tga			
+		mountains_high_ridge		\textures\pkh\mountains_high_ridge.tga		
+		mountains_high_valley		\textures\pkh\mountains_high_valley.tga		
+		mountains_high_flat		\textures\pkh\mountains_high_flat.tga
+        }
+}
+
+
+climate rocky_desert
+{
+	sea_zone
+	{
+		sea_shallow			\textures\pkh\sea_shallow_rocky.tga			\textures\pkh\sea_shallow_rocky_bump.tga				
+       		cliff				\textures\pkh\sea_shallow_rocky.tga			\textures\pkh\sea_shallow_rocky_bump.tga		
+                shore_gt			\textures\pkh\sea_shallow_rocky.tga			\textures\pkh\sea_shallow_rocky_bump.tga		
+	}
+        land_zone 
+	{
+
+        }
+        zone2
+	{
+
+        }
+        zone3
+	{
+	
+        }
+        zone4
+	{
+
+        }
+        zone5
+	{
+	
+        }
+
+}
+;southern chalk white cliffs
+climate sandy_desert
+{
+       sea_zone 
+	{
+                cliff				\textures\pkh\mountains_steep_white.tga
+        }
+        land_zone 
+	{
+
+                cliff				\textures\pkh\mountains_steep_white.tga
+		hills				\textures\pkh\hills_white.tga		\textures\pkh\hills_bump.tga		
+		hills_ridge			\textures\pkh\hills_white.tga		\textures\pkh\hills_bump.tga			
+		hills_valley			\textures\pkh\hills_white.tga		\textures\pkh\hills_bump.tga	
+		forest_dense			\textures\pkh\hills_white.tga		\textures\pkh\forest_sparse_bump.tga	
+        }
+ 
+}
+
+climate alpine
+{
+        land_zone 
+	{
+
+        }
+
+
+}
+;snowy scotland
+climate sub_arctic
+{
+	sea_zone
+	{
+
+        }
+        land_zone 
+	{				
+		
+		forest_sparse			\textures\pkh\forest_sparse_dark.tga			\textures\pkh\forest_sparse_bump.tga
+		fertility_high			\textures\pkh\fertility_high_dark.tga			\textures\pkh\fertility_high_bump.tga
+
+        }
+
+}
+;south moor and red sandstone - no snow
+climate mediterranean
+{
+        land_zone 
+	{
+		hills				\textures\pkh\hills_moor.tga		\textures\pkh\hills_bump.tga		
+		hills_ridge			\textures\pkh\hills_moor.tga		\textures\pkh\hills_bump.tga			
+		hills_valley			\textures\pkh\hills_moor.tga		\textures\pkh\hills_bump.tga	
+		forest_sparse			\textures\pkh\forest_sparse_moor.tga			\textures\pkh\forest_sparse_bump.tga	
+		forest_dense			\textures\pkh\hills_moor.tga				\textures\pkh\forest_sparse_bump.tga		
+
+        }
+
+}
+;; ;unused1 ;northern moorland
+climate temperate_grassland_fertile
+{
+       land_zone
+	{
+		hills				\textures\pkh\hills_moor.tga		\textures\pkh\hills_bump.tga		
+		hills_ridge			\textures\pkh\hills_moor.tga		\textures\pkh\hills_bump.tga			
+		hills_valley			\textures\pkh\hills_moor.tga		\textures\pkh\hills_bump.tga	
+		forest_sparse			\textures\pkh\forest_sparse_moor.tga			\textures\pkh\forest_sparse_bump.tga	
+		forest_dense			\textures\pkh\hills_moor.tga				\textures\pkh\forest_sparse_bump.tga	
+        }
+
+}
+;;steppe ;northern red sandstone
+climate temperate_grassland_infertile
+{
+	sea_zone
+	{
+		
+        }
+        land_zone 
+	{				
+				
+		forest_sparse			\textures\pkh\forest_sparse_dark.tga	 	\textures\pkh\forest_sparse_bump.tga	
+		fertility_high			\textures\pkh\fertility_high_dark.tga			\textures\pkh\fertility_high_bump.tga
+		hills				\textures\pkh\hills_brown.tga		\textures\pkh\hills_bump.tga		
+		hills_ridge			\textures\pkh\hills_brown.tga		\textures\pkh\hills_bump.tga			
+		hills_valley			\textures\pkh\hills_brown.tga		\textures\pkh\hills_bump.tga	
+		forest_dense			\textures\pkh\hills_brown.tga				\textures\pkh\forest_sparse_bump.tga	
+
+        }
+ 
+}
+;;temperate_deciduous_forest  ;east to midlands - frost area
+climate temperate_forest_open
+{
+        land_zone 
+	{
+
+        }
+ 
+}
+;;temperate_coniferous_forest  ;wales ireland
+climate temperate_forest_deep
+{
+	sea_zone
+	{
+
+        }
+        land_zone 
+	{				
+			
+		forest_sparse			\textures\pkh\forest_sparse_dark.tga			\textures\pkh\forest_sparse_bump.tga
+		fertility_high			\textures\pkh\fertility_high_dark.tga			\textures\pkh\fertility_high_bump.tga
+
+        }
+ 
+}
+;unused2  ;northern river
+climate swamp
+{
+	sea_zone
+	{
+
+        }
+        land_zone 
+	{				
+			
+		forest_sparse			\textures\pkh\forest_sparse_dark.tga			\textures\pkh\forest_sparse_bump.tga
+		fertility_high			\textures\pkh\fertility_high_dark.tga			\textures\pkh\fertility_high_bump.tga
+
+        }
+  
+}
+;warmer scotland and swamp for lochs
+climate highland
+{
+	sea_zone
+	{
+ 
+        }
+        land_zone 
+	{				
+			
+		forest_sparse			\textures\pkh\forest_sparse_dark.tga			\textures\pkh\forest_sparse_bump.tga
+		fertility_high			\textures\pkh\fertility_high_dark.tga			\textures\pkh\fertility_high_bump.tga
+		hills				\textures\pkh\hills_brown.tga		\textures\pkh\hills_bump.tga		
+		hills_ridge			\textures\pkh\hills_brown.tga		\textures\pkh\hills_bump.tga			
+		hills_valley			\textures\pkh\hills_brown.tga		\textures\pkh\hills_bump.tga	
+		forest_dense			\textures\pkh\hills_brown.tga				\textures\pkh\forest_sparse_bump.tga	
+        }
+ 
+}
+;south river no snow
+climate semi_arid
+{
+
+}
+;some mountains
+climate dummy_white
+{
+	sea_zone
+	{
+
+        }
+        land_zone 
+	{				
+			
+		forest_sparse			\textures\pkh\forest_sparse_dark.tga			\textures\pkh\forest_sparse_bump.tga
+		fertility_high			\textures\pkh\fertility_high_dark.tga			\textures\pkh\fertility_high_bump.tga	
+
+        }
+ 
+}
