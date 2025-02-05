@@ -1,10 +1,14 @@
 ![IWTE banner](IWTEgithub_images/IWTEbanner.jpg)
 # IWTE 
-### The documentation in this depository is still a work in progress - the information relates to IWTE_25_02A and later
+### The documentation in this depository is still a work in progress - the information relates to IWTE_25_02_beta and later
 
 Repository for the IWTE tool, developed by wilddog to enable modding of the Total War games, Medieval 2 Total War, Rome Total War and Rome Remastered.
 
 Information in this repository relates to using IWTE in conjunction with [Blender](https://www.blender.org/).  Blender is a powerful and FREE 3d modelling program. Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are not supported by the IWTE team.  The original Milkshape (ms3d) options have been retained but are not generally detailed here.  If you are new to modding with IWTE we do not recommend using ms3d as it has size and other limitations.
+
+The latest version is IWTE_25_02_beta.exe available here.
+
+The previous version IWTE_24_09_A  is still available [here](https://www.twcenter.net/forums/downloads.php?do=file&id=2741).
 
 #### Table of Contents
 * [Functions for M2TW](#Functions-for-M2TW)
