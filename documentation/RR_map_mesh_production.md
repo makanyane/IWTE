@@ -55,6 +55,20 @@ See task file example:
 Optional tags:
 * <river_drop_height> - to reduce amount of river_mesh required see [RR_map_mesh_rivers.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_rivers.md)
 
+_v2 adds the equivalent of small models to mountains_high, hills and volcanos. This is done to emulate the additions made automatically in OG, and also used as part of the vanilla RR mesh design.  The heights they add can be varied from 0x to 2.0x using the following tags, a value of 1.0 will get you the default setting.
+* <mtn_addition_ht_scale>  1.0
+* <hill_addition_ht_scale> 1.0
+* <volcano_addition_ht_scale> 1.0 # this is used for an expanded base to volcanos that aren't near another feature
+* <volcano_cone_addition_ht_scale> 1.0 # this is for the small cones applied to all volcanos
+
+The following tags from the original version will still work in _v2:
+* <tga_ht_scale>  1.0 # values between 0.2 and 2.0 accepted
+* <mtn_ht_factor>  1.0 # 1.0 to 5.0 - increases mountain heights in mesh
+* <ridge_ht_factor>  1.0 # optional multiplier for detected ridges from 1.0 to 2.0 
+* <ridge_ht> 100.0		# height above which the ridge_ht_factor is applied
+* <texture_normal_factor>       0.2            	# higher value increases impact of texture normals
+* <normals_multiplier>           14             	# higher value increases normals intensity
+
 ## Changing textures 
 
 See task file example:  
