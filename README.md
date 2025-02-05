@@ -147,7 +147,7 @@ Access to the software is obtained from their respective sites.
 * Python     PSF
 * Numpy      BSD-3
 * Scipy      BSD-3
-* PySide2    LGPLv3
+* PySide6    LGPLv3
 * Lz4        BSD-3
 * Pillow     HPND
 
