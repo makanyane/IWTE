@@ -43,29 +43,6 @@ As the map mesh can vary from a strict interpretation of the campaign map_*.tga 
 
 Both map generation processes contain options to accentuate certain features and/or change the textures to take heights and slopes into account.
 
-
-### Region Boundaries at Rivers
-For region boundaries that align properly with rivers you WILL NEED to add in the supplied  
-*descr_aerial_map_tile_models.txt*  
-
-text file into the folder:  
-*...mod_name/data/*   
-
-and add the supplied or created  
-*rivers_a.cas*  
-
-file to the folder:  
-*...mod_name/data/terrain/aerial_map/tile_models/river_a*  
-
-Ignoring both files will result in misalignment between rivers and region borders, adding one but not both will result in very messed up region borders!
-
-### Large Maps with a Large Number of Textures
-Very large maps which have hundreds of piece tiles may get the dissappearing frame bug due to too many textures.  
-
-  **combine_piece_textures**   
-task can be used to join 4 adjoining textures into one - this should be applied to the textures whilst they are in tga format
-as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
-
 ## Version _V2 task file settings
 
 <task_id>   **create_map_pieces_v2** 
@@ -99,7 +76,27 @@ Paths inside the texture descr files are relative, those starting \iwtepack will
 ### Recommended Further Reading (V2)
 TWC Wiki:	https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions
 
+## Region Boundaries at Rivers
+For region boundaries that align properly with rivers you WILL NEED to add in the supplied  
+*descr_aerial_map_tile_models.txt*  
 
+text file into the folder:  
+*...mod_name/data/*   
+
+and add the supplied or created  
+*rivers_a.cas*  
+
+file to the folder:  
+*...mod_name/data/terrain/aerial_map/tile_models/river_a*  
+
+Ignoring both files will result in misalignment between rivers and region borders, adding one but not both will result in very messed up region borders!
+
+## Large Maps with a Large Number of Textures
+Very large maps which have hundreds of piece tiles may get the dissappearing frame bug due to too many textures.  
+
+  **combine_piece_textures**   
+task can be used to join 4 adjoining textures into one - this should be applied to the textures whilst they are in tga format
+as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
 
 
 
