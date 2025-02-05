@@ -1,0 +1,96 @@
+IWTE modeldb function
+This is top line menu => Modelfiles => Modeldb => modeldb to csv
+
+This produces a subdirectory to the one that the *.modeldb is in called  from_modeldb
+
+In this subdirectory it generates :
+*_models.txt                        This file contains a line by line description of what it read, what it was suppose to be, and a binary position in the file.
+*_models_errors.txt                 This file contains any errors detected with a description of the error and a position (same as in the file above)
+*_models_unit_faction_data.csv      File containing the modeldb faction data 
+*_models_unit_lod_data.csv          File containing the modeldb lod data 
+*_models_unit_skeleton_data.csv     File containing the modeldb skeleton data 
+*_models_new.modeldb                reformatted file BUT not corrected for all errors
+
+you can make corrections in the csv files or the original modeldb files.
+The reformatting file puts the line breaks in postions which are more 'correct' in terms of the structure and it also alphabetically sorts by model unit.
+
+
+eg 
+_Models.txt
+---------------
+22 serialization::archive 3 0 0 0 0                                                        # serialization                                   at position =    36
+155                                                                                        # Number of units                                 at position =    40
+0  0                                                                                       # pads 0 0                                        at position =    46
+10  mount_pony                                                                             # name size and unit model name                   at position =    62
+1.12                                                                                       # unit scale value float 1.12 often for horses, int 1 for most units  at position =    67
+0  0                                                                                       # first time pads 0 0                             at position =    71
+3                                                                                          # Number of lods                                  at position =    73
+0  0                                                                                       # first time pads 0 0                             at position =    79
+59  unit_models/_Units/pkh_bm/horses/pkh_irish_ponies_lod0.mesh  121                       # name size, lod name and lod distance            at position =   148
+59  unit_models/_Units/pkh_bm/horses/pkh_irish_ponies_lod1.mesh  1225                      # name size, lod name and lod distance            at position =   218
+59  unit_models/_Units/pkh_bm/horses/pkh_irish_ponies_lod2.mesh  10000                     # name size, lod name and lod distance            at position =   288
+0  0                                                                                       # first time pads 0 0                             at position =   292
+1                                                                                          # faction with main texture count                 at position =   294
+0  0                                                                                       # first time pads 0 0                             at position =   300
+15  barons_alliance                                                                        # name size, faction name                         at position =   321
+69  unit_models/_Units/pkh_bm/horses/textures/pkh_irish_ponies_F1.texture                  # name size, faction_main_texture_standard        at position =   396
+74  unit_models/_Units/pkh_bm/horses/textures/pkh_irish_ponies_F1_norm.texture             # name size, faction_main_texture_normal          at position =   476
+57  unit_sprites/wd_pkh/timurids_WD_PKH_Irish_Pony_sprite.spr                              # name size, faction_sprite                       at position =   537
+0                                                                                          # faction with attachment texture count           at position =   539
+0  0                                                                                       # first time pads 0 0                             at position =   543
+1                                                                                          # number of mount types                           at position =   545
+0  0                                                                                       # first time pads 0 0                             at position =   551
+5  Horse                                                                                   # name size, mount_type_name                      at position =   561
+8  fs_horse                                                                                # name size, primary_skeleton_name                at position =   572
+0                                                                                          # name size, secondary_skeleton_name              at position =   577
+0  0                                                                                       # first time pads 0 0                             at position =   581
+0                                                                                          # number of primary weapons                       at position =   583
+0                                                                                          # number of secondary weapons                     at position =   585
+-1                                                                                         # index bone to which torch is connected (-1 means no torch) at position =   588
+0  0                                                                                       # first time pads 0 0                             at position =   592
+0 0 0 0 0 0                                                                                # attribute values 0 0 0 0 0 0 as torch has no parent index at position =   606
+16  northern_general                                                                       # name size and unit model name                   at position =   628
+1.00                                                                                       # unit scale value float 1.12 often for horses, int 1 for most units  at position =   630
+4                                                                                          # Number of lods                                  at position =   634
+60  unit_models/_Units/pkh_bm/Generals/pkh_captain_EK1_lod0.mesh  121                      # name size, lod name and lod distance            at position =   704
+60  unit_models/_Units/pkh_bm/Generals/pkh_captain_EK1_lod0.mesh  900                      # name size, lod name and lod distance            at position =   774
+60  unit_models/_Units/pkh_bm/Generals/pkh_captain_EK1_lod0.mesh  1500                     # name size, lod name and lod distance            at position =   845
+60  unit_models/_Units/pkh_bm/Generals/pkh_captain_EK1_lod0.mesh  9000                     # name size, lod name and lod distance            at position =   916
+31                                                                                         # faction with main texture count                 at position =   921
+
+
+example errors
+----------------
+northern_general  poland  texture  74  unit_models/_Units/pkh_bm/Generals/textures/pkh_Captain_Lancaster.texture    # Name size includes end space at position =  9072
+northern_general  russia  texture  74  unit_models/_Units/pkh_bm/Generals/textures/pkh_Captain_Beauchamp.texture    # Name size includes end space at position =  9242
+wd_pkh_mailed_knights_ug1  papal_states  texture  73  unit_models/_Units/pkh_bm/attachmentsets/pkhknight_ShieldsB_YRGB.texture    # Name size includes end space at position = 467010
+WD_PKH_Fast_Scottish_Pony_A  aztecs  texture  70  unit_models/_Units/pkh_bm/horses/textures/pk_scottish_poniesA.texture    # Name size includes end space at position = 859599
+pkh_captain_EK1  poland  texture  74  unit_models/_Units/pkh_bm/Generals/textures/pkh_Captain_Lancaster.texture    # Name size includes end space at position = 920180
+pkh_captain_EK1  russia  texture  74  unit_models/_Units/pkh_bm/Generals/textures/pkh_Captain_Beauchamp.texture    # Name size includes end space at position = 920350
+
+another file with errors
+me_monster_bombard_crew  saxons                                                            # faction_name for attachment not in faction name for main texture at position = 2428490
+me_serpentine_crew  saxons                                                                 # faction_name for attachment not in faction name for main texture at position = 2433317
+Cavalerie_Carolineer  slave  sprite  39  unit_sprites/bnw_musketeers_sprite.spr            # Name size includes end space                    at position = 3085643
+Cavalerie_Carolineer  merc  sprite  39  unit_sprites/bnw_musketeers_sprite.spr             # Name size includes end space                    at position = 3085796
+changatai_captain  milan                                                                   # faction_name for attachment not in faction name for main texture at position = 3128605
+changatai_captain  moors                                                                   # faction_name for attachment not in faction name for main texture at position = 3128930
+
+
+
+special note
+------------------
+If your modeldb starts with something like this (ie that second line is for a unit called blank then IWTE will remove that record if it passes the standard checks).
+ie it will not get added into the CSV file and will not be added into a new modeldb generated by IWTE.
+
+
+22 serialization::archive 3 0 0 0 0 1230 0 0
+5 blank 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+Basicall IWTE tries to check the mount types for recreating a modeldb (valid ones are 'none', 'horse', 'elephant', 'camel') and this record indicates it has a mount but has no mount type name which is invalid. 
+The record contains the extra pads (groups of 0 0 ) which are needed in the first record and IWTE reorders the file and doesn't need to know. MTW2 does need the first
+record to be padded correctly so please beware. This passes the formatting check but would be invalid and cause a crash if ever called (AFAIK).
+ 
+
+                                                
+
