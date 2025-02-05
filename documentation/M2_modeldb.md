@@ -29,3 +29,5 @@ An example of the three csv files opened in separate Excel windows is shown abov
 When using the ***Medieval 2 > Modeldb > csv to modeldb*** buttons to generate a new modeldb you will be asked for the three files in turn, please note and match the name of file it is asking for.
 
 Amended modeldb files will be created with the name *battle_models_fromcsv.modeldb*
+
+For help with understanding errors please see [IWTE modeldb checking and conversion function.txt](https://github.com/makanyane/IWTE/blob/main/documentation/misc_files/IWTE%20modeldb%20checking%20and%20conversion%20function.txt)
