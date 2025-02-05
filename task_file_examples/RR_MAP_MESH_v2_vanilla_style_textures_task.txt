@@ -3,11 +3,32 @@
 # the _v2 task can be expanded to amend where the default textures are used and/or to introduce your own textures
 # IWTE will use texconv.exe to convert the texture tga files produced to dds ready for use in the game, the texconv.exe needs to be in the same folder as the IWTE.exe for this to work
 
-<task_id>                                  create_map_pieces_v2                                                 #  please note the addition of _v2 to the task id switches the process used, the original process is also still available
-<directory_in>                             "J:/RRMods/My Mods/MM/data/world/maps/base"                          #  or folder containing map_*.tga files - you can if desired give IWTE different files to those used in game
-<directory_out>                            "J:/RRMods/My Mods/MM/data/terrain/campaign/imperial_campaign"       #  if you select the actual in game folder you will not need to move or rename main map components
-<directory_out_increment>                  no                                                                   #  use 'yes' if you are worried about overwriting existing files
+<task_id>                               create_map_pieces_v2                                                 #  please note the addition of _v2 to the task id switches the process used, the original process is also still available
+<directory_in>                          "J:\RRMods\My Mods\MM\data\world\maps\base"                          #  folder containing map_*.tga files - you can if desired give IWTE different files to those used in game
+<directory_out>                         "J:\RRMods\My Mods\MM\data\terrain\campaign\imperial_campaign"       #  if you select the actual in game folder you will not need to move or rename main map components
+<directory_out_increment>               no                                                                   #  use 'yes' if you are worried about overwriting existing files
+<create_full_glb> 			yes		# use to preview mesh in Blender - will be produced before textures
+<create_full_dae> 			no		# use to preview mesh in Blender - will be produced before textures
 
-#<create_dds>				   no				# optional - include this tag set to 'no' if you want to keep the textures in tga format to convert later
-#<map_pieces_longest_dimension>            13                           # optional - longest side is divided by this number of tiles - if not specified IWTE will calculate a viable number
+#<create_dds>				   no		# optional - include this tag set to 'no' if you want to keep the textures in tga format to convert later
+#<map_pieces_longest_dimension>            13           # optional - longest side is divided by this number of tiles - if not specified IWTE will calculate a viable number
 
+#<mtn_addition_ht_scale>                             1.0 	# from 0 to 2.0 - addition applies in V2 only - set to 0.0 to remove
+#<hill_addition_ht_scale>                            1.0	# from 0 to 2.0 - addition applies in V2 only - set to 0.0 to remove
+#<volcano_addition_ht_scale>                         1.0 	# from 0 to 2.0 - addition applies in V2 only - set to 0.0 to remove - this is base of volcanos not adjacent to other features
+#<volcano_cone_addition_ht_scale>                    1.0 	# from 0 to 2.0 - addition applies in V2 only - set to 0.0 to remove - this is cone section of all volcanos
+
+#<tga_ht_scale>     		1.0             # 0.2 to 2.0 - used instead of IWTE default settings to convert map_heights.tga values to mesh - different values will cause problems with bridges
+
+#<mtn_ht_factor>                0.0           	# multiplier 0.0 to 5.0 - increases mountain heights in mesh
+
+#<ridge_ht_factor>              1.0		# optional from 0 to 2.0 
+#<ridge_ht>                     100.0		# height above which the ridge_ht_factor is applied
+
+#<texture_normal_factor>        0.2            	# higher value increases impact of texture normals
+#<normals_multiplier>           14             	# higher value increases normals intensity
+
+#<river_drop_height>            5.0		# used to save river mesh size - high values will create canyons!
+
+#<sea_drop_list>  		4 2 1           # sea drop for seas shallow, deep, ocean (value  of 5 is similar to TGA pixel difference of 5 in heights_tga)
+#<drop_loop_factor>     	120         	# used to calculate itterations in sea drop
