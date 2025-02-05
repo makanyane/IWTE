@@ -73,6 +73,9 @@ as part of the process IWTE will modify the cas pieces uv mapping and produce th
 See task file example:  
 * [RR_MAP_MESH_v2_vanilla_style_textures_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_MAP_MESH_v2_vanilla_style_textures_task.txt) - shows optional tags for altering various settings
 
+Optional tags:
+* <river_drop_height> - to reduce amount of river_mesh required see [RR_map_mesh_rivers.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_rivers.md)
+
 ## Changing textures 
 
 See task file example:  
