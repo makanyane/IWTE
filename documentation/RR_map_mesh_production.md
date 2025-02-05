@@ -4,11 +4,11 @@
 The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW. It requires various mesh components and textures to be made by the modder.
 
 #### Table of Contents
-* [About the Rome Remastered campaign map](https://github.com/makanyane/IWTE/edit/main/documentation/RR_map_mesh_production.md#about-the-rome-remastered-campaign-map)
-* [Rome Remastered map making using IWTE](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#rome-remastered-map-making-using-iwte)
-* [Alternative options](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#alternative-options)
-* [Version _V2 task file settings](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#version-_v2-task-file-settings)
-* [Changing textures](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_production.md#changing-textures)
+* [About the Rome Remastered campaign map](#about-the-rome-remastered-campaign-map)
+* [Rome Remastered map making using IWTE](#rome-remastered-map-making-using-iwte)
+* [Alternative options](#alternative-options)
+* [Version _V2 task file settings](#version-_v2-task-file-settings)
+* [Changing textures](#changing-textures)
 
 ## About the Rome Remastered campaign map
 
