@@ -56,13 +56,19 @@ Very large maps which have hundreds of piece tiles may get the dissappearing fra
 task can be used to join 4 adjoining textures into one - this should be applied to the textures whilst they are in tga format
 as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
 
-## VERSION _V2 
+## Version _V2 task file settings
+
 <task_id>   **create_map_pieces_v2** 
 
+See task file example:  
+* [RR_MAP_MESH_v2_vanilla_style_textures_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_MAP_MESH_v2_vanilla_style_textures_task.txt) - shows optional tags for altering various settings
 
-## Changing Textures 
+## Changing textures 
 
-To change the textures used away from the default ones included in IWTE.exe add a tag and path to your task file, e.g.
+See task file example:  
+* [RR_MAP_MESH_v2_modified_textures_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_MAP_MESH_v2_modified_textures_task.txt) - uses default settings but adds reference to separate textures file
+
+To change the textures used away from the default textures and setup included in IWTE.exe add a tag and path to your task file, e.g.
 	<strat_map_texture_descr>        "D:\IWTE_folder\my_strat_map_texture_descr.txt"  
 If you use a relative path like  
 	<strat_map_texture_descr>        "\my_folder\my_strat_map_texture_descr.txt"  
