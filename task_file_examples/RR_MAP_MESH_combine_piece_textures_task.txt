@@ -3,7 +3,7 @@
 # IWTE will produce a descr_map_tiles.txt file to be used with the resultant texture/piece combinations
 
 <task_id>            combine_piece_textures                          # used to create combined textures and amended list, you will then need to convert the tgas used to dds, _v2 task is needed for all map types
-<directory_in>      "I:\Rome_remastered\create_maprr" 
+<directory_in>      "J:\RRMods\My Mods\MM\data\terrain\campaign\imperial_campaign" 
 <map_grid_list>      13 8                                               # this is the layout of the pieces that IWTE told you in the cmd window when you generated the pieces
-<directory_out>     "I:\Rome_remastered\create_maprr\combined"          # you need to ppoint this to a subdirectory preferably just add \combined as shown
+<directory_out>     "J:\RRMods\My Mods\MM\data\terrain\campaign\imperial_campaign\combined"          # you need to ppoint this to a subdirectory preferably just add \combined as shown
 
