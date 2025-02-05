@@ -1,3 +1,4 @@
+;A SIMILAR FILE TO THIS IS INCLUDED INSIDE IWTE.exe - THAT WILL BE USED IF AN ALTERNATIVE IS NOT SPECIFIED
 ;climate setup for strat map generation
 ;climate default must be first
 ;climate default has height attributes for each zone.
