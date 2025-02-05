@@ -2,7 +2,12 @@
 
 When using IWTE we recommend always using the most up-to-date version, but also keep a copy of version/s you have been using successfully.  Sometimes a version upgrade can introduce a problem on a specific process and we may have to advise you to return to an earlier version until the problem is fixed.
 
-##  RR Map Mesh Change Notes       
+#### Table of Contents
+* [RR map mesh change notes ](#rr-map-mesh-change-notes)
+* [Other changes in reverse date order](#other-changes-in-reverse-date-order)
+* [Copy of some earlier release information](#copy-of-some-earlier-release-information)
+
+##  RR map mesh change notes       
 IWTE_v22_02_B : added <sea_drop_list> and <drop_loop_factor> to control drop in sea depths
 
 IWTE_v22_06_C : added beach parameters
@@ -55,7 +60,7 @@ list of dummy climates has been updated.
 <dummy_silver_gt_dir>            "I:\IWTE_v23_02_B\base-textures\dummy_grey"              # 192 192 192 added 
 ```
 
-## Other Changes in reverse date order
+## Other changes in reverse date order
 
 with version24_09_A (bug fixes)
 1) M2/RR  - milkshape bug fix (format type).
