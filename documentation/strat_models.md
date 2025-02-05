@@ -58,6 +58,7 @@ General Modding Points to Note:
 * RR residences are specified at the top of each settlement_plan text file
 * Residence models have a 'symbol' mesh which controls the strat flag position, this mesh should NOT have a texture
 * Models with too many triangles or vertexes can cause crashes
+* Models that contain too many objects or mesh groups can cause crashes
 * RTW and M2TW residences can have some triangles that face away from the camera removed to reduce size.  RR residences can be viewed from any angle.
 
 
