@@ -6,7 +6,7 @@ The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW
 #### Table of Contents
 * [About the Rome Remastered campaign map](#about-the-rome-remastered-campaign-map)
 * [Rome Remastered map making using IWTE](#rome-remastered-map-making-using-iwte)
-* [Alternative options](#alternative-options)
+* [Options](#Options)
 * [Version _V2 task file settings](#version-_v2-task-file-settings)
 * [Changing textures](#changing-textures)
 
@@ -35,9 +35,9 @@ Running that process from the button will generate a task file with the task ID 
 
 To create the large 2d map and radar maps also needed in game see [RR_map_mesh_create_feral_map.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_create_feral_map.md) 
 
-## Alternative options
+## Options
 
-IWTE's original version of the map mesh process was released soon after Rome Remastered.  V2 is more recent and by default uses some textures built into IWTE which attempt to emulate a vanilla feel on the map.
+IWTE's original version of the map mesh process was released soon after Rome Remastered.  V2 is more recent and by default uses some textures built into IWTE which attempt to emulate a vanilla feel on the map. For details of the differences between the versions and more about the original version see [RR_map_mesh_versions.md](https://github.com/makanyane/IWTE/blob/main/documentation/RR_map_mesh_versions.md)
 
 As the map mesh can vary from a strict interpretation of the campaign map_*.tga files IWTE introduced several new features that allow more variety, including a 'map_heights_lakes.tga' that is used to avoid coastlines and excessive sinking of inland lakes, and dummy map climates that can be used to alter the albedo textures generated.  Dummy climates are an example of giving IWTE different data to that which will be used in game, this is fine but should be used with caution in case it confuses players about where they can move, or what they should expect on a battle map.
 
