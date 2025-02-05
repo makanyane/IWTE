@@ -45,3 +45,32 @@ Very large maps which have hundreds of piece tiles may get the dissappearing fra
   **combine_piece_textures**   
 task can be used to join 4 adjoining textures into one - this should be applied to the textures whilst they are in tga format
 as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
+
+##      ORIGINAL VERSION    
+<task_id>   **create_map_pieces** 
+
+Please note this process is still supported but is seperate and different to the newer v2 process (from 4th August 2024)
+
+IWTE map making is primarily a task based operation and you should set up a task to use it to its full potential.  
+The task allows options to be switched easily and makes it very easy to rerun or change things.  
+It will require a basic once off setup but should be easy enough to maintain.  
+Some of the 'tags' used in the file have changed with IWTE releases see notes below.  
+tag names are very important if you use an incorrect name it will not be found.  
+
+Please be aware the texture producing components of the map will take a long time to run. It is always best to have a console window open to see the progress.  
+You can of course open multiple IWTE versions for use at the same time or get on with something else whilst it runs as a background task.
+
+Please note the files will be produced at a 2048x2048 standard size. 
+
+To create and use a specific bump map to provide variation to the material (normal) it just needs to be named the same as your input *.tga but ending *_bump.tga.   
+Any bump map tgas should be placed in the appropriate climate ground type folder. 
+
+### Recommended Further Reading (Original Version)
+Kirsi's - Mapping Guide:  				https://drive.google.com/file/d/1b4hKawiIf2ZoqsBnGUNpsGQowbgMrusI/view?usp=drivesdk  
+TWC Wiki:						https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions  
+Makanyane's Demonstration Textures and Folder Setup:	https://drive.google.com/file/d/1TnICOKHdNzf0n5vmKbyvZjAGX8MnDVQI/view?usp=sharing  
+
+PLEASE ALSO SEE EXAMPLE TASK FILES
+Create mesh and textures original version;	 	task_file_examples/RR_MAP_MESH_older_version_task.txt  
+Converting material tgas to dds;	 		task_file_examples/TEXCONV_tga_to_dds_materials_task.txt  
+Converting albedo tgas to dds;	 			task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt  
