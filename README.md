@@ -116,7 +116,7 @@ dark or brown - brown is close to the light brown appearance of the pre 2025 IWT
 ## Launching and Error Reporting
 Please launch IWTE using a .bat file, the bat file should be in the same folder as the IWTE.exe and have content:
 
-    IWTE_v25_01A.exe
+    IWTE_v25_02_beta.exe
     cmd /k
 The top line should be the name of your current IWTE.exe\
 Launching via the .bat file will allow the command window to stay open in the event of an error occurring.  Some errors are also reported via IWTE's pop-up window as in the picture below.
