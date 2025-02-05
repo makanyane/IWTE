@@ -47,23 +47,7 @@ As the map mesh can vary from a strict interpretation of the campaign map_*.tga 
 
 Both map generation processes contain options to accentuate certain features and/or change the textures to take heights and slopes into account.
 
-### Main differences between versions 
 
-| | Original Version | Version V2 | Notes |
-|---|-------------------------|---|---|
-| Albedo Textures	| all input tgas must be provided (textures are found via name in climate folder, requiring duplicate copies) | includes optional default vanilla style input textures (textures specified in text file) |
-| Texture Variations	|	extra textures can be added based on height	(mtnhigh and mtnpeak only) | all textures can be varied based on 5 settable height zones (additional input textures can be specified for ridge/flat/steep/valley zones in hills mountains and wilderness) |
-| Tints	| height related tints can be applied	| n/a |
-| Winter Textures	|		requires 2nd run (requires snow added to input tgas)	|	produced on main run, uses map_snow.tga to add 'snow' (white overlay added by IWTE to output textures) |
-| Dummy Climates		|	possible				| possible		|NB: not to be used in game |
-| Shoreline	| colour applied to height range	| texture applied to height range near coast with added 'contour' lines |
-| Hills		|		no special treatment |	small 'models' added to areas of hill ground type (ala vanilla OG) |
-| Mountains_high	| ridge heights can be accentuated	|small 'models' added to areas of mountains_high ground type (ala vanilla OG)			|			
-| Height scale	|		factor can be applied			|	n/a (check) | NB: not recommended as bridge heights will be wrong in game |
-| Materials (normals)		| _bump.tga input textures can be used, mountains need rotated texture to get erosion effect 	| default 'erosion' effect applied to steep areas on hills/mountains etc, bump textures may still also be used
-
-
-##  Factors Common to both Versions
 ### Region Boundaries at Rivers
 For region boundaries that align properly with rivers you WILL NEED to add in the supplied  
 *descr_aerial_map_tile_models.txt*  
