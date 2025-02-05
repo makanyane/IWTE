@@ -86,8 +86,7 @@ Paths inside the texture descr files are relative, those starting \iwtepack will
 ### Recommended Further Reading (V2)
 TWC Wiki:	https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions
 
-PLEASE ALSO SEE EXAMPLE TASK FILES
-Create mesh and textures v2;	 	task_file_examples/RR_MAP_MESH_v2_vanilla_style_textures_task.txt
+
 
 
 
