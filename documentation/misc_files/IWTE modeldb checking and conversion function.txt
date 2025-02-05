@@ -87,7 +87,7 @@ ie it will not get added into the CSV file and will not be added into a new mode
 22 serialization::archive 3 0 0 0 0 1230 0 0
 5 blank 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
-Basicall IWTE tries to check the mount types for recreating a modeldb (valid ones are 'none', 'horse', 'elephant', 'camel') and this record indicates it has a mount but has no mount type name which is invalid. 
+Basically IWTE tries to check the mount types for recreating a modeldb (valid ones are 'none', 'horse', 'elephant', 'camel') and this record indicates it has a mount but has no mount type name which is invalid. 
 The record contains the extra pads (groups of 0 0 ) which are needed in the first record and IWTE reorders the file and doesn't need to know. MTW2 does need the first
 record to be padded correctly so please beware. This passes the formatting check but would be invalid and cause a crash if ever called (AFAIK).
  
