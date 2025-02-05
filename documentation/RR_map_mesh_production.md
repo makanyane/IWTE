@@ -99,6 +99,10 @@ Very large maps which have hundreds of piece tiles may get the dissappearing fra
     <task_id>     combine_piece_textures  
 task can be used to join 4 adjoining textures into one - as part of the process IWTE will modify the cas pieces uv mapping and produce the desc_map_tiles.txt file required to assign 4 tiles to the same texture.
 
+You will need to specify the input folder which should contain the albedos, albedos_winter, materials and pieces folders previously produced.  Specify the <map_grid_list>, the number of columns and rows used in the original mesh generation. And specify the output folder.
+
+See task file example:
+* [RR_MAP_MESH_combine_piece_textures_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_MAP_MESH_combine_piece_textures_task.txt)
 
 
 
