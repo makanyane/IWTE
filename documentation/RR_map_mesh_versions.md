@@ -66,11 +66,12 @@ To create and use a specific bump map to provide variation to the material (norm
 Any bump map tgas should be placed in the appropriate climate ground type folder. 
 
 ### Recommended Further Reading (Original Version)
-Kirsi's - Mapping Guide:  				https://drive.google.com/file/d/1b4hKawiIf2ZoqsBnGUNpsGQowbgMrusI/view?usp=drivesdk  
-TWC Wiki:						https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions  
-Makanyane's Demonstration Textures and Folder Setup:	https://drive.google.com/file/d/1TnICOKHdNzf0n5vmKbyvZjAGX8MnDVQI/view?usp=sharing  
+* Kirsi's - Mapping Guide:  				https://drive.google.com/file/d/1b4hKawiIf2ZoqsBnGUNpsGQowbgMrusI/view?usp=drivesdk  
+* TWC Wiki:						https://wiki.twcenter.net/index.php?title=IWTE_-_Rome_Remastered_Functions  
+* Makanyane's Demonstration Textures and Folder Setup:	https://drive.google.com/file/d/1TnICOKHdNzf0n5vmKbyvZjAGX8MnDVQI/view?usp=sharing  
 
-PLEASE ALSO SEE EXAMPLE TASK FILES
-Create mesh and textures original version;	 	task_file_examples/RR_MAP_MESH_older_version_task.txt  
-Converting material tgas to dds;	 		task_file_examples/TEXCONV_tga_to_dds_materials_task.txt  
-Converting albedo tgas to dds;	 			task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt  
+### Example Task Files
+* [RR_MAP_MESH_older_version_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_MAP_MESH_older_version_task.txt)
+* [TEXCONV_tga_to_dds_albedos_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/TEXCONV_tga_to_dds_albedos_task.txt)
+* [TEXCONV_tga_to_dds_materials_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/TEXCONV_tga_to_dds_materials_task.txt)
+
