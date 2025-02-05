@@ -9,6 +9,8 @@ The RR campaign map (3d view) is not generated 'on the fly' as with RTW and M2TW
 * [Options](#Options)
 * [Version _V2 task file settings](#version-_v2-task-file-settings)
 * [Changing textures](#changing-textures)
+* [Region Boundaries at Rivers](#region-boundaries-at-rivers)
+* [Large Maps with a Large Number of Textures](#large-maps-with-a-large-number-of-textures)
 
 ## About the Rome Remastered campaign map
 
