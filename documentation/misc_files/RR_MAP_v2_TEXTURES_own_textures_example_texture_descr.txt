@@ -1,5 +1,6 @@
 ;climate setup for strat map generation
 ;NOTE THESE TEXTURES ARE NOT INCLUDED IN THE IWTE PACKAGE - IT'S JUST AN EXAMPLE OF WHAT SPECIFYING YOUR OWN TEXTURES MIGHT LOOK LIKE!
+;relative paths given in this file are relative to the location of THIS FILE, not the IWTE.exe!
 
 climate default
 {
