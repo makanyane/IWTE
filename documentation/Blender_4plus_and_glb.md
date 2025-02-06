@@ -7,6 +7,8 @@ The Collada/dae interface in Blender has now been marked as 'legacy' and support
 
 ![blender_import_glb](../IWTEgithub_images/blender_import_glb.jpg)
 
+If you don't see the glTF2.0 options you may need to activate the add-on see the [Blender manual](https://docs.blender.org/manual/en/latest/addons/import_export/scene_gltf2.html).
+
 ## For Animations
 
 If exporting as .glb you need to untick the 'Optimize Animation Size' option.
