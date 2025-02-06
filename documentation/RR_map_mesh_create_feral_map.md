@@ -3,9 +3,9 @@
 
 IWTE will create a feral 2d map and radar map for summer and winter based on appending together albedo textures it has generated in the mesh creation process.  See example task file [RR_create_map_fe_task.txt](https://github.com/makanyane/IWTE/blob/main/task_file_examples/RR_create_map_fe_task.txt)
 
-The mesh and albedo process must have been run first. the directory in should be the folder where the albedo and albedo_winter folders are located. The 'pieces longest dimension' should be the same as used to generate the mesh. The map_heights, map_regions and map_ground_types.tga files USED IN GAME are needed so IWTE can work out where the game will think the coastline is and adapt the alpha layer accordingly.*
+The mesh and albedo process must have been run first. the <directory_in> should be the folder where the existing albedos, albedos_winter and materials folders are located. The <map_pieces_longest_dimension> should be the same as used to generate the mesh. The map_heights, map_regions and map_ground_types.tga files USED IN GAME are needed so IWTE can work out where the game will think the coastline is and adapt the alpha layer accordingly.*
 
-If you're running this on an existing mod and don't know what the 'pieces longest dimension' was, you should be able to work it out by viewing the albedos file as icons, viewed in reverse name order and adjusted until things line up. 
+If you're running this on an existing mod and don't know what the <map_pieces_longest_dimension> was, you should be able to work it out by viewing the albedos file as icons, viewed in reverse name order and adjusted until things line up. (Also check the total number of pieces divides by the number!)
 
 Picture below is of the albedos from a Mundus Magnus mod and it ended up as 13 tiles across the longest dimension:
 ![RR_feral_map_from_albedos](../IWTEgithub_images/RR_feral_map_from_albedos.jpg)
