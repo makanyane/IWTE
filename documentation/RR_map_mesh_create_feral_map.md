@@ -10,7 +10,7 @@ If you're running this on an existing mod and don't know what the <map_pieces_lo
 Picture below is of the albedos from a Mundus Magnus mod and it ended up as 13 tiles across the longest dimension:
 ![RR_feral_map_from_albedos](../IWTEgithub_images/RR_feral_map_from_albedos.jpg)
 
-IWTE will append the dds files previously produced for albedos together, some shading is also applied taken from the information in the previously produced materials, the alpha layer is created from information in the map_*.tga files requested.
+IWTE will append the dds files previously produced for albedos together, some shading is also applied taken from the information in the previously produced materials, the alpha layer is created from information in the map_*.tga files requested.  The sea colour is added with varying opacity according to the sea ground_types.
 
 ![RR_feral_map](../IWTEgithub_images/RR_feral_map.jpg)
 
