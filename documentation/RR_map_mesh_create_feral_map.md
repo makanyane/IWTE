@@ -19,4 +19,4 @@ Summer and winter versions sized to suit the Feral 2d map and the radar map will
 ![RR_feral_map_in_game](../IWTEgithub_images/RR_feral_map_in_game.jpg)
 
 
-*Many thanks to Serious Potato on Discord for research into how the 2d map relates to regions.
+*Many thanks to Suppanut on Discord for research into how the 2d map relates to regions.
