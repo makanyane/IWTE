@@ -14,6 +14,12 @@ Some information about the structure of the .world file is provided on [TWC Wiki
   * [Building Effects](#Building-Effects)
 * [Files loaded from .worldterrain](#Files-loaded-from-worldterrain)
 
+### See Also
+* [M2_world_complex_blocks.md](https://github.com/makanyane/IWTE/blob/main/documentation/M2_world_complex_blocks.md)
+* [M2_world_shading_and_lighting.md](https://github.com/makanyane/IWTE/blob/main/documentation/M2_world_shading_and_lighting.md)
+* [M2_worldterrain.md](https://github.com/makanyane/IWTE/blob/main/documentation/M2_worldterrain.md)
+* [M2_worldpathfinding.md](https://github.com/makanyane/IWTE/blob/main/documentation/M2_worldpathfinding.md)
+
 ## Loading Tree
 
 * .worldpkgdesc
