@@ -83,8 +83,11 @@ The following list is a quick round-up of IWTE's current capabilities for RTW (i
 
 ## Functions for Rome Remastered Only
 
-* Campaign Map - [Simple 3d Map Mesh Creation Method](documentation/RR_map_mesh_simple_method.md) - Creates 3d mesh and vanilla style textures for RR from map_*.tga files
-* Campaign Map - [3d Map Mesh Creation Options](documentation/RR_map_mesh_production.md) - Various options for creating the 3d map mesh and textures, including using your own input textures and varying mountain effects.
+* Campaign Map - 3d Map Mesh Production including Textures, see:
+  * [RR_map_mesh_simple_method.md](documentation/RR_map_mesh_simple_method.md) - Creates 3d mesh and vanilla style textures from map_*.tga files without task file
+  * [RR_map_mesh_production.md](documentation/RR_map_mesh_production.md) - Overview of the RR campaign map and details of options for the latest version of the mesh generation process
+  * [RR_map_mesh_rivers.md](documentation/RR_map_mesh_rivers.md) - Explains how to overcome problems with river_mesh limit.
+  * [RR_map_mesh_versions.md](documentation/RR_map_mesh_versions.md) - For differences between versions and details of the original mesh generation process.
 * Campaign Map - [Creating Feral 2d Map](documentation/RR_map_mesh_create_feral_map.md) - Generates a large tga view from the map mesh and textures produced by the map mesh creation process.
 * Units and Strat Figures - [Character Extraction](documentation/RR_Character_Extraction.md) - Extracts and converts .cas files for battlemap units and campaign map figures from Rome Remastered .pak files.
 * Units and Strat Figures - [RR Skeletons and Animations](documentation/RR_Skeletons_and_Animations.md) - Unpacks/packs Rome Remastered skeletons and animations and provides skeleton to text and back option.
