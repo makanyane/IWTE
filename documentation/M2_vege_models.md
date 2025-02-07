@@ -2,7 +2,7 @@
 
 # M2TW vege_models
 
-The vege_models are found in data/vegetation/models, each model calls one .texture which is located in data/vegetation/models/textures.
+The vege_models are found in data/vegetation/models, each model calls one .texture which is located in data/vegetation/models/textures.  In game vege_models are viewed in game until a distance set by the [vegetation.db](M2_worldvegetation.md) file in combination with the user's settings, after that [vege_sprites](M2_vege_sprites.md) are rendered. Vegetation distribution is set in the [geography.db](geography_db.md#m2-specific-elements).
 
 Some vanilla models (a large rock and cactus model) have a bug where either they can have see-through sections.  This is caused by their uv mapping exceeding the 0 to 1.0 range.  Textures for vege_models do not wrap around, they map onto the 'next' texture.  M2 compiles all the used vegetation textures into one large texture map in game memory, models mapped outside the 0 to 1 uv range, OR textures that are larger/smaller than the others causes vege_models to be displayed with the wrong textures.
 
