@@ -51,21 +51,13 @@ as part of the process IWTE will modify the cas pieces uv mapping and produce th
 ##      ORIGINAL VERSION    
 <task_id>   **create_map_pieces** 
 
-Please note this process is still supported but is seperate and different to the newer v2 process (from 4th August 2024)
+Please note this process is still supported but is seperate and different to the newer v2 process (from 4th August 2024).  This original version is only available via the task process.  The _task.txt you need will include the paths to your input map tga files and the tgas/folders for all the input textures.
 
-IWTE map making is primarily a task based operation and you should set up a task to use it to its full potential.  
-The task allows options to be switched easily and makes it very easy to rerun or change things.  
-It will require a basic once off setup but should be easy enough to maintain.  
-Some of the 'tags' used in the file have changed with IWTE releases see notes below.  
-tag names are very important if you use an incorrect name it will not be found.  
+Please be aware the texture producing components of the map will take a long time to run. It is always best to have a console window open to see the progress.  You can of course open multiple IWTE versions for use at the same time or get on with something else whilst it runs as a background task.
 
-Please be aware the texture producing components of the map will take a long time to run. It is always best to have a console window open to see the progress.  
-You can of course open multiple IWTE versions for use at the same time or get on with something else whilst it runs as a background task.
+Please note the texture files will be produced at a 2048x2048 standard size as tgas that need conversion to dds for use in game.
 
-Please note the files will be produced at a 2048x2048 standard size. 
-
-To create and use a specific bump map to provide variation to the material (normal) it just needs to be named the same as your input *.tga but ending *_bump.tga.   
-Any bump map tgas should be placed in the appropriate climate ground type folder. 
+To create and use a specific bump map to provide variation to the material (normal) it just needs to be named the same as your input *.tga but ending *_bump.tga.  Any bump map tgas should be placed in the appropriate climate ground type folder. 
 
 ### Recommended Further Reading (Original Version)
 * Kirsi's - Mapping Guide:  				https://drive.google.com/file/d/1b4hKawiIf2ZoqsBnGUNpsGQowbgMrusI/view?usp=drivesdk  
