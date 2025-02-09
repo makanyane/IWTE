@@ -72,7 +72,7 @@ FOLDER NAMES ARE IRRELEVANT, apart from making sure you have the paths correct. 
 
 
 ### Overwriting vanilla .world files
-Although you can't overwrite the .worldpkgdesc files by including different ones in your mod-folder you can over-ride the .world file.  If the .world currently loaded for a settlement you want to change is *data\settlements\north_european\settlements\town\north_european_town_a.world* you can name your .world and .worldcollision to the same name and place it in the same folder in your mod - your .world and whichever files it refers to will be loaded instead.
+Although you can't overwrite the .worldpkgdesc files by including different ones in your mod-folder you can over-ride the .world file.  If the .world currently loaded for a settlement you want to change is *data\settlements\north_european\settlements\town\north_european_town_a.world* you can name your .world and .worldcollision to the same name and place it in the same folder in your mod, then your .world and whichever files it refers to will be loaded instead.
 
 ## Which files are loaded from the .world?
 
