@@ -10,9 +10,14 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
-with version25_02_beta (Major release/upgrade)  
+### with version25_02_beta_01 (bug fix and beta tweaking) 
 
-ALL
+* All bugs reported to date should be fixed.
+* UI modes converted to CSS and default mode added.
+
+### with version25_02_beta (Major release/upgrade)  
+
+ALL GAMES
 * Most components have had various software upgrades. We have tried to fix all of them but there may be some obscure or legacy processes that may encounter issues.          (this is also the reason for the large increase in size)
 * A new settings tab has been introduced allowing you to switch certain options eg UI mode, extract type, game type, 3d view options.
 * A color scheme is now implemented supporting a dark mode alternative to the more traditional brown setting (the UI mode).
