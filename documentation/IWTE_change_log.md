@@ -3,10 +3,36 @@
 When using IWTE we recommend always using the most up-to-date version, but also keep a copy of version/s you have been using successfully.  Sometimes a version upgrade can introduce a problem on a specific process and we may have to advise you to return to an earlier version until the problem is fixed.
 
 #### Table of Contents
+* [Changes from 25_02_beta onwards](#Changes-from-25_02_beta-onwards)
 * [RR map mesh change notes ](#rr-map-mesh-change-notes)
 * [Other changes in reverse date order](#other-changes-in-reverse-date-order)
 * [Copy of some earlier release information](#copy-of-some-earlier-release-information)
 
+
+## Changes from 25_02_beta onwards
+with version25_02_beta (Major release/upgrade)
+1) ALL  - Most components have had various software upgrades. We have tried to fix all of them but there may be some obscure or legacy processes that may encounter issues.
+          (this is also the reason for the large increase in size)
+        - A new settings tab has been introduced allowing you to switch certain options eg UI mode, extract type, game type, 3d view options.
+        - A color scheme is now implemented supporting a dark mode alternative to the more traditional brown setting (the UI mode).
+        - extract types now includes the glb type (GLTFv2 format - this has been tested with Blender 4.3).
+        - game type selection will customise the main menus for Rome (rr) or Medieval 2 (m2). This hides most of the non wanted options.
+        - paths within task files can be shortened to relative paths for any directories below the IWTE executable.
+        - a settings file is now used to save last directories and other settings.
+   M2   - vegetation model changes are now supported via glb/dae and ms3d. A correction to the normals hae been introduced.
+        - vege sprite generation is performed in a hidden mode.
+        - 3d viewing of .world files should now be seemless using the settings options to switch between texture, effects or shading modes, and with/without normals. 
+          (the .texture files required should be in the textures directory below the model or for .world be in the IWTEsave directory. No need to convert.)
+        - added unit .mesh directory to extracts option (no skeletons involved).
+   RR   - mapping processes have been amended for the v2 process. Memory usage has been addressed (major slowdown on mesh production of large map mesh).
+        - creation of Fe maps is now handled via a task.
+        - combining textures for large maps now works from DDS or TGA files.
+        - some of the features tied to version 1 of the strat map have been added into v2 (mostly mountain, ridge variability).
+        - some of the features used in version 2 have had added factors added (size of added mountains/hills/volcanos).
+        - updated Settlement plans to use items if issues with cas models (not found or can't open).
+   M2/RR- various other improvements, fixes.
+
+Thank you for the contributions of those that offered suggestions and feedback. Any issues found please notify so we can correct or add as I suspect the settings process is likely to have various requests tied to preferred workflows which may not be catered for.
 ##  RR map mesh change notes       
 IWTE_v22_02_B : added <sea_drop_list> and <drop_loop_factor> to control drop in sea depths
 
