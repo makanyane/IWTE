@@ -91,6 +91,7 @@ The following list is a quick round-up of IWTE's current capabilities for RTW (i
 * Campaign Map - [Creating Feral 2d Map](documentation/RR_map_mesh_create_feral_map.md) - Generates a large tga view from the map mesh and textures produced by the map mesh creation process.
 * Units and Strat Figures - [Character Extraction](documentation/RR_Character_Extraction.md) - Extracts and converts .cas files for battlemap units and campaign map figures from Rome Remastered .pak files.
 * Units and Strat Figures - [RR Skeletons and Animations](documentation/RR_Skeletons_and_Animations.md) - Unpacks/packs Rome Remastered skeletons and animations and provides skeleton to text and back option.
+* Units and Strat Figures - [New skeleton from model](documentation/RR_units_new_skeleton_from_model.md) - Creates new skeleton and set of anims from edited unit model.
 * Misc - [dds Conversion](documentation/Image_Editing_and_Conversion.md#rr-dds-lz4-compression-conversion-options) - Decompresses dds image files that use LZ4 compression, also applies LZ4 compression
 
   
