@@ -12,7 +12,7 @@ Task files must be text files with the file name ending **_task.txt**
 
 Tasks can now be run on IWTE **launch** from a cmd window or .bat file using the addition:  
    
-    --st relative_path/name_of_file_task.txt
+    --st path_to_file/name_of_file_task.txt
 
 There are a few simply syntax items anyone wanting to use this process should be aware of
 1. Anything following a # sign on the same line is regarded as a comment and will not be used.
