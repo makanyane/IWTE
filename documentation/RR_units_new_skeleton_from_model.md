@@ -8,6 +8,14 @@ This will open a form table for you to browse to the directories you want and/or
 
 ![RR_units_new_skeleton_from_model.jpg](../IWTEgithub_images/RR_units_new_skeleton_from_model.jpg)
 
+The <anim_prefix> section is optional, using it will add the prefix before all the newly generated animation names and include the altered names in the new skeleton file.
+
 The process has to work from before and after unit .cas models as they are the only element that stores the bone names.  Bone names are needed so IWTE can retain information from the anims, e.g. any movements that bone_Relbow had in the original anims will be transferred to bone_Relbow in the new animations.  Movements for bones which do not exist with the same name in the new animation will be deleted. No movements will be applied to bones with new names.  The picture below shows an example of before and after unit models.  Only the Armature structure is relavent for this process.
 
 ![RR_units_new_skeleton_from_model_base.jpg](../IWTEgithub_images/RR_units_new_skeleton_from_model_base.jpg)
+
+## New skeleton from model via task file
+
+**<task_id>              skel_from_cas**   
+
+Running the process from the buttons and form will generate an iwte_skel_from_cas_rr_task.txt file.  You will probably find this easier to use and ammend to use for other skeletons.
