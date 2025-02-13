@@ -10,6 +10,10 @@ For some button options IWTE generates a task equivalent to the screen selection
 
 Task files must be text files with the file name ending **_task.txt**
 
+Tasks can now be run on IWTE **launch** from a cmd window or .bat file using the addition:  
+   
+    --st relative_path/name_of_file_task.txt
+
 There are a few simply syntax items anyone wanting to use this process should be aware of
 1. Anything following a # sign on the same line is regarded as a comment and will not be used.
 2. All 'data_ids' are identified as a continuous string starting and ending with less than/greater than signs eg <task_id>
@@ -34,6 +38,7 @@ There are a few simply syntax items anyone wanting to use this process should be
 | extract_to_cas | [extract_to_CAS_with_multiple_anims](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt)
 | cas_data_csv | [CAS_data_to_csv](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
+| open_world_files | [M2_settlement_open_files](../task_file_examples/M2_settlement_open_files_task.txt) | M2 only, opens .world/.worldcollision and .animinstances files
 | world_effects_and_shading | [M2_SETTLEMENT_effect_and_shading](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | M2 only |
 | dds_to_texture_directory | [M2_TEXTURE_dds_to_texture_directory](../task_file_examples/M2_TEXTURE_dds_to_texture_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | M2 only |
 | texture_to_dds_directory | [M2_TEXTURE_texture_to_dds_directory](../task_file_examples/M2_TEXTURE_texture_to_dds_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | 
