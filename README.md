@@ -121,10 +121,20 @@ Please launch IWTE using a .bat file, the bat file should be in the same folder 
 
     IWTE_v25_02_beta.exe
     cmd /k
-The top line should be the name of your current IWTE.exe\
+The top line should be the name of your current IWTE.exe.  From 25_02_beta_2 IWTE allows some functions to be added to the .bat/cmd line:  
+
+![IWTE cmd options](IWTEgithub_images/IWTE_cmd_options.jpg)
+
+* --h  gives help menu
+* --st  automatically starts the task listed after it on launch
+* --uh  hides the ui NB: use only if you want IWTE to run the task specified at --st and then close
+
+      IWTE_v25_02_beta_2.exe --st /iwte_tasks/open_world_stone_fort_D_task.txt
+The above command would launch IWTE and run the task *open_world_stone_fort_D_task.txt* file located in your */iwte_tasks* folder
+
 Launching via the .bat file will allow the command window to stay open in the event of an error occurring.  Some errors are also reported via IWTE's pop-up window as in the picture below.
 
-![image](IWTEgithub_images/error-messages.jpg)
+![error-messages](IWTEgithub_images/error-messages.jpg)
 
 The pop-up window allows you to show/hide details, although it will normally be easier to read information in the command window.  If your error is simple e.g. a file not found issue from a task file, you can click 'ignore', fix the file reference and run the task again.  For more complex problems make a copy or screenshot of the error message and click 'close' to shut IWTE.
 
