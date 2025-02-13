@@ -106,15 +106,17 @@ As from 2025 versions certain preferences can be set and stored.
 
 ![image](IWTEgithub_images/preferences.jpg)
 
-Settings and some frequently used paths will be stored in iwte_settings.txt in the IWTE folder.
+The Settings side bar can be un-docked and moved.  Settings and some frequently used paths will be stored in iwte_settings.txt in the IWTE folder.
 
-Options accessed from main screen buttons are:
+Options accessed from the settings tab drop-down buttons are:
 * Extract File\
 dae, glb, or ms3d - the selected type will be used as default for cas to extract and mesh to extract processes, please note that some conversions are not possible to ms3d due to file format limits.  Glb files can be used in Blender 4+ where support for dae has been withdrawn.
 * Game\
 all, m2, rr or rtw - select a specific game if you wish to tidy the appearance of IWTE by removing game related functions you don't need
 * Mode\
 dark or brown - brown is close to the light brown appearance of the pre 2025 IWTE versions
+
+The 3D window settings relate primarily to viewing M2TW .world settlements.  Normals can also be switched on/off when viewing .cas and .mesh models.
 
 ## Launching and Error Reporting
 Please launch IWTE using a .bat file, the bat file should be in the same folder as the IWTE.exe and have content:
