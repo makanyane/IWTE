@@ -10,6 +10,12 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version25_02_beta_2 (beta tweaking and cmd/.bat functionality added)
+
+* Dark and brown UIs amended, inc trying to make active tabs and radio buttons clearer.
+* Function to run tasks from cmd/.bat added.
+* Task to open M2 .world/.worldcollision/.animinstances added.
+
 ### with version25_02_beta_01 (bug fix and beta tweaking) 
 
 * All bugs reported to date should be fixed.
