@@ -121,7 +121,9 @@ Please launch IWTE using a .bat file, the bat file should be in the same folder 
 
     IWTE_v25_02_beta.exe
     cmd /k
-The top line should be the name of your current IWTE.exe.  From 25_02_beta_2 IWTE allows some functions to be added to the .bat/cmd line:  
+The top line should be the name of your current IWTE.exe.  
+
+From 25_02_beta_2 IWTE allows some functions to be added to the .bat/cmd line:  
 
 ![IWTE cmd options](IWTEgithub_images/IWTE_cmd_options.jpg)
 
