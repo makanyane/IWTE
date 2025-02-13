@@ -1,0 +1,4 @@
+<task_id>                                           open_world_files                                                 #  
+<world_file_full_path_in>                           "/stone_fort_d/stone_fort_d.world"                                 #  
+<collision_file_full_path_in>                       "/stone_fort_d/stone_fort_d.worldcollision"                                 #  
+<animinstances_file_full_path_in>                   "/stone_fort_d/stone_fort_d.animinstances"                                 # 
