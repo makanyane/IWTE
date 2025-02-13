@@ -49,7 +49,12 @@ That will get you a text file called *original_name_textformat.txt*.  The skelet
        0   -0.0232   -0.4006   -0.0124  17   0   0              # bone idx 18
 
 The table section for the bones works as follows;
-* column 1 - special bone indicator - certain bones such as the hands in units and saddle bones in mounts have an indicator number
+* column 1 - special bone indicator - as follows
+  * 1 = bone_H_Saddle or bone_camel_root (horse or camel rider attachment bone)
+  * 2 = bone_E_platform (elephant rider attachment bone)
+  * 4 = bone_Lhand
+  * 5 = bone_Rhand
+  * *3 might work as equivalent of bone_wheel to give automatic rotation, this is used in M2, needs testing*
 * columns 2,3,4 - x,y,z coordinates **RELATIVE TO THE PARENT BONE**
 * column 5 - bone index for that bone's parent bone - so 0 for bones parented to bone_pelvis in units
 * columns 6,7 - indicators related to special functions - these appear to activate the ability of bones to follow terrain/enemy movement but only work in RR RTW version not under RR BI version!
