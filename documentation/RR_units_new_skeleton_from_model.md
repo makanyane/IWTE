@@ -30,4 +30,4 @@ As an alternative to using prefixes you can keep the anim names and paths mostly
 you can insert a folder when moving your new anims into position and use  
 
     data/animations/my_mod_name/lij/LIJ 01 Stand idle 03.cas 
-the */my_mod_name* folder should also be added to the paths in the skeleton before packing by converting to text, editing, and converting back.
+the */my_mod_name* folder should also be added to the paths in the skeleton before packing by converting to text, editing, and converting back, see [RR_Skeletons_and_Animations.md#working-with-skeleton-files](RR_Skeletons_and_Animations.md#working-with-skeleton-files)
