@@ -6,7 +6,7 @@ The worldterrain controls the terrain heights and how they merge with surroundin
 
 #### Table of Contents
 * [.worldterrain file structure](#worldterrain-File-Structure)
-* [Editing .worldterrain via tgas](editing-worldterrain-via-tgas)
+* [Editing .worldterrain via tgas](#editing-worldterrain-via-tgas)
 * [Resizing .worldterrain files](#resizing-worldterrain-files)
 * [Editing .worldterrain in IWTE 2d window](#editing-worldterrain-in-iwte-2d-window)
 * [Editing .worldterrain in Blender](#editing-worldterrain-in-blender)
