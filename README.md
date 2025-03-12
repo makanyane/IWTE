@@ -1,6 +1,6 @@
 ![IWTE banner](IWTEgithub_images/IWTEbanner.jpg)
 # IWTE 
-### The documentation in this depository is still a work in progress - the information relates to IWTE_25_02_beta and later
+### The documentation in this depository is still a work in progress - the information relates to IWTE versions from _25 onwards.
 
 Repository for the IWTE tool, developed by wilddog to enable modding of the Total War games, Medieval 2 Total War, Rome Total War and Rome Remastered.
 
