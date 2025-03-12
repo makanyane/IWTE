@@ -10,6 +10,14 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version25_03A (ui tweaking, bug fixes, added rotation of M2TW .worldvegetation and masks)
+
+* Dark and brown UIs scroll bars tabs amended
+* Function to rotate .worldvegetation and .worldterrain masks added
+* Techtree slots with typed input as 270 degree angle forced to 269.80 degrees to avoid in-game lighting bug (and to match vanilla techtrees)
+* M2TW .world bounding sphere process; decimal accuracy reduced to avoid loop on geometries that generated two equally valid sphere sizes
+* M2TW unit .mesh to .ms3d and back, group names and optional indicator fixed
+
 ### with version25_02_beta_2 (beta tweaking and cmd/.bat functionality added)
 
 * Dark and brown UIs amended, inc trying to make active tabs and radio buttons clearer.
