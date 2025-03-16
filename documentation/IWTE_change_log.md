@@ -10,6 +10,11 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version25_03_B (minor fixes)
+
+* Fix to disregard some eroneous vertex colours generated in Blender/dae
+* Bug fix on M2TW settlements 'pick animation' function
+ 
 ### with version25_03A (ui tweaking, bug fixes, added rotation of M2TW .worldvegetation and masks)
 
 * Dark and brown UIs scroll bars tabs amended
