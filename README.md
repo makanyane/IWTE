@@ -117,10 +117,10 @@ all, m2, rr or rtw - select a specific game if you wish to tidy the appearance o
 * Mode\
 dark or brown - brown is close to the light brown appearance of the pre 2025 IWTE versions
 * 3D window - if selected will launch 3D window when view world 2D is used (M2 settlements only)
-* Normals - if selected will show normal directions of any mesh viewed in the 3D window
+* Normals - if selected will show normal directions of any .world .mesh or .cas viewed in the 3D window
 * M2 .world - texture/shading/effects options- alternative viewing options for settlements in the 3D window
 * CSV delim. - comma/semi-colon options for the delimiter used in .csv files read or produced by IWTE (comma is normally used in US/UK, semi-colon in EU/others)
-The 3D window settings relate primarily to viewing M2TW .world settlements.  Normals can also be switched on/off when viewing .cas and .mesh models.
+
 
 ## Launching and Error Reporting
 Please launch IWTE using a .bat file, the bat file should be in the same folder as the IWTE.exe and have content:
