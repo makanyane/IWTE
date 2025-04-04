@@ -6,7 +6,7 @@ Repository for the IWTE tool, developed by wilddog to enable modding of the Tota
 
 Information in this repository relates to using IWTE in conjunction with [Blender](https://www.blender.org/).  Blender is a powerful and FREE 3d modelling program. Extract to dae/glb may also work with 3dsMax but problems with 3dsMax use are not supported by the IWTE team.  The original Milkshape (ms3d) options have been retained but are not generally detailed here.  If you are new to modding with IWTE we do not recommend using ms3d as it has size and other limitations.
 
-## The latest version is IWTE_25_03_B.exe available [here](https://www.dropbox.com/scl/fo/jefpt1m128hgh3fitevcg/ACYrgIpoy_wx9yxQeFG3DYI?rlkey=wnrkc3frs571krzxoxc13dlg6&e=2&st=mba2qjnz&dl=0).
+## The latest version is IWTE_25_04_A.exe available [here](https://www.dropbox.com/scl/fo/jefpt1m128hgh3fitevcg/ACYrgIpoy_wx9yxQeFG3DYI?rlkey=wnrkc3frs571krzxoxc13dlg6&e=2&st=mba2qjnz&dl=0).
 
 #### Table of Contents
 * [Functions for M2TW](#Functions-for-M2TW)
@@ -125,7 +125,7 @@ dark or brown - brown is close to the light brown appearance of the pre 2025 IWT
 ## Launching and Error Reporting
 Please launch IWTE using a .bat file, the bat file should be in the same folder as the IWTE.exe and have content:
 
-    IWTE_v25_03_B.exe
+    IWTE_v25_04_A.exe
     cmd /k
 The top line should be the name of your current IWTE.exe.  
 
