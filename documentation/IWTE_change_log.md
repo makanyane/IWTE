@@ -10,7 +10,7 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
-###with version25_04_A (minor fixes and csv delimeter option)
+### with version25_04_A (minor fixes and csv delimeter option)
 
 * Preferences option to change between comma and semi-colon when reading/writing csv files
 * Bug fix for IWTE crash on importing .glb M2 files with multiple texcoord sets
