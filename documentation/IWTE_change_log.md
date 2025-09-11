@@ -10,6 +10,21 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version25_09_A (minor fixes and features including .cas multiple mesh combiner)
+
+CAS FILES 
+* Bug fix for the cas > glb > cas process (was adding .tga.tga to texture name) - https://www.twcenter.net/threads/cas-glb-cas-has-texture-name-issue.823592/
+* New feature to combine meshes within character .cas files (RTW/M2 strat, RTW battle, not currently suited for RR battle) - https://www.twcenter.net/threads/function-to-combine-meshes-within-cas-files.823593/
+  
+FOR M2TW ONLY  
+* Remove confusing extra type selector on modeldb extract unit screen - https://www.twcenter.net/threads/fix-to-modeldb-extract-unit-format.823426/
+* Allow dockable windows on left of IWTE - https://www.twcenter.net/threads/allow-dockable-windows-on-the-left.823424/
+* Add scroll bar to .world collision list - https://www.twcenter.net/threads/scroll-bar-at-side-of-collision-list.823425/
+* Added function to delete .world objects using IWTE, not Blender - https://www.twcenter.net/threads/function-to-delete-world-objects-from-within-iwte.823594/
+  
+FOR RR ONLY  
+* Bug-fix to allow Lz4 Compression function to be used on a directory - https://www.twcenter.net/threads/error-using-lz4-compression-function.823428/
+  
 ### with version25_04_A (minor fixes and csv delimeter option)
 
 * Preferences option to change between comma and semi-colon when reading/writing csv files
