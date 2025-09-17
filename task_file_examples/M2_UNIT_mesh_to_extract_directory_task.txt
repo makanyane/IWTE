@@ -1,0 +1,10 @@
+# PRODUCES FOLDER OF EXTRACT FILES FROM FOLDER OF .MESH FILES 
+# BONE WEIGHTING WILL BE INCLUDED BUT ALL BONES WILL BE AT 0,0,0 LOCATION
+
+<task_id>                        mesh_to_extract_directory                                        
+<mesh_type>                      unit                                                               
+<mesh_double_texture>            yes                     # battle mesh models mapped to two textures yes/no
+<directory_in>                   "J:\IWTERomeRemastered\IWTE_v25_09_plus\test"                                                
+<directory_out>                  "J:\IWTERomeRemastered\IWTE_v25_09_plus\to_extract"                                         
+<extract_file_type>              glb                     #  glb or dae or ms3d
+ 
