@@ -1,5 +1,6 @@
 # PRODUCES FOLDER OF EXTRACT FILES FROM FOLDER OF .MESH FILES 
 # BONE WEIGHTING WILL BE INCLUDED BUT ALL BONES WILL BE AT 0,0,0 LOCATION
+# NB: THE WHOLE FOLDER WILL BE CONVERTED AS EITHER DOUBLE OR SINGLE TEXTURED DEPENDING ON YOUR yes/no SETTING
 
 <task_id>                        mesh_to_extract_directory                                        
 <mesh_type>                      unit                                                               
@@ -8,3 +9,4 @@
 <directory_out>                  "J:\IWTERomeRemastered\IWTE_v25_09_plus\to_extract"                                         
 <extract_file_type>              glb                     #  glb or dae or ms3d
  
+
