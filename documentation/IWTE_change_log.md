@@ -10,6 +10,16 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version25_10_A (minor fixes including adjustment to deployment block tolerance)
+FOR M2TW ONLY
+* Tolerance for defining contiguous flat planes in .world deployment blocks increased.
+* Existing .world doors set to be automatically displayed in the 2d view when add door option is triggered.
+GUI
+* add/sub line scroll 'arrows' added
+SETTINGS
+* default to/from extract directories set not to change unless settings file edited
+* separate default to/from extract directories added for batch processes
+  
 ### with version25_09_A (minor fixes and features including .cas multiple mesh combiner)
 
 CAS FILES 
