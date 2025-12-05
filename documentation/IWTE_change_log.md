@@ -13,8 +13,10 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 ### with version25_12_A (major change to RR mesh process, plus minor fixes)
 FOR RR ONLY
 * Major update to RR map mesh and texture production. Both original and _v2 task files now run the same process. Erosion effects added. Color ramps introduced.  
+
 FOR M2TW
 * Fix to .modeldb error checker to correctly identify +1 overlong character count on some lines.  
+
 BUG FIX (RTW/RR)
 * IWTE crash when .item to .cas conversion requested fixed.  
 
