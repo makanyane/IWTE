@@ -1,92 +1,97 @@
 ;climate setup for strat map generation
 ;climate default must be first
-;climate default has height attributes for each zone.
+;climate default has height attributes for each zone - the other climates can not have heights set
 ;the height attributes (two) are the lowest height that band may apply and the max height to which the previous bands may apply.
 ;the default sea will cascade to other climates sea.
 ;the default land will cascade to other climates land
 ;any amendments to a climates land or higher zone will cascade upwards within the climate.
-
-
+;climate default can not have a color ramp - all other climates can as an option
+;you can use tabs or spaces between entries - if you have a space within a path it must be enclosed in " "
+;if you want to use a bump for a texture it must be added to EVERY ground_type line you want the bump to apply to
 
 climate default
 {
 	sea_zone
 	{
-        	heights -999 -999
-                default_gt       		\iwtepack\iwte_rr_sea.tga
-		sea_shallow			\iwtepack\iwte_rr_sea.tga		
-                shore_gt			\iwtepack\iwte_shore.tga
+		heights -999 -999
+			default_gt			\iwtepack\iwte_rr_sea.tga
+			sea_shallow			\iwtepack\iwte_rr_sea.tga		
+			shore_gt			\iwtepack\iwte_shore.tga
 	}
-        land_zone 
+
+	land_zone 
 	{
-        	heights 0.0 0.15
-		sea_shallow			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-		beach				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-		swamp				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-		fertility_low			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga							
-		fertility_medium		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga								
-		fertility_high			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga							
-		forest_dense			\iwtepack\iwte_rr_forest_open_wood.tga			\iwtepack\iwte_rr_default_wood_bump.tga				
-		forest_sparse			\iwtepack\iwte_rr_forest_open_wood.tga			\iwtepack\iwte_rr_default_wood_bump.tga				
-		wilderness			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga		
-		hills				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga		
-		mountains_low			\iwtepack\iwte_mountains_alpine.tga	
-		mountains_high			\iwtepack\iwte_mountains_alpine.tga		
-                cliff				\iwtepack\cliff_dark.tga	             
-                river_bed_gt			\iwtepack\iwte_rr_sea.tga
-                river_gt			\iwtepack\iwte_mountains_alpine.tga
-                ford_gt				\iwtepack\iwte_rr_ford.tga
-                ford_bed_gt			\iwtepack\iwte_rr_ford_bed.tga
-                shore_gt			\iwtepack\iwte_shore.tga	
-                volcano_gt			\iwtepack\iwte_mountains_alpine.tga
-                lake				\iwtepack\iwte_rr_sea.tga
-        }
-        zone2
+		heights 0.0 0.15
+			sea_shallow			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga	
+			sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+			ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+			beach				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+			swamp				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+			fertility_low			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga							
+			fertility_medium		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga								
+			fertility_high			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga							
+			forest_dense			\iwtepack\iwte_rr_forest_open_wood.tga			\iwtepack\iwte_rr_default_wood_bump.tga				
+			forest_sparse			\iwtepack\iwte_rr_forest_open_wood.tga			\iwtepack\iwte_rr_default_wood_bump.tga				
+			wilderness			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga		
+			hills				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga		
+			mountains_low			\iwtepack\iwte_mountains_alpine.tga	
+			mountains_high			\iwtepack\iwte_mountains_alpine.tga		
+			cliff				\iwtepack\cliff_dark.tga				 
+			river_bed_gt			\iwtepack\iwte_rr_sea.tga
+			river_gt			\iwtepack\iwte_mountains_alpine.tga
+			ford_gt				\iwtepack\iwte_rr_ford.tga
+			ford_bed_gt			\iwtepack\iwte_rr_ford_bed.tga
+			shore_gt			\iwtepack\iwte_shore.tga	
+			volcano_gt			\iwtepack\iwte_mountains_alpine.tga
+			lake				\iwtepack\iwte_rr_sea.tga
+	}
+
+	zone2
 	{
-        	heights 9.0 26.0
-		mountains_low			\iwtepack\iwte_mountains_alpine.tga	
-		mountains_high			\iwtepack\iwte_mountains_alpine.tga
-        }
-        zone3
-        {
-        	heights 35.0 52.0
-        }
-        zone4
-        {
-        	heights 65.0 85.0
-		mountains_low			\iwtepack\iwte_mountains_alpine.tga		
-		mountains_high			\iwtepack\iwte_mountains_alpine.tga
-        }
-        zone5
-        {
-        	heights 105.0 150.0
-		mountains_low			\iwtepack\iwte_mountains_alpine.tga		
-		mountains_high			\iwtepack\iwte_mountains_alpine.tga
-        }
+		heights 9.0 26.0
+			mountains_low			\iwtepack\iwte_mountains_alpine.tga	
+			mountains_high			\iwtepack\iwte_mountains_alpine.tga
+	}
+
+	zone3
+	{
+		heights 35.0 52.0
+	}
+
+	zone4
+	{
+		heights 65.0 85.0
+			mountains_low			\iwtepack\iwte_mountains_alpine.tga		
+			mountains_high			\iwtepack\iwte_mountains_alpine.tga
+	}
+
+	zone5
+	{
+		heights 105.0 150.0
+			mountains_low			\iwtepack\iwte_mountains_alpine.tga		
+			mountains_high			\iwtepack\iwte_mountains_alpine.tga
+	}
 }
 
 
-
-
-
-climate mediterranean
+climate mediterranean ; RGB 236 0 140 (called text_climate in some files)
 {
-        color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.7
-                ramp_texture        	        \iwtepack\climate_map_001.tga      
-        }
+		ramp_mix						0.7
+		ramp_texture					\iwtepack\climate_map_001.tga	  
+	}
+
 	sea_zone
 	{
 
 	}
-        land_zone 
+
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_med_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga						
@@ -112,13 +117,12 @@ climate mediterranean
 		mountains_high_valley		\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_steep		\iwtepack\iwte_mountains_med.tga
-                cliff				\iwtepack\iwte_mountains_med.tga
+		cliff				\iwtepack\iwte_mountains_med.tga
 		river_gt			\iwtepack\iwte_mountains_med.tga
-                volcano_gt			\iwtepack\iwte_mountains_med.tga
+		volcano_gt			\iwtepack\iwte_mountains_med.tga
+	}
 
-
-        }
-        zone2
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_med.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -138,8 +142,9 @@ climate mediterranean
 		mountains_high_valley		\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_med.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_med.tga  		
-        }
-       zone3
+	}
+
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -158,9 +163,10 @@ climate mediterranean
 		mountains_high_flat		\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_med_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_med.tga 
-		mountains_high_steep		\iwtepack\iwte_mountains_med.tga   		
-        }
-       zone4
+		mountains_high_steep		\iwtepack\iwte_mountains_med.tga			
+	}
+
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_med.tga
 		wilderness_valley		\iwtepack\iwte_mountains_med.tga
@@ -180,8 +186,9 @@ climate mediterranean
 		mountains_high_valley		\iwtepack\iwte_mountains_med.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_med.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_med.tga  		
-        }
-       zone5
+	}
+
+	zone5
 	{
 		wilderness			\iwtepack\iwte_mountains_med.tga
 		wilderness_valley		\iwtepack\iwte_mountains_med.tga
@@ -201,236 +208,183 @@ climate mediterranean
 		mountains_high_valley		\iwtepack\iwte_mountains_med.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_med.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_med.tga  		
-        }
+		}
 
 }
 
-climate sandy_desert
+climate sandy_desert ; RGB 102 45 145
 {
-        color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.2
-                ramp_texture        	        \iwtepack\climate_map_002.tga          
-        }
+		ramp_mix						0.2
+		ramp_texture					\iwtepack\climate_map_002.tga		  
+	}
 	sea_zone
 	{
 
 	}
-        land_zone 
+	land_zone 
 	{
 
-		sea_shallow			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_plain_bump.tga	
-       		sea_deep			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_plain_bump.tga
-       		ocean				\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_plain_bump.tga
-		beach				\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_plain_bump.tga
-		swamp				\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga
-		fertility_low			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga						
-		fertility_medium		\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga							
-		fertility_high			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga
-		forest_dense			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga				
-		forest_sparse			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga				
-		wilderness			\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga
-		hills				\iwtepack\iwte_sandy_desert.tga				\iwtepack\iwte_sandy_desert_bump.tga
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_hill.tga			\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga	
-                cliff				\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		river_gt			\iwtepack\iwte_rr_rocky_desert_mountain.tga	
-
-        }
-        zone2
+		sea_shallow			\iwtepack\iwte_rr_sandy_desert.tga								
+		sea_deep			\iwtepack\iwte_rr_sandy_desert.tga								
+		ocean				\iwtepack\iwte_rr_sandy_desert.tga								
+		beach				\iwtepack\iwte_rr_sandy_desert.tga								
+		swamp				\iwtepack\iwte_rr_sandy_desert.tga								
+		fertility_low			\iwtepack\iwte_rr_sandy_desert.tga														
+		fertility_medium		\iwtepack\iwte_rr_sandy_desert.tga															
+		fertility_high			\iwtepack\iwte_rr_sandy_desert.tga								
+		forest_dense			\iwtepack\iwte_rr_sandy_desert.tga												
+		forest_sparse			\iwtepack\iwte_rr_sandy_desert.tga												
+		wilderness			\iwtepack\iwte_rr_sandy_desert.tga			\iwtepack\iwte_rr_sandy_desert_bump.tga					
+		hills				\iwtepack\iwte_rr_sandy_desert.tga			\iwtepack\iwte_rr_sandy_desert_bump.tga
+		mountains_low			\iwtepack\iwte_rr_sandy_desert.tga			\iwtepack\iwte_rr_sandy_desert_bump.tga
+		mountains_low_steep		\iwtepack\iwte_rr_sandy_desert.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high			\iwtepack\iwte_rr_sandy_desert.tga			\iwtepack\iwte_rr_sandy_desert_bump.tga
+		mountains_high_steep		\iwtepack\iwte_rr_sandy_desert.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga	
+		cliff				\iwtepack\iwte_rr_desert_mountain.tga
+		river_gt			\iwtepack\iwte_rr_desert_mountain.tga		
+	}
+	zone2
 	{
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_low_valley		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_high_valley		\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga			
-        }
-        zone3
+		mountains_low			\iwtepack\iwte_rr_sandy_desert.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low_flat		\iwtepack\iwte_rr_sandy_desert.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_low_ridge		\iwtepack\iwte_rr_desert_mountain.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low_steep		\iwtepack\iwte_rr_desert_mountain.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high			\iwtepack\iwte_rr_sandy_desert.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high_flat		\iwtepack\iwte_rr_sandy_desert.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_high_ridge		\iwtepack\iwte_rr_desert_mountain.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high_steep		\iwtepack\iwte_rr_desert_mountain.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga			
+	}
+		
+	zone3
 	{
-          
-		hills				\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga             
-		hills_steep			\iwtepack\iwte_rr_rocky_desert_mountain.tga             
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_low_valley		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_high_valley		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga			
-        }
-       zone4
+		hills				\iwtepack\iwte_rr_desert_mountain.tga
+		hills_valley			\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		hills_ridge			\iwtepack\iwte_rr_desert_mountain.tga		
+		hills_steep			\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low			\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low_flat		\iwtepack\iwte_rr_desert_mountain.tga		
+		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_low_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low_steep		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high			\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high_flat		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_high_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high_steep		\iwtepack\iwte_rr_desert_mountain.tga
+	}
+	zone4
 	{
-		hills				\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_steep			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_valley		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga  	
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_valley		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga			
-        }
+		
+	}
 }
 
-climate rocky_desert
+climate rocky_desert ; RGB 146 39 143
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.2
-                ramp_texture        	        \iwtepack\climate_map_003.tga          
-        }
+		ramp_mix						0.2
+		ramp_texture					\iwtepack\climate_map_003.tga		  
+	}
+
 	sea_zone
 	{
  
 	}
-     land_zone 
+
+	land_zone 
 	{
-		sea_shallow			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-       		ocean				\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		beach				\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		swamp				\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		fertility_low			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga						
-		fertility_medium		\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga							
-		fertility_high			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		forest_dense			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga				
-		forest_sparse			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_valley		\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_ridge		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_steep		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills				\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_steep			\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_low			\iwtepack\iwte_rr_rocky_foothill_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_foothill_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		sea_shallow			\iwtepack\iwte_rr_rocky_desert_new.tga	
+		sea_deep			\iwtepack\iwte_rr_rocky_desert_new.tga
+		ocean				\iwtepack\iwte_rr_rocky_desert_new.tga
+		beach				\iwtepack\iwte_rr_rocky_desert_new.tga
+		swamp				\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		fertility_low			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga						
+		fertility_medium		\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga							
+		fertility_high			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		forest_dense			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga				
+		forest_sparse			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		wilderness			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		hills				\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		hills_valley			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		hills_ridge			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		hills_steep			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low			\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga
 		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_foothill_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high			\iwtepack\iwte_rr_rocky_foothill_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_foothill_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_high			\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-                cliff				\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		river_gt			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-        }
-        zone2
+		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_new.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		cliff				\iwtepack\iwte_rr_desert_mountain.tga
+		river_gt			\iwtepack\iwte_rr_desert_mountain.tga
+	}
+	zone2
 	{
-		wilderness			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_valley		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_ridge		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills				\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_steep			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low			\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high			\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_foothill.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
-		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
+		mountains_low			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_low_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
+		mountains_high			\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_foothill_bump.tga
+		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		mountains_high_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_new.tga				\iwtepack\iwte_rr_rocky_desert_new_bump.tga
 		
-        }
-        zone3
+	}
+
+	zone3
 	{
-		wilderness			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_valley		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		wilderness_ridge		\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga             
-		wilderness_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga             
-		hills				\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_hill.tga				\iwtepack\iwte_rr_rocky_desert_bump.tga             
-		hills_steep			\iwtepack\iwte_rr_rocky_desert_mountain.tga           
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
+		wilderness			\iwtepack\iwte_rr_desert_mountain.tga
+		wilderness_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		wilderness_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		wilderness_steep		\iwtepack\iwte_rr_desert_mountain.tga
+		hills				\iwtepack\iwte_rr_desert_mountain.tga
+		hills_valley			\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
+		hills_ridge			\iwtepack\iwte_rr_desert_mountain.tga
+		hills_steep			\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low			\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low_flat		\iwtepack\iwte_rr_desert_mountain.tga
 		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
+		mountains_low_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_low_steep		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high			\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high_flat		\iwtepack\iwte_rr_desert_mountain.tga
 		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga	
-        }
-       zone4
+		mountains_high_ridge		\iwtepack\iwte_rr_desert_mountain.tga
+		mountains_high_steep		\iwtepack\iwte_rr_desert_mountain.tga
+	}
+
+	zone4
 	{
-		wilderness			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		wilderness_valley		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		wilderness_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		wilderness_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills				\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_steep			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga  	
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga			
-        }
-       zone5
+		
+	}
+
+	zone5
 	{
-		wilderness			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		wilderness_valley		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		wilderness_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		wilderness_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills				\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_valley			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_ridge			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		hills_steep			\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low			\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_low_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_low_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_low_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga  	
-		mountains_high			\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_high_flat		\iwtepack\iwte_rr_rocky_desert_mountain.tga
-		mountains_high_valley		\iwtepack\iwte_rr_rocky_valley_128.tga				\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_rr_rocky_desert_mountain.tga 
-		mountains_high_steep		\iwtepack\iwte_rr_rocky_desert_mountain.tga			
-        }
+		
+	}
 }
 
-climate temperate_grassland_fertile
+climate temperate_grassland_fertile ; RGB 237 20 91
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.5
-                ramp_texture        	        \iwtepack\climate_map_004.tga          
-        }
-        land_zone 
+		ramp_mix						0.5
+		ramp_texture					\iwtepack\climate_map_004.tga		  
+	}
+	land_zone 
 	{
-
 		sea_shallow			\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_grass_fertile_swamp.tga		\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga						
@@ -456,10 +410,10 @@ climate temperate_grassland_fertile
 		mountains_high_valley		\iwtepack\iwte_rr_grass_fertile.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_rr_grass_fertile_hill.tga		\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-;                cliff				\iwtepack\iwte_mountains_semi_arid.tga
+;;;		cliff				\iwtepack\iwte_mountains_semi_arid.tga
 		river_gt			\iwtepack\iwte_mountains_semi_arid.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_grass_fertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_grass_fertile.tga				\iwtepack\iwte_rr_default_bump.tga
@@ -479,8 +433,8 @@ climate temperate_grassland_fertile
 		mountains_high_valley		\iwtepack\iwte_rr_grass_fertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-        zone3
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_grass_fertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_grass_fertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -500,8 +454,8 @@ climate temperate_grassland_fertile
 		mountains_high_valley		\iwtepack\iwte_rr_grass_fertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_semi_arid.tga
 		wilderness_valley		\iwtepack\iwte_mountains_semi_arid.tga
@@ -521,8 +475,8 @@ climate temperate_grassland_fertile
 		mountains_high_valley		\iwtepack\iwte_mountains_semi_arid.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
-        zone5
+	}
+	zone5
 	{
 		wilderness			\iwtepack\iwte_mountains_high_snow.tga
 		wilderness_valley		\iwtepack\iwte_mountains_high_snow.tga
@@ -542,25 +496,25 @@ climate temperate_grassland_fertile
 		mountains_high_valley		\iwtepack\iwte_mountains_high_snow.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_high_snow.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_high_snow.tga
-        }
+	}
 }
 
-climate temperate_grassland_infertile
+climate temperate_grassland_infertile ; RGB 237 28 36
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.5
-                ramp_texture        	        \iwtepack\climate_map_005.tga          
-        }
-        sea_zone 
+		ramp_mix						0.5
+		ramp_texture					\iwtepack\climate_map_005.tga		  
+	}
+	sea_zone 
 	{
 
-        }
-        land_zone 
+	}
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga
-       		ocean				\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga
+		sea_deep			\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga
+		ocean				\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga
 		beach				\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga
 		swamp				\iwtepack\iwte_rr_grass_infertile_swamp.tga		\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_mixed_bump.tga						
@@ -586,10 +540,10 @@ climate temperate_grassland_infertile
 		mountains_high_valley		\iwtepack\iwte_rr_grass_infertile.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_rr_grass_infertile_hill.tga		\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_steep		\iwtepack\iwte_mountains_infertile.tga		
-                cliff				\iwtepack\iwte_mountains_infertile.tga
+		cliff				\iwtepack\iwte_mountains_infertile.tga
 		river_gt			\iwtepack\iwte_mountains_infertile.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_grass_infertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_grass_infertile.tga				\iwtepack\iwte_rr_mixed_bump.tga
@@ -609,8 +563,8 @@ climate temperate_grassland_infertile
 		mountains_high_valley		\iwtepack\iwte_rr_grass_infertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_infertile.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_infertile.tga 		
-        }
-        zone3
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_grass_infertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_grass_infertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -630,8 +584,8 @@ climate temperate_grassland_infertile
 		mountains_high_valley		\iwtepack\iwte_rr_grass_infertile_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_infertile.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_infertile.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_infertile.tga
 		wilderness_valley		\iwtepack\iwte_mountains_infertile.tga
@@ -651,21 +605,21 @@ climate temperate_grassland_infertile
 		mountains_high_valley		\iwtepack\iwte_mountains_infertile.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_infertile.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_infertile.tga		
-        }
+	}
 }
 
-climate temperate_forest_open
+climate temperate_forest_open ; RGB 242 101 34
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.5
-                ramp_texture        	        \iwtepack\climate_map_006.tga          
-        }
-        land_zone 
+		ramp_mix						0.5
+		ramp_texture					\iwtepack\climate_map_006.tga		  
+	}
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_forest_open_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga						
@@ -685,16 +639,16 @@ climate temperate_forest_open
 		mountains_low_flat		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low_ridge		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga
+		mountains_low_steep		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_flat		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-;                cliff				\iwtepack\iwte_mountains_semi_arid.tga
+		mountains_high_steep		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga		
+;;;		cliff				\iwtepack\iwte_mountains_semi_arid.tga
 		river_gt			\iwtepack\iwte_mountains_semi_arid.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -707,70 +661,70 @@ climate temperate_forest_open
 		mountains_low			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga 
 		mountains_low_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga 
+		mountains_low_ridge		\iwtepack\iwte_mountains_highland.tga 
+		mountains_low_steep		\iwtepack\iwte_mountains_highland.tga 
 		mountains_high			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga 
 		mountains_high_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-        zone3
+		mountains_high_ridge		\iwtepack\iwte_mountains_highland.tga 
+		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga 		
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_ridge		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		wilderness_steep		\iwtepack\iwte_mountains_semi_arid.tga
+		wilderness_steep		\iwtepack\iwte_mountains_highland.tga
 		hills				\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		hills_valley			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		hills_ridge			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		hills_steep			\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_low			\iwtepack\iwte_mountains_semi_arid.tga 
+		hills_steep			\iwtepack\iwte_mountains_highland.tga
+		mountains_low			\iwtepack\iwte_mountains_highland.tga 
 		mountains_low_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high			\iwtepack\iwte_mountains_semi_arid.tga 
+		mountains_low_ridge		\iwtepack\iwte_mountains_highland.tga 
+		mountains_low_steep		\iwtepack\iwte_mountains_highland.tga 
+		mountains_high			\iwtepack\iwte_mountains_highland.tga 
 		mountains_high_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-       zone4
+		mountains_high_ridge		\iwtepack\iwte_mountains_highland.tga 
+		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga 		
+	}
+	zone4
 	{
-		wilderness			\iwtepack\iwte_mountains_semi_arid.tga
-		wilderness_valley		\iwtepack\iwte_mountains_semi_arid.tga
-		wilderness_ridge		\iwtepack\iwte_mountains_semi_arid.tga
-		wilderness_steep		\iwtepack\iwte_mountains_semi_arid.tga
-		hills				\iwtepack\iwte_mountains_semi_arid.tga
-		hills_valley			\iwtepack\iwte_mountains_semi_arid.tga
-		hills_ridge			\iwtepack\iwte_mountains_semi_arid.tga
-		hills_steep			\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_low			\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_low_flat		\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_low_valley		\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_low_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high			\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high_flat		\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_high_valley		\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
+		wilderness			\iwtepack\iwte_mountains_highland.tga
+		wilderness_valley		\iwtepack\iwte_mountains_highland.tga
+		wilderness_ridge		\iwtepack\iwte_mountains_highland.tga
+		wilderness_steep		\iwtepack\iwte_mountains_highland.tga
+		hills				\iwtepack\iwte_mountains_highland.tga
+		hills_valley			\iwtepack\iwte_mountains_highland.tga
+		hills_ridge			\iwtepack\iwte_mountains_highland.tga
+		hills_steep			\iwtepack\iwte_mountains_highland.tga
+		mountains_low			\iwtepack\iwte_mountains_highland.tga 
+		mountains_low_flat		\iwtepack\iwte_mountains_highland.tga
+		mountains_low_valley		\iwtepack\iwte_mountains_highland.tga
+		mountains_low_ridge		\iwtepack\iwte_mountains_highland.tga 
+		mountains_low_steep		\iwtepack\iwte_mountains_highland.tga 
+		mountains_high			\iwtepack\iwte_mountains_highland.tga 
+		mountains_high_flat		\iwtepack\iwte_mountains_highland.tga
+		mountains_high_valley		\iwtepack\iwte_mountains_highland.tga
+		mountains_high_ridge		\iwtepack\iwte_mountains_highland.tga 
+		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga		
+	}
 }
 
-climate temperate_forest_deep
+climate temperate_forest_deep ; RGB 247 148 29
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.5
-                ramp_texture        	        \iwtepack\climate_map_007.tga          
-        }
-        land_zone 
+		ramp_mix						0.5
+		ramp_texture					\iwtepack\climate_map_007.tga		  
+	}
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_forest_deep_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga						
@@ -796,10 +750,10 @@ climate temperate_forest_deep
 		mountains_high_valley		\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_rr_forest_deep_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga		
-;                cliff				\iwtepack\iwte_mountains_highland.tga
+;;;		cliff				\iwtepack\iwte_mountains_highland.tga
 		river_gt			\iwtepack\iwte_mountains_highland.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_forest_deep_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -819,8 +773,8 @@ climate temperate_forest_deep
 		mountains_high_valley		\iwtepack\iwte_rr_forest_deep_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_highland.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga		
-        }
-        zone3
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_forest_deep_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_deep.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -840,8 +794,8 @@ climate temperate_forest_deep
 		mountains_high_valley		\iwtepack\iwte_rr_forest_deep_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_highland.tga
 		wilderness_valley		\iwtepack\iwte_mountains_highland.tga
@@ -861,21 +815,21 @@ climate temperate_forest_deep
 		mountains_high_valley		\iwtepack\iwte_mountains_highland.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
+	}
 }
 
-climate swamp
+climate swamp ; RGB 255 242 0
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.0
-                ramp_texture        	        \iwtepack\climate_map_008.tga          
-        }
-        land_zone 
+		ramp_mix						0.0
+		ramp_texture					\iwtepack\climate_map_008.tga		  
+	}
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga	
-       		sea_deep			\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
-       		ocean				\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
+		sea_deep			\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
+		ocean				\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		beach				\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		swamp				\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga						
@@ -901,10 +855,10 @@ climate swamp
 		mountains_high_valley		\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_swamp_hill.tga			\iwtepack\iwte_swamp_bump.tga
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-;                cliff				\iwtepack\iwte_mountains_semi_arid.tga
+;;;;		cliff				\iwtepack\iwte_mountains_semi_arid.tga
 		river_gt			\iwtepack\iwte_mountains_semi_arid.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_swamp_hill.tga			\iwtepack\iwte_swamp_bump.tga
 		wilderness_valley		\iwtepack\iwte_swamp.tga			\iwtepack\iwte_swamp_bump.tga
@@ -924,8 +878,8 @@ climate swamp
 		mountains_high_valley		\iwtepack\iwte_swamp_hill.tga			\iwtepack\iwte_swamp_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-        zone3
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_swamp_hill.tga			\iwtepack\iwte_swamp_bump.tga
 		wilderness_valley		\iwtepack\iwte_swamp_hill.tga			\iwtepack\iwte_swamp_bump.tga
@@ -945,8 +899,8 @@ climate swamp
 		mountains_high_valley		\iwtepack\iwte_swamp_hill.tga			\iwtepack\iwte_swamp_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_semi_arid.tga
 		wilderness_valley		\iwtepack\iwte_mountains_semi_arid.tga
@@ -966,21 +920,21 @@ climate swamp
 		mountains_high_valley		\iwtepack\iwte_mountains_semi_arid.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
+	}
 }
 
-climate highland
+climate highland ; RGB 141 198 63
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.5
-                ramp_texture        	        \iwtepack\climate_map_009.tga          
-        }
-        land_zone 
+		ramp_mix						0.5
+		ramp_texture					\iwtepack\climate_map_009.tga		  
+	}
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_forest_open_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga						
@@ -1006,10 +960,10 @@ climate highland
 		mountains_high_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_highland.tga			
 		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga		
-;                cliff				\iwtepack\iwte_mountains_highland.tga
+;			cliff				\iwtepack\iwte_mountains_highland.tga
 		river_gt			\iwtepack\iwte_mountains_highland.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -1029,8 +983,8 @@ climate highland
 		mountains_high_valley		\iwtepack\iwte_mountains_highland.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_highland.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga 		
-        }
-        zone3
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -1050,8 +1004,8 @@ climate highland
 		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_highland.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_highland.tga
 		wilderness_valley		\iwtepack\iwte_mountains_highland.tga
@@ -1071,21 +1025,21 @@ climate highland
 		mountains_high_valley		\iwtepack\iwte_mountains_highland.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
+	}
 }
 
-climate alpine
+climate alpine ; RGB 57 181 74
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.7
-                ramp_texture        	        \iwtepack\climate_map_010.tga          
-        }
-        land_zone 
+		ramp_mix						0.7
+		ramp_texture					\iwtepack\climate_map_010.tga		  
+	}
+	land_zone 
 	{
 		sea_shallow			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_forest_open_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 		fertility_low			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga						
@@ -1103,18 +1057,18 @@ climate alpine
 		hills_steep			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low_flat		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		mountains_low_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
 		mountains_low_ridge		\iwtepack\iwte_mountains_alpine.tga
 		mountains_low_steep		\iwtepack\iwte_mountains_alpine.tga
 		mountains_high			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_flat		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_high_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
+		mountains_high_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_alpine.tga
 		mountains_high_steep		\iwtepack\iwte_mountains_alpine.tga		
-;                cliff				\iwtepack\iwte_mountains_alpine.tga
+;			cliff				\iwtepack\iwte_mountains_alpine.tga
 		river_gt			\iwtepack\iwte_mountains_alpine.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -1124,18 +1078,18 @@ climate alpine
 		hills_valley			\iwtepack\iwte_rr_forest_open.tga			\iwtepack\iwte_rr_default_bump.tga
 		hills_ridge			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		hills_steep			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga 
+		mountains_low			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_low_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
+		mountains_low_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
 		mountains_low_ridge		\iwtepack\iwte_mountains_alpine.tga 
 		mountains_low_steep		\iwtepack\iwte_mountains_alpine.tga 
-		mountains_high			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga 
+		mountains_high			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		mountains_high_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
+		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_alpine.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_alpine.tga 		
-        }
-        zone3
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
@@ -1147,16 +1101,16 @@ climate alpine
 		hills_steep			\iwtepack\iwte_mountains_alpine.tga
 		mountains_low			\iwtepack\iwte_mountains_alpine.tga 
 		mountains_low_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_low_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
+		mountains_low_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
 		mountains_low_ridge		\iwtepack\iwte_mountains_alpine.tga 
 		mountains_low_steep		\iwtepack\iwte_mountains_alpine.tga 
 		mountains_high			\iwtepack\iwte_mountains_alpine.tga 
 		mountains_high_flat		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
-		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_default_bump.tga
+		mountains_high_valley		\iwtepack\iwte_rr_forest_open_hill.tga			\iwtepack\iwte_rr_rocky_foothill_128_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_alpine.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_alpine.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_mountains_alpine.tga
 		wilderness_valley		\iwtepack\iwte_mountains_alpine.tga
@@ -1176,8 +1130,8 @@ climate alpine
 		mountains_high_valley		\iwtepack\iwte_mountains_alpine.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_snow.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_alpine.tga		
-        }
-        zone5
+	}
+	zone5
 	{
 		wilderness			\iwtepack\iwte_mountains_semi_snow.tga
 		wilderness_valley		\iwtepack\iwte_mountains_semi_snow.tga
@@ -1197,22 +1151,22 @@ climate alpine
 		mountains_high_valley		\iwtepack\iwte_mountains_semi_snow.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_high_snow.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_high_snow.tga			
-        }
+	}
 }
 
-climate sub_arctic
+climate sub_arctic ; RGB 0 166 81
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                      0.5
-                ramp_texture        	        \iwtepack\climate_map_011.tga          
-        }
-        land_zone 
+		ramp_mix					  0.5
+		ramp_texture					\iwtepack\climate_map_011.tga		  
+	}
+	land_zone 
 	{
 
 		sea_shallow			\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
-       		ocean				\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
+		sea_deep			\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
+		ocean				\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
 		beach				\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
 		swamp				\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_swamp_bump.tga
 
@@ -1223,55 +1177,54 @@ climate sub_arctic
 		forest_dense			\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_wood_bump.tga				
 		forest_sparse			\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_wood_bump.tga				
 		wilderness			\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
-		hills				\iwtepack\iwte_rr_sub_arctic.tga			\iwtepack\iwte_rr_default_bump.tga
+		hills				\iwtepack\iwte_rr_winter.tga			\iwtepack\iwte_rr_default_bump.tga
 
 		mountains_low			\iwtepack\iwte_mountains_alpine.tga
 		mountains_high			\iwtepack\iwte_mountains_alpine.tga
-
-;                cliff				\iwtepack\iwte_mountains_alpine.tga
+;				cliff				\iwtepack\iwte_mountains_alpine.tga
 		river_gt			\iwtepack\iwte_mountains_alpine.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		mountains_low			\iwtepack\iwte_mountains_alpine.tga	
 		mountains_high			\iwtepack\iwte_mountains_alpine.tga		
-        }
-        zone3
+	}
+	zone3
 	{
 		mountains_low			\iwtepack\iwte_mountains_high_snow.tga		
 		mountains_high			\iwtepack\iwte_mountains_high_snow.tga		
-        }
-        zone4
+	}
+	zone4
 	{
 		mountains_low			\iwtepack\iwte_mountains_high_snow.tga		
 		mountains_high			\iwtepack\iwte_mountains_high_snow.tga			
-        }
-        zone5
+	}
+	zone5
 	{
 		mountains_low			\iwtepack\iwte_mountains_high_snow.tga		
 		mountains_high			\iwtepack\iwte_mountains_high_snow.tga			
-        }
+	}
 }
 
-climate semi_arid
+climate semi_arid ; RGB 0 114 188
 {
-      color_ramp
+	color_ramp
 	{
-                ramp_mix                       0.7
-                ramp_texture        	        \iwtepack\climate_map_012.tga          
-        }
+		ramp_mix						0.7
+		ramp_texture					\iwtepack\climate_map_012.tga		  
+	}
 	sea_zone
 	{
 
 	}
-        land_zone 
+	land_zone 
 	{
 
 		sea_shallow			\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga	
-       		sea_deep			\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
-       		ocean				\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
-       		beach				\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
-       		swamp				\iwtepack\iwte_rr_semi_arid_swamp.tga			\iwtepack\iwte_swamp_bump.tga
+		sea_deep			\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
+		ocean				\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
+		beach				\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
+		swamp				\iwtepack\iwte_rr_semi_arid_swamp.tga			\iwtepack\iwte_swamp_bump.tga
 
 		fertility_low			\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga						
 		fertility_medium		\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga							
@@ -1291,16 +1244,16 @@ climate semi_arid
 		mountains_low_flat		\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_low_valley		\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_low_ridge		\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga
+		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga
 		mountains_high			\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_high_flat		\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga
-		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-                cliff				\iwtepack\iwte_mountains_semi_arid.tga
+		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga		
+		cliff				\iwtepack\iwte_mountains_semi_arid.tga
 		river_gt			\iwtepack\iwte_mountains_semi_arid.tga
-        }
-        zone2
+	}
+	zone2
 	{
 		wilderness			\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_semi_arid.tga				\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
@@ -1314,14 +1267,14 @@ climate semi_arid
 		mountains_low_flat		\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_low_valley		\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_low_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga  
+		mountains_low_steep		\iwtepack\iwte_mountains_semi_arid.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga  
 		mountains_high			\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga 
 		mountains_high_flat		\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_high_valley		\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
-		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga  		
-        }
-        zone3
+		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga			\iwtepack\iwte_rr_rocky_foothill_bump.tga  		
+	}
+	zone3
 	{
 		wilderness			\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		wilderness_valley		\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
@@ -1341,8 +1294,8 @@ climate semi_arid
 		mountains_high_valley		\iwtepack\iwte_rr_semi_arid_hill.tga			\iwtepack\iwte_rr_semi_arid_fertility_bump.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga 		
-        }
-       zone4
+	}
+	zone4
 	{
 		wilderness			\iwtepack\iwte_rr_semi_arid_hill.tga
 		wilderness_valley		\iwtepack\iwte_rr_semi_arid_hill.tga
@@ -1362,8 +1315,8 @@ climate semi_arid
 		mountains_high_valley		\iwtepack\iwte_rr_semi_arid_hill.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
-       zone5
+	}
+	zone5
 	{
 		wilderness			\iwtepack\iwte_rr_semi_arid_hill.tga
 		wilderness_valley		\iwtepack\iwte_rr_semi_arid_hill.tga
@@ -1383,6 +1336,6 @@ climate semi_arid
 		mountains_high_valley		\iwtepack\iwte_mountains_semi_arid.tga
 		mountains_high_ridge		\iwtepack\iwte_mountains_semi_arid.tga 
 		mountains_high_steep		\iwtepack\iwte_mountains_semi_arid.tga		
-        }
+	}
 }
 
