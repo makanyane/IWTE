@@ -91,7 +91,7 @@ M2
 * vege sprite generation is performed in a hidden mode.
 * 3d viewing of .world files should now be seemless using the settings options to switch between texture, effects or shading modes, and with/without normals.           (the .texture files required should be in the textures directory below the model or for .world be in the IWTEsave directory. No need to convert.)
 * added unit .mesh directory to extracts option (no skeletons involved).
-* 
+* fix to geography.db editing to allow cactus/mangroves etc to be added to climates that didn't have them previously
 RR
 * mapping processes have been amended for the v2 process. Memory usage has been addressed (major slowdown on mesh production of large map mesh).
 * creation of Fe maps is now handled via a task.
