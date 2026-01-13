@@ -38,6 +38,7 @@ There are a few simply syntax items anyone wanting to use this process should be
 | extract_to_cas | [extract_to_CAS_with_multiple_anims](../task_file_examples/CAS_extract_to_CAS_with_multiple_anims_task.txt)
 | cas_data_csv | [CAS_data_to_csv](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
+| cas_merge_meshes | [CAS_merge_meshes](../task_file_examples/CAS_merge_meshes.txt) | see https://www.twcenter.net/ubs/fixing-cas-files-with-too-many-meshes.75/page/joining-multiple-meshes-together.5/
 | open_world_files | [M2_settlement_open_files](../task_file_examples/M2_settlement_open_files_task.txt) | M2 only, opens .world/.worldcollision and .animinstances files
 | world_effects_and_shading | [M2_SETTLEMENT_effect_and_shading](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | M2 only |
 | dds_to_texture_directory | [M2_TEXTURE_dds_to_texture_directory](../task_file_examples/M2_TEXTURE_dds_to_texture_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | M2 only |
