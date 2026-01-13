@@ -1,0 +1,5 @@
+<task_id>        combine_cas_model_mesh_directory
+<directory_in>        "I:\MOD DL Copies\MOBILE\sship\SSHIP.PART1\models_strat"
+<directory_out>        "E:\m2 sent\mobile_model_fixes\sship\models_strat"
+#<combine_mesh>        battle
+<combine_mesh>        strat
