@@ -1,4 +1,34 @@
-# FOR UNIT MESHES - EXAMPLE WITH BODY AND ONE WEAPON ANIM
+# FOR UNIT MESHES - EXAMPLE WITH BODY WEAPON AND SHIELD ANIMATIONS 
+# THIS IS THE PKH BOWSTRING UNIT THAT USES THE SHIELD ANIM FOR THE STRING
 <task_id>                              mesh_to_extract                                         # reads a.mesh file and .cas basepose and animation files
 
-find one for this!
+<mesh_file_full_path_in>                            M:\M2TW\mods\WD_PKH\data\unit_models\_units\pkh_bm\anglo\pkh_bowstring_militia_lod0.mesh   #  
+<mesh_type>                                         unit                                                                 #  
+<mesh_double_texture>                               yes                                                                  #  
+<cas_file_types_in_list>                                                                                                 #  
+body                                                                                                                    
+weapon                                                                                                                  
+shield                                                                                                                  
+
+<directory_out>                                     M:\IWTE\IWTEpythons\IWTE_V25_09_plus\to_extract                       #  
+<extract_file_name_out>                bowstring.glb                                                    #  
+<create_text_file>                                  no                                                                   #  
+<create_task_file_from_input>                       yes                                                                  #  
+<task_file_full_path_out>                            M:\IWTE\IWTEpythons\IWTE_V25_09_plus/dae_to_mesh_pkh_bowstring_lod0_task.txt   #  
+<cas_file_full_path_in_default_list>                                                                                     #  
+M:\M2TW\mods\WD_PKH\data/animations/pkh_bowman/pkh_bowman_basepose.cas                                      
+M:\M2TW\mods\WD_PKH\data/animations/pkh_bowman/bow_anim/pkh_bow_arrow_default.cas                           
+M:\M2TW\mods\WD_PKH\data/animations/pkh_bowman/bow_anim/pkh_bow_string_default.cas                          
+
+<cas_file_full_path_in_action_list>                                                                                      #  
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/pkh_Bowman_attack_missile_ready.cas                          
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/bow_anim/pkh_bow_arrow_attack_missile_ready.cas              
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/bow_anim/pkh_bow_string_attack_missile_ready.cas 
+            
+M:\M2TW\mods\WD_PKH\data/animations/pkh_bowman/pkh_Bowman_attack_missile_hold.cas                           
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/bow_anim/pkh_bow_arrow_missile_hold.cas                      
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/bow_anim/pkh_bow_string_missile_hold.cas  
+                   
+M:\M2TW\mods\WD_PKH\data/animations/pkh_bowman/pkh_Bowman_attack_missile_release.cas                        
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/bow_anim/pkh_bow_arrow_default.cas                           
+M:\M2TW\mods\WD_PKH\data/animations/pkh_Bowman/bow_anim/pkh_bow_string_missile_release.cas   
