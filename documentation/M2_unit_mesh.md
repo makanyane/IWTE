@@ -52,4 +52,7 @@ Running that task file will generate an extract file that will show all the list
 When you run a mesh_to_extract task with animations IWTE will write a return extract_to_mesh task file which lists the names and start/end frames of each incoming anim.  This allows multiple animations to be edited in the same file and then be written out individually.
 See [unit animations in Blender](https://github.com/makanyane/IWTE/blob/main/documentation/unit_animations_in_blender.md) for some further information relevant to cas and mesh models.
 
-
+## Adjusting bounding spheres
+IWTE by default calculates a minimum sized bounding sphere for use in the unit .mesh files, this is similar to vanilla meshes. This can cause units to drop out of view early with extreme custom camera angles. To increase the bounding sphere sizes you can process an existing .mesh or directory of .mesh files with these tasks:
+* [mesh_bounding_sphere_edit](https://github.com/makanyane/IWTE/blob/main/task_file_examples/M2_UNIT_mesh_bounding_sphere_single_task.txt)
+* [mesh_bounding_sphere_edit_directory](https://github.com/makanyane/IWTE/blob/main/task_file_examples/M2_UNIT_mesh_bounding_sphere_directory_task.txt)
