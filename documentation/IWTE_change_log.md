@@ -13,34 +13,34 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 ### with version 26_03_A (multiple feature changes and fixes)
 M2TW ONLY: 
 New Features:
-    Environment: You can now select RGB colour via colour picker for .lighting file and descr_geography_new.db distance colours
-    Settlements: Sloping deployment blocks on battle map settlement walls are now possible
-    Settlements: Doors that belong to deployment blocks that are deleted will now also be deleted along with the link/ladders attached to them and ground doors if they are not connected to another link.
-    Settlements: When adding or adjusting a ground door, IF you have the .worldterrain open, you will get the option to 'accept ground height' at that point.
-    Settlements: Bulk deletion of object collisions allowed.
-    Settlements: Bulk deletion of object animations allowed.
-    Units: New task process to amend bounding sphere in unit .mesh files (IWTE default and vanilla minimal sized bounding spheres can cause units to be dropped from view early if using custom camera angles)
+* Environment: You can now select RGB colour via colour picker for .lighting file and descr_geography_new.db distance colours
+* Settlements: Sloping deployment blocks on battle map settlement walls are now possible
+* Settlements: Doors that belong to deployment blocks that are deleted will now also be deleted along with the link/ladders attached to them and ground doors if they are not connected to another link.
+* Settlements: When adding or adjusting a ground door, IF you have the .worldterrain open, you will get the option to 'accept ground height' at that point.
+* Settlements: Bulk deletion of object collisions allowed.
+* Settlements: Bulk deletion of object animations allowed.
+* Units: New task process to amend bounding sphere in unit .mesh files (IWTE default and vanilla minimal sized bounding spheres can cause units to be dropped from view early if using custom camera angles)
 
 Fixes to existing processes:
-    Environment: Descr_geography_new.db editing now allows colours to be added to lines that didn't previously have a texture assigned
-    Units: CSV to modeldb - extra spaces at ends of lines (inputted in error by user) are now ignored
-    Settlements: Fix to docking display for 'no valid docking' option in battle map settlement walls
-    Settlements: Fix to prevent accidental assignment of more than one breach per object.
-    Settlements: Fix for error processing single triangle meshes in the reset shading/effects process
-    Settlements: Fix to preset order of animations for settlement gates, this was not necessary for PC but is necessary for mobile, also prevents accidental assignment of duplicate animation phases.
-    Settlements: .world binary to text button operation fixed
-    Settlements: look-up for mainobject > change object breach fixed
+* Environment: Descr_geography_new.db editing now allows colours to be added to lines that didn't previously have a texture assigned
+* Units: CSV to modeldb - extra spaces at ends of lines (inputted in error by user) are now ignored
+* Settlements: Fix to docking display for 'no valid docking' option in battle map settlement walls
+* Settlements: Fix to prevent accidental assignment of more than one breach per object.
+* Settlements: Fix for error processing single triangle meshes in the reset shading/effects process
+* Settlements: Fix to preset order of animations for settlement gates, this was not necessary for PC but is necessary for mobile, also prevents accidental assignment of duplicate animation phases.
+* Settlements: .world binary to text button operation fixed
+* Settlements: look-up for mainobject > change object breach fixed
 
 BLENDER/glb issues:
-    Improved error message if 'neutral bone' is encountered. This can occur if you transfer objects between armatures with mismatched bone names.
-    Fix for exporting RR/RTW info_walls.cas files to glb
-    Fix for .glb exports from Blender where one mesh has two textures assigned (and therefore the verts assigned to the second texture were being ignored)
+* Improved error message if 'neutral bone' is encountered. This can occur if you transfer objects between armatures with mismatched bone names.
+* Fix for exporting RR/RTW info_walls.cas files to glb
+* Fix for .glb exports from Blender where one mesh has two textures assigned (and therefore the verts assigned to the second texture were being ignored)
 
 RR ONLY:
-    Bug fix: include " " on paths with spaces for map*_tga files in RR mesh making process when re-writing task file (thanks @Sulla for the report)
+* Bug fix: include " " on paths with spaces for map*_tga files in RR mesh making process when re-writing task file (thanks @Sulla for the report)
 
 MISC:
-    Change to CMD window behaviour when task run from command line.
+* Change to CMD window behaviour when task run from command line.
 
 ### with version25_12_A (major change to RR mesh process, plus minor fixes)
 FOR RR ONLY
