@@ -1,0 +1,8 @@
+<task_id>                                 mesh_bounding_sphere_edit_directory            # to alter a bounding sphere for a directory of unit .mesh files
+<directory_in>                            "/janissaries"                                 # Full or relative path to directory
+#<directory_out>                          "/amended"                                     # if not specified new files will be placed in sub folder /edited
+
+<x_val>                               0.0                                                # side to side position change
+<y_val>                               0.0                                                # front/back position change
+<height_val>                          0.30                                               # center height
+<radius_val>                          0.75                                               # radius

@@ -1,0 +1,9 @@
+<task_id>                                           mesh_bounding_sphere_edit                                    # to alter a bounding sphere for a unit mesh
+<mesh_file_full_path_in>                            "/janissaries/janissary_archers_lod0.mesh"                   # unit mesh file full or relative path
+
+#<create_text_file>                                  full                                                        # uncomment this line if you want a text representation of the .mesh
+
+<x_val>                               0.0                                                            # side to side position change
+<y_val>                               0.0                                                            # front/back position change
+<height_val>                          0.0                                                            # height
+<radius_val>                          0.75                                                           # radius
