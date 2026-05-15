@@ -1,3 +1,6 @@
+# will convert the listed .world files to extract
+# all building .textures used will be converted to .dds and saved to directory_out/data/blockset/textures
+
 <task_id>                                         world_list_to_extract                                                       #  
 <mod_directory_in>                                "M:\M2TW\mods\InsularisDraco"  # mod folder
 <m2_directory_in>                                 "M:\M2unpacked"                # M2TW main folder - with vanilla textures etc unpacked   
