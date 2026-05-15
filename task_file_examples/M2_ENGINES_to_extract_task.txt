@@ -1,0 +1,11 @@
+# will convert the listed siege engine .mesh to extract complete with basepose skeleton
+# .textures will be converted to .dds and saved to directory_out/textures
+# suited for viewing extracted files - task files for conversion back are NOT included
+
+<task_id>                                           m2_engines_to_extract                                                       #  
+<mod_directory_in>                                 "M:\M2unpacked\mods\british_isles"      # path to mod folder - do not include \data
+<directory_out>                                     /extracted_engines_test 
+<extract_file_type>                                 glb 
+<engine_name_list>    	# names as per descr_engines.txt 'type'               
+ballista
+huge_bombard
