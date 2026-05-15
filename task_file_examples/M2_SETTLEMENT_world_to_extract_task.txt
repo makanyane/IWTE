@@ -1,0 +1,8 @@
+<task_id>                                           world_list_to_extract                                                       #  
+<mod_directory_in>                                 "M:\M2TW\mods\InsularisDraco"
+<m2_directory_in>                                 "M:\M2unpacked"       
+<directory_out>                                     /extracted_insularisDraco 
+<extract_file_type>                                 glb 
+<world_name_list>                   
+\data\settlements\cul_5\castles\large_castle\cul_5_large_castle_a.world
+\data\settlements\cul_5\castles\stone_keep\cul_5_stone_keep_a.world
