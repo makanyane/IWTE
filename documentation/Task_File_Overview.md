@@ -39,12 +39,14 @@ There are a few simply syntax items anyone wanting to use this process should be
 | cas_data_csv | [CAS_data_to_csv](../task_file_examples/CAS_data_to_csv_task.txt)
 | cas_texture_csv | [CAS_texture_tga_list_to_csv](../task_file_examples/CAS_texture_tga_list_to_csv_task.txt)
 | cas_merge_meshes | [CAS_merge_meshes](../task_file_examples/CAS_merge_meshes.txt) | see https://www.twcenter.net/ubs/fixing-cas-files-with-too-many-meshes.75/page/joining-multiple-meshes-together.5/
-| open_world_files | [M2_settlement_open_files](../task_file_examples/M2_settlement_open_files_task.txt) | M2 only, opens .world/.worldcollision and .animinstances files
+| open_world_files | [M2_SETTLEMENT_open_files](../task_file_examples/M2_SETTLEMENT_open_files_task.txt) | M2 only, opens .world/.worldcollision and .animinstances files
 | world_effects_and_shading | [M2_SETTLEMENT_effect_and_shading](../task_file_examples/M2_SETTLEMENT_world_effect_and_shading_task.txt) | M2 only |
+| world_list_to_extract | [M2_SETTLEMENT_world_list_to_extract](../task_file_examples/M2_SETTLEMENT_world_list_to_extract_task.txt) | M2 only, converts list of .world files to extract, and .textures to .dds
 | dds_to_texture_directory | [M2_TEXTURE_dds_to_texture_directory](../task_file_examples/M2_TEXTURE_dds_to_texture_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | M2 only |
 | texture_to_dds_directory | [M2_TEXTURE_texture_to_dds_directory](../task_file_examples/M2_TEXTURE_texture_to_dds_directory_task.txt) | [M2 Texture Conversion Options](Image_Editing_and_Conversion.md#m2-texture-conversion-options) | 
 | unit_card_data | [M2_UNIT_CARD_data_for_Blender_addon](../task_file_examples/M2_UNIT_CARD_data_for_Feral_Blender_addon_task.txt) | M2 only |
 | convert_from_skeleton_to_new |
+| m2_engines_to_extract | [M2_ENGINES_to_extract](../task_file_examples/M2_ENGINES_to_extract_task.txt) | | M2 only, converts list of engines from .mesh to extract, with .textures to .dds |
 | extract_to_mesh | [M2_UNIT_extract_to_mesh_with_WEAPON_SHIELD_anims](../task_file_examples/M2_UNIT_extract_to_mesh_body_WEAPON_SHIELD_anims_task.txt) | | M2 only |
 | mesh_to_extract | [M2_UNIT_mesh_to_extract_with_anims_list](../task_file_examples/M2_UNIT_mesh_to_extract_with_anims_list_task.txt)<br> [M2_UNIT_mesh_to_extract_body_and_WEAPON_anims](../task_file_examples/M2_UNIT_mesh_to_extract_body_and_WEAPON_anims_task.txt)<br>[M2_UNIT_mesh_to_extract_body_WEAPON_and_MOUNT](../task_file_examples/M2_UNIT_mesh_to_extract_body_WEAPON_and_MOUNT_task.txt)<br>[M2_UNIT_mesh_to_extract_directory_task](../task_file_examples/M2_UNIT_mesh_to_extract_directory_task.txt)   | | M2 only |
 | modeldb_mesh_to_extract | [M2_UNIT_modeldb_mesh_to_extract](../task_file_examples/M2_UNIT_modeldb_mesh_to_extract_task.txt) |  M2 only |
