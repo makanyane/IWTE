@@ -10,6 +10,35 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version 26_05_A 
+
+M2TW Only:
+SIEGE ENGINES: 
+* New task to convert list of engine .mesh files to extract. 
+https://github.com/makanyane/IWTE/blob/main/task_file_examples/M2_ENGINES_to_extract_task.txt	
+
+MODELDB:
+* Fix to handle 'foreign' characters in unit names, during modeldb_mesh_to_extract.
+* Addition to modeldb read processes - mesh name duplicates are now listed at the end of the modeldb errors.txt file IWTE produces. 
+This is to warn users converting .mesh to extract, that the extract files will overwrite each other if written to the same folder.
+
+SETTLEMENTS: 
+* New screen at Medievel 2 > Battle Map Settlements > World extract/imports > Worldpkg Export World,
+allows .world files referenced in any .worldpkgdesc within mod to be selected for conversion to extract, complete with dds of textures.
+* New task to convert list of settlements to extract, complete with dds of textures.
+https://github.com/makanyane/IWTE/blob/main/task_file_examples/M2_SETTLEMENT_world_list_to_extract_task.txt
+* Saving terrain mask files from 2d screen now produces .tga file and converted .texture file (in IWTEsave/textures).
+* Fix to change old .world files (not produced by IWTE) that have -0.000 in deployment block rotation (which crashes on M2 mobile/Mac/Linux), 
+applied when opening and re-saving the 3 binary files.
+* Bug fix to problem introduced in last version converting M2 building .anim files to extract - now fixed.
+* Fix to pick up shading from .glb files imported into M2 settlements where textures have been viewed in Blender - 
+where two sets of vertex shading data can be exported in the .glb file. The incorrect (black) shading data is now ignored.
+
+GEOGRAPHY/LIGHTING: 
+* Fix to color picker to allow new color selection to be cancelled 
+
+MISC:
+* Fix to let IWTE automatically run on PCs with only one thread available. 
 ### with version 26_03_A (multiple feature changes and fixes)
 M2TW ONLY: 
 New Features:
