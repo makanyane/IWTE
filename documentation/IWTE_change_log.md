@@ -10,6 +10,22 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version 26_06_A 
+M2TW:
+Fixes to allow some odd/early .world settlement files to be read and/or corrected
+* fix to allow .world files with no complexes to be read (a vanilla ambient has this)
+* fix to allow .world files where object refers to animation reference not in file to be read
+* fix to remove any duplicate breaches from .world files when files are re-saved
+* fix to correct door/path indicator/separator numbers when files are re-saved
+Bug fix for mesh with weapon to extract using skel/unpacked cas process.
+Fix to allow unpacking of skel/anims with '15' indicator (for EBII files - everything else had 14)
+
+M2TW Mobile:
+Conversion of building .anims to mobile .anim and .gr2 is in this version, but isn't fully tested yet.
+
+RR:
+Fix for mounted units converted to extract with animation to set height correctly.
+
 ### with version 26_05_A 
 
 M2TW Only:
