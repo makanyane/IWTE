@@ -10,7 +10,10 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
-### with version 26_06_A 
+### with version 26_06_B 
+M2TW:
+Improvement to error reporting when reading modeldb files with errors that prevent full read of file.
+### with version 26_06_A
 M2TW:
 Fixes to allow some odd/early .world settlement files to be read and/or corrected
 * fix to allow .world files with no complexes to be read (a vanilla ambient has this)
