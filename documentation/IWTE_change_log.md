@@ -10,6 +10,11 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version 26_06_C 
+M2TW battlemap settlements:  
+QOL improvements to 'Add Deployment Block' feature - you can now select first object from 2d window,  
+handling of split objects improved so Huge City corner wall sections that meet at a point now work properly,  
+the selected section of a split object is now shown with a wide red border.  
 ### with version 26_06_B 
 M2TW:
 Improvement to error reporting when reading modeldb files with errors that prevent full read of file.
