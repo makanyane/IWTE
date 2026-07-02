@@ -10,6 +10,9 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version 26_07_A 
+RR Mesh Production:  
+Fix to break coastline sections into .cas size chunks for very large maps with continuous coastline sections.
 ### with version 26_06_C 
 M2TW battlemap settlements:  
 QOL improvements to 'Add Deployment Block' feature - you can now select first object from 2d window,  
