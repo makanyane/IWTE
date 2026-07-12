@@ -18,3 +18,6 @@ Also do not use 'group by NLA track'.
 ![glb_setting2](../IWTEgithub_images/glb_setting2.jpg)
 
 Please be aware that despite having a 'Remember Export Settings' button, Blender tends to forget...
+
+If you have difficulties with files that had more than one armature (with extra armatures subsequently deleted) you may need to use:  
+File > Cleam_Up > Purge Unused Data
