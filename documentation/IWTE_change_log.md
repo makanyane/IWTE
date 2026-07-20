@@ -10,6 +10,15 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version 26_07_B
+RR Mesh Production:  
+Introduction of desaturation option for textures.  
+Introduction of winter_mix (darken) option for textures.  
+Introduction of alternate default (pre-packed) textures for some climates.  
+Fix for lakes at very high heights producing unwanted hill effects around edges.  
+Please see blog at
+https://www.twcenter.net/ubs/new-rome-remastered-map-mesh-texture-options-in-iwte.137/
+for details of the new textures options
 ### with version 26_07_A 
 RR Mesh Production:  
 Fix to break coastline sections into .cas size chunks for very large maps with continuous coastline sections.
