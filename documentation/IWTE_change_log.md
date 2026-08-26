@@ -10,6 +10,11 @@ When using IWTE we recommend always using the most up-to-date version, but also 
 
 
 ## Changes from 25_02_beta onwards
+### with version 26_08_A
+RR Mesh Production:  
+Fix for unwanted 'mountains' at lake / river intersections.  
+RTW/RR  
+Fix for Milkshape only (cas to ms3d / ms3d to cas) mesh naming issue for weapon meshes.  
 ### with version 26_07_B
 RR Mesh Production:  
 Introduction of desaturation option for textures.  
